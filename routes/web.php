@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/breadcrumb',[SimpleFunctionsController::class,"create_breadcrumbs"]);
+Route::get('/breadcrumb', 'SimpleFunctionsController@create_breadcrumbs');
