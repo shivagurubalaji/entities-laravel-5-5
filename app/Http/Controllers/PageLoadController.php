@@ -184,14 +184,9 @@ class PageLoadController extends Controller
                 break;           
             default:
                 // Code to execute if $value does not match any case
-                return view('pageloader');
+                echo "error";
         }
 
-        if($get_index_data){
-            return view('pageloader', compact('get_index_data'));
-        }else{
-            return view('pageloader');
-        }
 
     }
 
