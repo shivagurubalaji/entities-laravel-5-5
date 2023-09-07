@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/breadcrumb', 'SimpleFunctionsController@create_breadcrumbs');
+
+Route::get('/test', 'PageLoadController@test');
