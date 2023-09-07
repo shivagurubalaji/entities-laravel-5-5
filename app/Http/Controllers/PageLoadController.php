@@ -313,9 +313,9 @@ class PageLoadController extends Controller
 
         $get_index_data = MainIndex::where('page_uri','=', 'index/')->first();
 
-        //$get_content = ModxContent::where('uri','=', $page_uri.'/')->where('context_key','=', 'web')->first();
+        $get_content = ModxContent::where('uri','=', $page_uri.'/')->where('context_key','=', 'web')->first();
 
-        var_dump($get_index_data);
+        var_dump($get_content);
 
     }
 
