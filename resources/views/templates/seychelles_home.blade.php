@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body>
-    @include('blocks.header.header-inner-sc')
+
 
 
     <div class="hidden-xs">
