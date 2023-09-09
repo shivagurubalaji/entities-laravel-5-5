@@ -1,0 +1,7 @@
+<svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <circle id="Ellipse_27" data-name="Ellipse 27" cx="15" cy="15" r="15" fill="#41b8ea"/>
+  <g id="ic_arrows_right" data-name="ic arrows right" transform="translate(7.15 10.24)">
+    <path id="Vector" d="M.75,0a.75.75,0,0,0,0,1.5Zm15.7,1.5a.75.75,0,0,0,0-1.5ZM.75,1.5h15.7V0H.75Z" transform="translate(-0.75 3.99)" fill="#fff"/>
+    <path id="Vector-2" data-name="Vector" d="M.22,9.74A.75.75,0,0,0,1.28,10.8ZM4.86,6.16l.53.53,0,0Zm0-1.41.532-.529,0,0ZM1.39.22A.75.75,0,0,0,.33,1.28ZM1.28,10.8,5.39,6.69,4.33,5.63.22,9.74ZM5.392,6.689A1.75,1.75,0,0,0,5.9,5.455H4.4a.25.25,0,0,1-.073.176ZM5.9,5.455a1.75,1.75,0,0,0-.509-1.234L4.328,5.279a.25.25,0,0,1,.073.176ZM5.39,4.22l-4-4L.33,1.28l4,4Z" transform="translate(10.55 -0.75)" fill="#fff"/>
+  </g>
+</svg>

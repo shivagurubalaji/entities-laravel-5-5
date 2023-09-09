@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Icon-slider" transform="translate(25.376 24.906) rotate(180)">
+    <rect id="Bg_Circle" data-name="Bg Circle" width="25" height="25" rx="12.5" transform="translate(0.376 -0.094)" fill="#41b8ea"/>
+    <g id="Arrow" transform="translate(9.151 8.463)">
+      <path id="Shape" d="M4.641,4.628,1.01,8.249a.591.591,0,0,1-.836-.834l3.213-3.2L.173,1.007A.591.591,0,0,1,1.01.173L4.641,3.794a.589.589,0,0,1,0,.834Z" transform="translate(4.814 8.422) rotate(180)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

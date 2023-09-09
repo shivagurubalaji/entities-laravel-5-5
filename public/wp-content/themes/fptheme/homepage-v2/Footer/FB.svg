@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-FB">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="FB" clip-path="url(#clip-FB)">
+    <g id="Group_1981" data-name="Group 1981" transform="translate(1583.613 9491.029)">
+      <ellipse id="Oval" cx="15.887" cy="15.887" rx="15.887" ry="15.887" transform="translate(-1583 -9490.416)" fill="#41b8ea"/>
+      <path id="Shape" d="M9.172,10.345H6.338V20.731H2.043V10.345H0V6.7H2.043V4.334A4.027,4.027,0,0,1,6.376,0L9.557.013V3.556H7.249a.874.874,0,0,0-.911.995V6.7h3.21Z" transform="translate(-1572.292 -9484.253)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

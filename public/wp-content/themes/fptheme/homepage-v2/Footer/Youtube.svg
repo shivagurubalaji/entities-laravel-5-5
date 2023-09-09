@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-Youtube">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Youtube" clip-path="url(#clip-Youtube)">
+    <g id="Group_1986" data-name="Group 1986" transform="translate(1365.544 9490.959)">
+      <path id="Path_238" data-name="Path 238" d="M417.493,15.957A15.957,15.957,0,1,1,401.536,0a15.957,15.957,0,0,1,15.957,15.957" transform="translate(-1750.58 -9490.416)" fill="#41b8ea"/>
+      <path id="Path_239" data-name="Path 239" d="M427.4,38.158a2.471,2.471,0,0,0-1.745-1.745C424.12,36,417.948,36,417.948,36s-6.172,0-7.711.413a2.471,2.471,0,0,0-1.745,1.745,27.55,27.55,0,0,0,0,9.5,2.471,2.471,0,0,0,1.745,1.745c1.539.413,7.711.413,7.711.413s6.172,0,7.711-.413a2.471,2.471,0,0,0,1.745-1.745,27.558,27.558,0,0,0,0-9.5m-11.43,7.711V39.947l5.128,2.961Z" transform="translate(-1766.989 -9517.366)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

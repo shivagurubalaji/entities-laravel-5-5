@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>element/icon/32px/secondary/magnifying-glass</title>
+    <g id="element/icon/32px/secondary/magnifying-glass" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="element/icon/grey/magnifying-glass" transform="translate(6.320083, 5.867417)" stroke="#77787B">
+            <g id="element/icon/white/magnifying-glass" transform="translate(11.000000, 11.000000) scale(-1, 1) rotate(45.000000) translate(-11.000000, -11.000000) translate(5.000000, 2.000000)">
+                <circle id="Oval" stroke-width="2" cx="6.17647059" cy="5.5" r="5.5"></circle>
+                <line x1="6.17647059" y1="11.3529412" x2="6.17647059" y2="17.2712302" id="Line-2" stroke-width="2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

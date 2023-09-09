@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.5" height="19.5" viewBox="0 0 19.5 19.5">
+  <g id="arrow1" transform="translate(-384 -6215.25)">
+    <path id="Path_478" data-name="Path 478" d="M9.75,0A9.75,9.75,0,1,1,0,9.75,9.75,9.75,0,0,1,9.75,0Z" transform="translate(384 6215.25)" fill="#d5f3ff"/>
+    <g id="Icons_Actions_ic-actions-check" data-name="Icons/Actions/ic-actions-check" transform="translate(388.81 6221.34)">
+      <g id="ic_actions_check" data-name="ic actions check" transform="translate(-4.56 -6.09)">
+        <path id="Vector" d="M1.073,3.911a.659.659,0,0,0-.889,0,.563.563,0,0,0,0,.833Zm2.121,2.82-.445.417a.659.659,0,0,0,.889,0Zm7-5.725a.563.563,0,0,0,0-.833.659.659,0,0,0-.889,0ZM.184,4.744l2.566,2.4.889-.833-2.566-2.4Zm3.455,2.4L10.2,1.006,9.307.173,2.75,6.314Z" transform="translate(4.56 6.09)" fill="#41b8ea" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

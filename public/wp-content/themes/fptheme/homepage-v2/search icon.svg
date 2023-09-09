@@ -1,0 +1,11 @@
+<svg id="search_icon" data-name="search icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_467" data-name="Rectangle 467" width="21" height="21" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1896" data-name="Group 1896" clip-path="url(#clip-path)">
+    <path id="Path_504" data-name="Path 504" d="M10.5,21h0A10.5,10.5,0,1,1,21,10.5,10.5,10.5,0,0,1,10.5,21" fill="#e2e2e2"/>
+    <path id="Path_505" data-name="Path 505" d="M15.833,14.956,12.6,11.721A4.358,4.358,0,0,0,9.113,4.742h0a4.371,4.371,0,1,0,0,8.742h.012a4.36,4.36,0,0,0,2.6-.886l3.232,3.231.176-.177h0l-.176.176a.617.617,0,0,0,.872,0,.617.617,0,0,0,0-.874M12.248,9.115A3.136,3.136,0,1,1,11.33,6.9a3.141,3.141,0,0,1,.918,2.219" fill="#132a4a"/>
+  </g>
+</svg>
