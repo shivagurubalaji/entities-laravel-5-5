@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/749acc29b6.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('/assets/sc/css/style-main.min.css?v=1.2')}}" />
+    <link rel="stylesheet" type="text/css" href="/assets/components/modxminify/cache/styles-1-1676989427.min.css" />
 
     
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
