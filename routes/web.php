@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::any('/{entity}/{lang}', ['uses' => 'PageLoadController@home'])->name('fpmarkets.sc.home');
+Route::any('/{lang}', ['uses' => 'PageLoadController@home'])->name('fpmarkets.sc.home');
 
 Route::get('/breadcrumb', 'SimpleFunctionsController@create_breadcrumbs');
 
