@@ -1,0 +1,702 @@
+<style>
+    select.wapf-input {
+        background: transparent;
+        border: 1px solid #01bdff;
+        border-radius: 10px;
+        color: #01bdff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+        outline: none;
+
+    }
+
+    .tv-logo-copy-img {
+        height: 32px;
+    }
+
+    .tv-logo-text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    p.tv-logo-section {
+        font-size: 12px;
+        padding-top: 7px;
+        padding-left: 5px;
+    }
+
+    @media (max-width: 767px) {
+        .padding-mobile-nc {
+            margin-top: 20px !important;
+        }
+    }
+</style>
+
+
+<div class="search-box-col-md-align-for-mobile padding-mobile-nc" style="padding:1%;text-align:right;">
+    <form class="searchInput">
+        <select id="dynamic_select" class="wapf-input">
+            <option value="" selected>Choose other instruments</option>
+            <option value="3m-share-price/">3M Company (MMM)</option>
+            <option value="a2milk-share-price/">A2 Milk Co Ltd (A2M)</option>
+            <option value="aactechnologies-share-price/">AAC Technologies Holdings Inc (SEHK: 2018)</option>
+            <option value="aalberts-share-price/">Aalberts NV (AALB)</option>
+            <option value="abbott-laboratories-share-price/">Abbott Laboratories (ABT)</option>
+            <option value="abbvie-inc-share-price/">AbbVie Inc (ABBV)</option>
+            <option value="abiomed-inc-share-price/">ABIOMED Inc (ABMD)</option>
+            <option value="abnamrobank-share-price/">ABN AMRO Bank NV (ABN)</option>
+            <option value="accenture-plc-share-price/">Accenture Plc (ACN)</option>
+            <option value="acciona-share-price/">Acciona SA (ANA)</option>
+            <option value="acerinox-share-price/">Acerinox SA (ACX)</option>
+            <option value="acsactividades-share-price/">ACS Actividades Cons y Serv SA (ACS)</option>
+            <option value="activision-blizzard-share-price/">Activision Blizzard, Inc (ATVI)</option>
+            <option value="adidas-share-price/">Adidas AG (ADS)</option>
+            <option value="adobe-share-price/">Adobe Inc. (ADBE)</option>
+            <option value="amd-share-price/">Advanced Micro Devices (AMD)</option>
+            <option value="adyen-share-price/">Adyen NV (ADYEN)</option>
+            <option value="aegon-share-price/">Aegon NV (AGN)</option>
+            <option value="aenasme-share-price/">Aena SME SA (AENA)</option>
+            <option value="aflac-inc-share-price/">Aflac Inc (AFL)</option>
+            <option value="afterpaytouchgroup-share-price/">Afterpay Touch Group Ltd (APT)</option>
+            <option value="agilent-technologies-share-price/">Agilent Technologies Inc (A)</option>
+            <option value="agl-energy-share-price/">AGL Energy Ltd (AGL)</option>
+            <option value="agnc-investment-share-price/">Agnc Investment Corp (AGNC)</option>
+            <option value="agricultural-back-of-china-share-price/">Agricultural Bank of China Limited (1288.HK)</option>
+            <option value="aia-share-price/">AIA Group Ltd (HKG: 1299)</option>
+            <option value="airfrance-share-price/">Air France-KLM SA (AF)</option>
+            <option value="apd-share-price/">Air Products & Chemicals Inc (APD)</option>
+            <option value="airbnb-share-price/">Airbnb, Inc. (ABNB)</option>
+            <option value="airbus-share-price/">AIRBUS SE (AIR)</option>
+            <option value="akamai-technologies-share-price/">Akamai Technologies Inc (AKAM)</option>
+            <option value="akzonobel-share-price/">Akzo Nobel NV (AKZA)</option>
+            <option value="albemarlecorp-share-price/">Albemarle Corp (ALB)</option>
+            <option value="alcoacorp-share-price/">Alcoa Corp (AA)</option>
+            <option value="alibaba-share-price/">Alibaba Group Holding Ltd (BABA)</option>
+            <option value="alibaba-health-share-price/">Alibaba Health Information Tech Ltd (241.HK)</option>
+            <option value="aligntech-share-price/">Align Technology Inc (ALGN)</option>
+            <option value="allianz-share-price/">Allianz SE (ALV)</option>
+            <option value="allstate-corp-share-price/">Allstate Corp (ALL)</option>
+            <option value="google-share-price/">Alphabet Inc - C (GOOG)</option>
+            <option value="alphabet-inc-share-price/">Alphabet Inc – C (GOOG.xnas)</option>
+            <option value="alsltd-share-price/">ALS Ltd (ALQ)</option>
+            <option value="alteryx-inc-share-price/">Alteryx Inc - Class A (AYX)</option>
+            <option value="altiumgrp-share-price/">Altium Ltd (ALU)</option>
+            <option value="altriagrp-share-price/">Altria Group Inc (MO)</option>
+            <option value="alumina-share-price/">Alumina Ltd (AWC)</option>
+            <option value="amadeusitgr-share-price/">Amadeus IT Group SA (AMS)</option>
+            <option value="amazon-share-price/">Amazon.com, Inc. (AMZN)</option>
+            <option value="amcorplc-share-price/">Amcor Plc (CDIs) (AMC)</option>
+            <option value="america-airlines-share-price/">American Airlines Group, Inc. (AAL)</option>
+            <option value="aep-share-price/">American Electri Power (AEP)</option>
+            <option value="aep-share-price-2/">American Electric Power (AEP.xnas)</option>
+            <option value="amex-share-price/">American Express Co (AXP)</option>
+            <option value="afg-share-price/">American Financial Group Inc (AFG)</option>
+            <option value="aig-share-price/">American International Group (AIG)</option>
+            <option value="american-tower-share-price/">American Tower Corp (AMT)</option>
+            <option value="awc-share-price/">American Well Corp (AMWL)</option>
+            <option value="amgen-share-price/">Amgen Inc (AMGN)</option>
+            <option value="amp-share-price/">AMP Ltd (AMP)</option>
+            <option value="ampol-share-price/">Ampol Ltd (ALD)</option>
+            <option value="analog-devices-share-price/">Analog Devices Inc (ADI)</option>
+            <option value="anhui-conch-cement-share-price/">Anhui Conch Cement Co Ltd (914.HK)</option>
+            <option value="ansell-share-price/">Ansell Ltd (ANN)</option>
+            <option value="anta-sports-share-price/">Anta Sports Products Ltd (2020.HK)</option>
+            <option value="anthem-share-price/">Anthem Inc (ANTM)</option>
+            <option value="aon-plc-share-price/">Aon Plc (AON)</option>
+            <option value="apagroup-share-price/">APA Group (APA)</option>
+            <option value="apache-share-price/">Apache Corp (APA)</option>
+            <option value="appen-share-price/">Appen Ltd (APX)</option>
+            <option value="apple-share-price/">Apple Inc. (AAPL)</option>
+            <option value="applied-materials-share-price/">Applied Materials Inc (AMAT)</option>
+            <option value="arcelormittal-share-price/">ArcelorMittal SA (MTS)</option>
+            <option value="archer-daniels-midland-share-price/">Archer-Daniels-Midland Co (ADM)</option>
+            <option value="arcimoto-share-price/">Arcimoto Inc (FUV)</option>
+            <option value="aristocrat-leisure-share-price/">Aristocrat Leisure Ltd (ALL)</option>
+            <option value="aroundtown-share-price/">Aroundtown SA (AT1)</option>
+            <option value="ase-tech-share-price/">Ase Technology Holding (ADRs) (ASX)</option>
+            <option value="asmintl-share-price/">ASM International NV (ASM)</option>
+            <option value="asmhldg-share-price/">ASML Holding NV (Nasdaq) (ASML)</option>
+            <option value="asml-holding-share-price/">ASML Holding NV (Nasdaq) (ASML.xnas)</option>
+            <option value="asrnederland-share-price/">ASR Nederland NV (ASRNL)</option>
+            <option value="asx-share-price/">ASX Ltd (ASX)</option>
+            <option value="att-share-price/">AT&T Inc. (T)</option>
+            <option value="atlas-arteria-share-price/">Atlas Arteria (ALX)</option>
+            <option value="atlassian-share-price/">Atlassian Corporation PLC (TEAM)</option>
+            <option value="ato-tech-share-price/">Atotech Ltd (ATC)</option>
+            <option value="aurinia-pharma-share-price/">Aurinia Pharmaceuticals Inc (AUPH)</option>
+            <option value="aurizonhldgs-share-price/">Aurizon Holdings Ltd (AZJ)</option>
+            <option value="ausnet-share-price/">Ausnet Services (AST)</option>
+            <option value="anz-share-price/">Australian & New Zealand Banking Group Ltd (ANZ)</option>
+            <option value="australianfoundation-share-price/">Australian Foundation Investment Co Ltd (AFI)</option>
+            <option value="autodesk-share-price/">Autodesk Inc (ADSK)</option>
+            <option value="adp-share-price/">Automatic Data Processing Inc (ADP)</option>
+            <option value="autozone-share-price/">Autozone Inc (AZO)</option>
+            <option value="avalonbay-share-price/">AvalonBay Communities Inc (AVB)</option>
+            <option value="baidu-share-price/">Baidu, Inc. (BIDU)</option>
+            <option value="bldp-share-price/">Ballard Power Systems Inc (BLDP)</option>
+            <option value="bancodesabadell-share-price/">Banco de Sabadell SA (SAB)</option>
+            <option value="santander-share-price/">Banco Santander, S.A. (SAN)</option>
+            <option value="boa-share-price/">Bank of America Corporation (BAC)</option>
+            <option value="bank-of-china-share-price/">BANK OF CHINA (3988.HK)</option>
+            <option value="bankcomm-share-price/">Bank of Communications Co Ltd (3328)</option>
+            <option value="bankofeastasia-share-price/">Bank of East Asia Ltd (23)</option>
+            <option value="bankofnewyork-mellon-share-price/">Bank of New York Mellon Corp (BK.xnys)</option>
+            <option value="bankofqueensland-share-price/">Bank of Queensland Ltd (BOQ)</option>
+            <option value="bankinter-share-price/">Bankinter SA (BKT.xmad)</option>
+            <option value="barclays-share-price/">Barclays plc (BARC)</option>
+            <option value="basf-share-price/">BASF SE (BAS)</option>
+            <option value="baxterintl-share-price/">Baxter International Inc (BAX.xnys)</option>
+            <option value="bayer-share-price/">Bayer AG (BAYN)</option>
+            <option value="bmw-share-price/">Bayerische Motoren Werke AG (BMW)</option>
+            <option value="bbva-share-price/">BBVA SA (BBVA)</option>
+            <option value="beach-energy-ltd-share-price/">Beach Energy Ltd (BPT.xasx)</option>
+            <option value="becton-dickinson-share-price/">Becton Dickinson & Co (BDX)</option>
+            <option value="bbby-share-price/">Bed Bath & Beyond Inc (BBBY)</option>
+            <option value="beiersdorf-share-price/">Beiersdorf AG (BEI.xetr)</option>
+            <option value="beigene-share-price/">Beigene Ltd (BGNE)</option>
+            <option value="bendigo-share-price/">Bendigo and Adelaide Bank (BEN.xasx)</option>
+            <option value="bestbuy-share-price/">Best Buy Co Inc (BBY.xnys)</option>
+            <option value="beyond-meat-share-price/">Beyond Meat Inc (BYND)</option>
+            <option value="bhp-group-share-price/">BHP Group Ltd [ASX] (BHP)</option>
+            <option value="bilibili-sponsored-share-price/">Bilibili Inc-Sponsored (ADRs) (BILI)</option>
+            <option value="bilibili-inc-share-price/">Bilibili Inc. (BILI)</option>
+            <option value="biogen-share-price/">Biogen Inc (BIIB.xnas)</option>
+            <option value="biomarinpharmaceutical-share-price/">BioMarin Pharmaceutical Inc (BMRN.xnas)</option>
+            <option value="bionanogenomic-share-price/">Bionano Genomics Inc (BNGO.xnas)</option>
+            <option value="biontech-share-price/">BioNTech SE (BNTX.xnas)</option>
+            <option value="blackberry-share-price/">Blackberry Ltd (BB.xnys)</option>
+            <option value="blackrock-share-price/">Blackrock Inc (BLK)</option>
+            <option value="blinkchargingco-share-price/">Blink Charging Co (BLNK.xnas)</option>
+            <option value="bloomenergycorp-share-price/">Bloom Energy Corp (BE.xnys)</option>
+            <option value="bluescope-steel-share-price/">BlueScope Steel Ltd (BSL)</option>
+            <option value="bnp-share-price/">BNP Paribas SA (BNP)</option>
+            <option value="bochongkongholdings-share-price/">BOC Hong Kong Holdings Ltd (2388.xhkg)</option>
+            <option value="boeing-share-price/">Boeing Company (BA)</option>
+            <option value="booking-share-price/">Booking Holdings Inc (BKNG)</option>
+            <option value="boral-ltd-share-price/">Boral Ltd (BLD)</option>
+            <option value="boston-scientific-share-price/">Boston Scientific Corporation (BSX)</option>
+            <option value="bp-share-price/">BP plc (BP)</option>
+            <option value="brambles-ltd-share-price/">Brambles Ltd (BXB.xasx)</option>
+            <option value="brenntag-ag-share-price/">Brenntag AG (BNR.xetr)</option>
+            <option value="bristol-myers-share-price/">Bristol-Myers Squibb Co (BMY)</option>
+            <option value="budweiserbrewing-share-price/">Budweiser Brewing Co APAC Ltd (1876)</option>
+            <option value="bumble-inc-share-price/">Bumble Inc (BMBL)</option>
+            <option value="byd-share-price/">BYD Co Ltd (1211)</option>
+            <option value="cabot-oil-gas-share-price/">Cabot Oil & Gas Corp (COG)</option>
+            <option value="cadence-design-system-share-price/">Cadence Design Systems Inc (CDNS)</option>
+            <option value="caixabank-share-price/">CaixaBank SA (CABK.xmad)</option>
+            <option value="capital-one-share-price/">Capital One Financial Corp (COF)</option>
+            <option value="cardinal-health-share-price/">Cardinal Health Inc (CAH)</option>
+            <option value="carl-zeiss-share-price/">Carl Zeiss Meditec AG (AFX)</option>
+            <option value="carrefour-share-price/">Carrefour SA (CA)</option>
+            <option value="carsalesltd-share-price/">Carsales.com Ltd (CAR)</option>
+            <option value="caterpillar-share-price/">Caterpillar Inc (CAT)</option>
+            <option value="cathay-pacific-share-price/">Cathay Pacific Airways Ltd (293.HK)</option>
+            <option value="cboe-global-share-price/">Cboe Global Markets Inc (CBOE)</option>
+            <option value="cellnextelco-share-price/">Cellnex Telecom SA (CLNX)</option>
+            <option value="cemex-sab-share-price/">Cemex Sab-Spons Adr Part Cer (CX)</option>
+            <option value="centene-corp-share-price/">Centene Corp (CNC)</option>
+            <option value="cerner-corp-share-price/">Cerner Corp (CERN)</option>
+            <option value="cgn-power-share-price/">CGN Power Co Ltd (1816.xhkg)</option>
+            <option value="challenger-share-price/">Challenger Ltd (CGF)</option>
+            <option value="charter-comms-share-price/">Charter Communications Inc (CHTR)</option>
+            <option value="charterhall-share-price/">Charter Hall Group (CHC)</option>
+            <option value="chkp-share-price/">Check Point Software Technologies Ltd (CHKP)</option>
+            <option value="chevron-share-price/">Chevron Corp (CVX)</option>
+            <option value="chimera-investment-share-price/">Chimera Investment Corp (CIM)</option>
+            <option value="citic-bank-share-price/">China Citi Bank Corp Ltd (998)</option>
+            <option value="china-coal-share-price/">China Coal Energy Co Ltd (1898)</option>
+            <option value="china-communications-construction-share-price/">China Communications Construction Co Ltd (1800)</option>
+            <option value="china-construction-bank-share-price/">China Construction Bank Corp (939)</option>
+            <option value="china-eastern-airlines-share-price/">China Eastern Airlines Co (670)</option>
+            <option value="china-evergrande-share-price/">China Evergrande Group (3333)</option>
+            <option value="chinagalaxy-share-price/">China Galaxy Securities Co Ltd (6881)</option>
+            <option value="china-gas-share-price/">China Gas Holdings Ltd (384)</option>
+            <option value="china-life-share-price/">China Life Insurance Co Ltd (2628)</option>
+            <option value="chinadairy-share-price/">China Mengniu Dairy Co Ltd (2319)</option>
+            <option value="chinamobile-share-price/">China Mobile Ltd (941)</option>
+            <option value="chinaoverseasland-share-price/">China Overseas Land & Investment Ltd (688)</option>
+            <option value="chinapetroleum-share-price/">China Petroleum & Chemical / Sinopec (386)</option>
+            <option value="chinarailway-share-price/">China Railway Construction Corp Ltd (1186)</option>
+            <option value="china-resources-beer-holding-co-ltd-291/">China Resources Beer Holding Co Ltd (291)</option>
+            <option value="chinaresourcesgas-share-price/">China Resources Gas Group Ltd (1193)</option>
+            <option value="chinaresourcesland-share-price/">China Resources Land Ltd (1109)</option>
+            <option value="chinaresourcespower-share-price/">China Resources Power Holdings Co Ltd (836)</option>
+            <option value="chinashenuaenergy-share-price/">China Shenhua Energy Co Ltd (1088)</option>
+            <option value="china-southern-airlines-share-price/">China Southern Airlines Co Ltd (1055)</option>
+            <option value="china-telecom-share-price/">China Telecom Corp Ltd (0728.HK)</option>
+            <option value="chinatowercorp-share-price/">China Tower Corp Ltd (788)</option>
+            <option value="unicom-share-price/">China Unicom Hong Kong Ltd (0762.HK)</option>
+            <option value="chinavankeco-share-price/">China Vanke Co Ltd (2202)</option>
+            <option value="chongqing-ruralcombank-share-price/">Chongqing Rural Commercial Bank Co Ltd (3618.xhkg)</option>
+            <option value="dior-share-price/">Christian Dior SE (CDl)</option>
+            <option value="chubb-ltd-share-price/">Chubb Ltd (CB)</option>
+            <option value="chungwa-telco-share-price/">Chunghwa Telecom Co Ltd (ADRs) (CHT)</option>
+            <option value="churchill-capital-share-price/">Churchill Capital Corp IV (CCIV)</option>
+            <option value="cieautomotive-share-price/">CIE AUTOMOTIVE, S.A. (CIE)</option>
+            <option value="cigna-share-price/">Cigna Corp (CI.xnys)</option>
+            <option value="cimicgroup-share-price/">CIMIC Group Ltd (CIM.xasx)</option>
+            <option value="cintas-corp-share-price/">Cintas Corp (CTAS)</option>
+            <option value="cisco-share-price/">Cisco Systems, Inc. (CSCO)</option>
+            <option value="citicltd-share-price/">CITIC Ltd (267.xhkg)</option>
+            <option value="citi-share-price/">Citigroup Inc (C)</option>
+            <option value="ck-asset-holdings-share-price/">CK Asset Holdings Ltd (1113.xhkg)</option>
+            <option value="ck-hutchinson-share-price/">CK Hutchison Holdings Ltd (1.xhkg)</option>
+            <option value="ck-infrastructure-share-price/">CK Infrastructure Holdings Ltd (1038.xhkg)</option>
+            <option value="cleanawaywastemgt-share-price/">CLEANAWAY WASTE MANAGEMENT LTD (TSPCF)</option>
+            <option value="clrox-company-share-price/">Clorox Company (CLX.xnys)</option>
+            <option value="clovis-oncology-share-price/">Clovis Oncology Inc (CLVS.xnas)</option>
+            <option value="clphldg-share-price/">CLP Holdings Ltd (2.xhkg)</option>
+            <option value="cmegroup-share-price/">CME Group Inc (CME.xnas)</option>
+            <option value="cnooc-share-price/">CNOOC Ltd (883.xhkg)</option>
+            <option value="assurances-cnp-share-price/">CNP Assurances (CNP)</option>
+            <option value="cocacola-share-price/">Coca-Cola Company (KO)</option>
+            <option value="icocacola-share-prce/">Coca-Cola Company (KO)</option>
+            <option value="cochlear-share-price/">Cochlear Ltd (COH.xasx)</option>
+            <option value="cognizanttech-share-price/">Cognizant Tech Solutions - Class A (CTSH.xnas)</option>
+            <option value="coinbase-share-price/">Coinbase Global, Inc. (COIN)</option>
+            <option value="coin-share-price/">Coinbase Global, Inc. (COIN)</option>
+            <option value="coles-share-price/">Coles Group Ltd (COL.xasx)</option>
+            <option value="colgate-palmolive-share-price/">Colgate-Palmolive Co (CL.xnys)</option>
+            <option value="comcast-share-price/">Comcast Corporation Class A (CMCSA)</option>
+            <option value="comerica-share-price/">Comerica Inc (CMA.xnys)</option>
+            <option value="commerzbankag-share-price/">COMMERZBANK AG (CBK.DE)</option>
+            <option value="commonwealthbankofaustralia-share-price/">Commonwealth Bank of Australia (CBA.xasx)</option>
+            <option value="computershare-share-price/">Computershare Ltd (CPU.xasx)</option>
+            <option value="concho-resources-share-price/">Concho Resources Inc (CXO)</option>
+            <option value="conocophillips-share-price/">ConocoPhillips (COP)</option>
+            <option value="consolidated-edison-share-price/">Consolidated Edison Inc (ED)</option>
+            <option value="constellation-brands-share-price/">Constellation Brands Inc - Class A (STZ)</option>
+            <option value="contextlogic-share-price/">ContextLogic Inc (WISH)</option>
+            <option value="continental-ag-share-price/">Continental AG (CON.xetr)</option>
+            <option value="corning-inc-share-price/">Corning Inc (GLW)</option>
+            <option value="costco-share-price/">Costco Wholesale Corp (COST)</option>
+            <option value="coty-inc-share-price/">Coty Inc (COTY)</option>
+            <option value="country-garden-share-price/">Country Garden Holdings Co Ltd (2007)</option>
+            <option value="coupang-llc-share-price/">Coupang LLC (CPNG)</option>
+            <option value="covestro-ag-share-price/">Covestro AG (1COV.xetr)</option>
+            <option value="credicorp-share-price/">Credicorp Ltd (BAP)</option>
+            <option value="cronos-group-share-price/">Cronos Group Inc (CRON)</option>
+            <option value="crownresorts-share-price/">Crown Castle Intl Corp (CCI)</option>
+            <option value="crowncastle-share-price/">Crown Castle Intl Corp (CCI.xnys)</option>
+            <option value="cscfinancial-share-price/">CSC Financial Co Ltd (6066.xhkg)</option>
+            <option value="csl-share-price/">CSL Ltd (CSL.xasx)</option>
+            <option value="cspc-pharma-share-price/">CSPC Pharmaceutical Group Ltd (1093.xhkg)</option>
+            <option value="csxcorp-share-price/">CSX Corp (CSX)</option>
+            <option value="cummins-inc-share-price/">Cummins Inc (CMI)</option>
+            <option value="curevac-share-price/">CureVac NV (CVAC)</option>
+            <option value="cvs-health-share-price/">CVS Health Corp (CVS)</option>
+            <option value="daimler-share-price/">Daimler AG (DAI)</option>
+            <option value="danahercorp-share-price/">Danaher Corp (DHR)</option>
+            <option value="datadoginc-share-price/">Datadog Inc - Class A (DDOG)</option>
+            <option value="deereco-share-price/">Deere & Co (DE)</option>
+            <option value="deliveroo-share-price/">Deliveroo PLC (ROO)</option>
+            <option value="deliveryhero-share-price/">Delivery Hero SE (DHER.xetr)</option>
+            <option value="dell-share-price/">Dell Technologies Inc. (DELL)</option>
+            <option value="delta-share-price/">Delta Air Lines, Inc. (DAL)</option>
+            <option value="deterra-royalties-share-price/">Deterra Royalties Ltd (DRR)</option>
+            <option value="deutschebank-share-price/">Deutsche Bank AG (DB)</option>
+            <option value="deutscheboerse-share-price/">Deutsche Boerse AG (DB1.xetr)</option>
+            <option value="deutsche-lufthansa-share-price/">Deutsche Lufthansa AG (LHA.DE)</option>
+            <option value="deutschepost-share-price/">Deutsche Post</option>
+            <option value="deutschewohnen-share-price/">Deutsche Wohnen SE (DWNI.xetr)</option>
+            <option value="devon-energycorp-share-price/">Devon Energy Corp (DVN)</option>
+            <option value="dexcominc-share-price/">DexCom Inc (DXCM)</option>
+            <option value="dexus-dxs-xasx/">Dexus (DXS.xasx)</option>
+            <option value="diamondback-energy-share-price/">Diamondback Energy Inc (FANG)</option>
+            <option value="discover-financial-share-price/">Discover Financial Services (DFS)</option>
+            <option value="discovery-inc-share-price/">Discovery Inc (DISCA)</option>
+            <option value="docusign-share-price/">DocuSign Inc (DOCU)</option>
+            <option value="dollar-general-share-price/">Dollar General Corp (DG)</option>
+            <option value="dollar-tree-share-price/">Dollar Tree Inc (DLTR)</option>
+            <option value="dominion-energy-share-price/">Dominion Energy Inc (D)</option>
+            <option value="dominospizza-share-price/">Domino's Pizza Enterprises Ltd (DMP.xasx)</option>
+            <option value="dong-feng-motor-share-price/">Dongfeng Motor Group Co Ltd (489.HK)</option>
+            <option value="doordash-share-price/">DoorDash Inc (DASH)</option>
+            <option value="dow-inc-share-price/">Dow Inc (DOW)</option>
+            <option value="downer-share-price/">Downer EDI Ltd (DOW)</option>
+            <option value="dr-horton-share-price/">Dr Horton Inc (DHI)</option>
+            <option value="dropbox-share-price/">Dropbox Inc (DBX)</option>
+            <option value="dte-energy-share-price/">Dte Energy Company (DTE)</option>
+            <option value="duke-energy-share-price/">Duke Energy Corp (DUK)</option>
+            <option value="dupont-share-price/">DuPont de Nemours Inc (DD)</option>
+            <option value="dws-group-share-price/">DWS Group GmbH & Co KGaA (DWS.xetr)</option>
+            <option value="eoan-share-price/">E.ON SE (EOAN)</option>
+            <option value="eastman-chemical-share-price/">Eastman Chemical Co (EMN)</option>
+            <option value="eastman-kodak-share-price/">Eastman Kodak Co (KODK)</option>
+            <option value="eastman-kodak-share-price-2/">Eastman Kodak Co (KODK)</option>
+            <option value="easyjet-share-price/">easyJet plc (EZJ)</option>
+            <option value="eaton-corp-share-price/">Eaton Corp Plc (ETN)</option>
+            <option value="ebay-share-price/">eBay Inc (EBAY)</option>
+            <option value="ecolab-share-price/">Ecolab Inc (ECL)</option>
+            <option value="edwards-lifesciences-share-price/">Edwards Lifesciences Corp (EW)</option>
+            <option value="electrameccanica-vehicles-share-price/">Electrameccanica Vehicles Co (SOLO)</option>
+            <option value="electronic-arts-share-price/">Electronic Arts Inc (EA)</option>
+            <option value="eli-lily-share-price/">Eli Lilly & Co (LLY)</option>
+            <option value="emerson-electric-share-price/">Emerson Electric Co (EMR)</option>
+            <option value="enagas-share-price/">Enagas SA (ENG)</option>
+            <option value="ence-energia-share-price/">ENCE Energia y Celulosa SA (ENC)</option>
+            <option value="endesa-share-price/">Endesa SA (ELE)</option>
+            <option value="enn-energy-share-price/">ENN Energy Holdings Ltd (2688.HK)</option>
+            <option value="epd-share-price/">Enterprise Products Partners LP (EPD)</option>
+            <option value="eog-resources-share-price/">EOG Resources Inc (EOG)</option>
+            <option value="equinix-share-price/">Equinix Inc (EQIX.xnas)</option>
+            <option value="estee-lauder-share-price/">Estee Lauder Companies, Inc. (EL)</option>
+            <option value="exxon-share-price/">Exxon Mobil Corporation (XOM)</option>
+            <option value="facebook-share-price/">Facebook, Inc. (FB)</option>
+            <option value="fedex-share-price/">FedEx Corp (FDX)</option>
+            <option value="ferrari-share-price/">Ferrari N.V. (RACE)</option>
+            <option value="flightcentretravel-share-price/">Flight Centre Travel Group Ltd (FLT.xasx)</option>
+            <option value="ford-share-price/">Ford Motor Company (F)</option>
+            <option value="fortescuemetals-share-price/">Fortescue Metals Group Ltd (FMG.xasx)</option>
+            <option value="fortinet-share-price/">Fortinet Inc (FTNT.xnas)</option>
+            <option value="fortive-share-price/">Fortive Corp (FTV.xnys)</option>
+            <option value="fraportagfrankfurt-share-price/">Fraport AG Frankfurt Airport (FRA.xetr)</option>
+            <option value="galapagos-share-price/">Galapagos NV (GLPG.xams)</option>
+            <option value="galaxyentgroup-share-price/">Galaxy Entertainment Group Ltd (27.xhkg)</option>
+            <option value="gapinc-share-price/">Gap Inc (GPS.xnys)</option>
+            <option value="geely-share-price/">Geely Automobile Holdings Ltd (175)</option>
+            <option value="ge-share-price/">General Electric Company (GE)</option>
+            <option value="gm-share-price/">General Motors Co (GM)</option>
+            <option value="gevoinc-share-price/">Gevo, Inc. (GEVO.xnas)</option>
+            <option value="glaxosmithkline-share-price/">GlaxoSmithKline plc (GSK)</option>
+            <option value="glencore-share-price/">Glencore PLC (GLNCY)</option>
+            <option value="goldman-share-price/">Goldman Sachs Group, Inc. (GS)</option>
+            <option value="goodmangroup-share-price/">Goodman Group (GMG.xasx)</option>
+            <option value="goodyeartirerubber-share-price/">Goodyear Tire & Rubber Co (GT.xnas)</option>
+            <option value="gopro-share-price/">GoPro, Inc. (GPRO)</option>
+            <option value="guangdonginvestment-share-price/">Guangdong Investment Ltd (270.xhkg)</option>
+            <option value="gac-share-price/">Guangzhou Automobile Group/ GAC (2238)</option>
+            <option value="haidilao-share-price/">Haidilao International Holding Ltd (6862.HK)</option>
+            <option value="halliburton-share-price/">Halliburton Company (HAL)</option>
+            <option value="hanglungproperties-share-price/">Hang Lung Properties Ltd (101.xhkg)</option>
+            <option value="hangsengbank-share-price/">Hang Seng Bank Ltd (11.xhkg)</option>
+            <option value="hannoverrueck-share-price/">Hannover Rueck SE (HNR1.xetr)</option>
+            <option value="hansohpharmaceutical-share-price/">Hansoh Pharmaceutical Group Co Ltd (3692.xhkg)</option>
+            <option value="harleydavidson-share-price/">Harley-Davidson Inc (HOG.xnys)</option>
+            <option value="heidelbergcement-share-price/">HeidelbergCement AG (HEI.xetr)</option>
+            <option value="heineken-share-price/">Heineken NV (HEIA)</option>
+            <option value="hendersonland-share-price/">Henderson Land Development Co Ltd (12.xhkg)</option>
+            <option value="henkelagco-share-price/">Henkel AG & Co KgaA (HEN3.xetr)</option>
+            <option value="hermes-share-price/">Hermes International SCA (RMS)</option>
+            <option value="hiltonwordwide-share-price/">Hilton Worldwide Holdings Inc (HLT.xnys)</option>
+            <option value="homedepot-share-price/">Home Depot, Inc. (HD)</option>
+            <option value="honeywell-share-price/">Honeywell International Inc. (HON)</option>
+            <option value="honeywell-international-share-price/">Honeywell International Inc. (HON)</option>
+            <option value="hongkongchinagas-share-price/">Hong Kong & China Gas Co Ltd (3.xhkg)</option>
+            <option value="hongkongexchanges-share-price/">Hong Kong Exchanges & Clearing Ltd (388.xhkg)</option>
+            <option value="hp-share-price/">HP Inc (HPQ)</option>
+            <option value="hsbc-share-price/">HSBC Holdings PLC (HSBA)</option>
+            <option value="hsbc-share-price-2/">HSBC Holdings PLC (HSBA)</option>
+            <option value="iberdrola-share-price/">Iberdrola (IBE)</option>
+            <option value="indcommbankofchinaicbc-share-price/">Ind & Comm Bank of China Ltd / ICBC (1398.xhkg)</option>
+            <option value="ing-share-price/">ING Groep NV (INGA)</option>
+            <option value="share-price-intel/">Intel Corporation (INTC)</option>
+            <option value="intercontinentalexchange-share-price/">Intercontinental Exchange Inc / ICE (ICE.xnys)</option>
+            <option value="ibm-share-price/">International Business Machines (IBM)</option>
+            <option value="sainsbury-share-price/">J Sainsbury PLC (SBRY)</option>
+            <option value="jd-share-price/">JD.com, Inc. (JD)</option>
+            <option value="jnj-share-price/">Johnson & Johnson (JNJ)</option>
+            <option value="johnsoncontrols-share-price/">Johnson Controls International Plc (JCI.xnys)</option>
+            <option value="jpmorgan-share-price/">JP Morgan Chase & Co. (JPM)</option>
+            <option value="takeaway-share-price/">Just Eat Takeaway (TKWY)</option>
+            <option value="lloyds-share-price/">Lloyds Banking Group plc (LLOY)</option>
+            <option value="lvmh-share-price/">LVMH Group SA (MC)</option>
+            <option value="lyft-share-price/">Lyft Inc-A (LYFT)</option>
+            <option value="loreal-share-price/">L’Oreal SA (OR)</option>
+            <option value="mt-bank-share-price/">M & T Bank Corp (MTB.xnys)</option>
+            <option value="macquariegroupltd-share-price/">Macquarie Group Ltd (MQG.xasx)</option>
+            <option value="manchester-united-share-price/">Manchester United (MANU)</option>
+            <option value="marriottinternational-share-price/">Marriott International - Class A (MAR.xnas)</option>
+            <option value="marshmclennanco-share-price/">Marsh & McLennan Cos (MMC.xnys)</option>
+            <option value="mastercard-share-price/">Mastercard Incorporated (MA)</option>
+            <option value="mcdonalds-share-price/">McDonald’s Corporation (MCD)</option>
+            <option value="mediasetespanacomunicacion-share-price/">Mediaset Espana Comunicacion SA (TL5.xmad)</option>
+            <option value="medibank-private-share-price/">Medibank Private Ltd (MPL.xasx)</option>
+            <option value="meituan-share-price/">Meituan (3690.HK)</option>
+            <option value="metlife-share-price/">Metlife Inc (MET.xnys)</option>
+            <option value="metroag-share-price/">Metro AG (B4B.xetr)</option>
+            <option value="michelin-share-price/">Michelin CGDE (ML)</option>
+            <option value="microsoft-share-price/">Microsoft Corporation (MSFT)</option>
+            <option value="mrna-share-price/">Moderna, Inc. (MRNA)</option>
+            <option value="moodyscorp-share-price/">Moody's Corp (MCO.xnys)</option>
+            <option value="morganstanley-share-price/">Morgan Stanley (MS)</option>
+            <option value="nab-share-price/">National Australia Bank Ltd (NAB.xasx)</option>
+            <option value="natwestgroup-share-price/">Natwest Group</option>
+            <option value="nemetschek-share-price/">Nemetschek SE (NEM.xetr)</option>
+            <option value="netapp-share-price/">Netapp Inc (NTAP.xnas)</option>
+            <option value="netflix-share-price/">Netflix, Inc. (NFLX)</option>
+            <option value="newscorp-share-price/">News Corp - Class B (CDIs) (NWS.xasx)</option>
+            <option value="nextdc-share-price/">NEXTDC Ltd (NXT.xasx)</option>
+            <option value="nike-share-price/">Nike, Inc. (NKE)</option>
+            <option value="nngroup-share-price/">NN Group NV (NN.xams)</option>
+            <option value="nvidia-share-price/">NVIDIA Corp (NVDA)</option>
+            <option value="oracle-share-price/">Oracle Corporation (ORCL</option>
+            <option value="paypal-share-price/">PayPal Holdings, Inc. (PYPL)</option>
+            <option value="picc-share-price/">People's Insurance Co Group of China Ltd (1339)</option>
+            <option value="pepsi-share-price/">Pepsico, Inc. (PEP)</option>
+            <option value="pfizer-share-price/">Pfizer, Inc. (PFE)</option>
+            <option value="pinduoduo-share-price/">Pinduoduo Inc (PDD)</option>
+            <option value="pingan-share-price/">Ping An Insurance Group (2318.HK)</option>
+            <option value="porsche-share-price/">Porsche Automobil Holding SE (PAH3)</option>
+            <option value="postalsaving-bankofchina-share-price/">Postal Savings Bank of China Co., Ltd (1658.HK) Stock Price</option>
+            <option value="puma-share-price/">Puma SE (PUM.xetr)</option>
+            <option value="qantas-share-price/">Qantas Airways Limited (QAN.AX)</option>
+            <option value="qubeholdings-share-price/">Qube Holdings Ltd (QUB.xasx)</option>
+            <option value="qurate-retail-share-price/">Qurate Retail (QRTEA)</option>
+            <option value="ramsay-health-care-share-price/">Ramsay Health Care Ltd (RHC)</option>
+            <option value="randstad-share-price/">Randstad NV (RAND)</option>
+            <option value="rational-ag-share-price/">Rational AG (RAA.xetr)</option>
+            <option value="raytheon-technologies-share-price/">Raytheon Technologies (RTX)</option>
+            <option value="reagroup-share-price/">REA Group Ltd (REA)</option>
+            <option value="red-electrica-share-price/">Red Electrica Corporacion SA (REE.xmad)</option>
+            <option value="regeneron-pharma-share-price/">Regeneron Pharmaceuticals (REGN)</option>
+            <option value="regions-financial-share-price/">Regions Financial Corp (RF)</option>
+            <option value="reliance-worldwide-share-price/">Reliance Worldwide Corp Ltd / RWC (RWC)</option>
+            <option value="relxplc-share-price/">Relx PLC [AEX] (REL.xams)</option>
+            <option value="repsol-sa-share-price/">Relx PLC [AEX] (RELX)</option>
+            <option value="renault-share-price/">Renault SA (RNO)</option>
+            <option value="resmed-sa-share-price/">Resmed Inc (CDIs) (RMD)</option>
+            <option value="ringcentral-inc-share-price/">RingCentral Inc (RNG)</option>
+            <option value="rio-share-price/">Rio Tinto PLC (RIO)</option>
+            <option value="rolls-royce-share-price/">Rolls-Royce Holdings PLC (RR)</option>
+            <option value="rbs-share-price/">Royal Bank of Scotland Group plc</option>
+            <option value="shell-share-price/">Royal Dutch Shell PLC (RDS-A)</option>
+            <option value="salesforce-share-price/">Salesforce.com Inc (CRM)</option>
+            <option value="sanofi-share-price/">Sanofi (SNY)</option>
+            <option value="sap-share-price/">SAP SE (SAP)</option>
+            <option value="scout24-share-price/">Scout24 AG (G24.xetr)</option>
+            <option value="seek-share-price/">Seek Ltd (SEK.xasx)</option>
+            <option value="siemens-share-price/">SIEMENS AG (SIE)</option>
+            <option value="siemens-gamesa-share-price/">Siemens Gamesa Renewable Energy SA (SGRE)</option>
+            <option value="siemenshealthineers-share-price/">Siemens Healthineers AG (SHL.xetr)</option>
+            <option value="signet-jewelers-share-price/">Signet Jewelers Ltd (SIG)</option>
+            <option value="simon-property-group-share-price/">Simon Property Group Inc (SPG)</option>
+            <option value="sino-biopharma-share-price/">Sino Biopharmaceutical Ltd (1177)</option>
+            <option value="sino-land-share-price/">Sino Land Co Ltd (83)</option>
+            <option value="siriusxm-holdings-share-price/">Sirius XM Holdings Inc (SIRI)</option>
+            <option value="six-flags-ent-share-price/">Six Flags Entertainment Corp (SIX)</option>
+            <option value="skyworks-solutions-share-price/">Skyworks Solutions Inc (SWKS)</option>
+            <option value="slack-technologies-share-price/">Slack Technologies Inc (WORK)</option>
+            <option value="snap-share-price/">Snap Inc A (SNAP)</option>
+            <option value="snowflakeinc-share-price/">Snowflake Inc (SNOW)</option>
+            <option value="sociedad-quimica-share-price/">Sociedad Quimica y Minera SA (ADRs) (SQM)</option>
+            <option value="socgen-share-price/">Societe Generale SA (GLE)</option>
+            <option value="sonic-healthcare-share-price/">Sonic Healthcare Ltd (SHL)</option>
+            <option value="sony-corp-share-price/">Sony Group Corporation (SONY)</option>
+            <option value="sorrento-therapeutics-share-price/">Sorrento Therapeutics Inc (SRNE)</option>
+            <option value="south-23-share-price/">South32 Ltd (S32)</option>
+            <option value="southernco-share-price/">Southern Co (SO)</option>
+            <option value="southwest-airlines-share-price/">Southwest Airlines Co (LUV)</option>
+            <option value="spark-infrastructure-share-price/">Spark Infrastructure Group (SKI)</option>
+            <option value="spirit-airlines-share-price/">Spirit Airlines Inc (SAVE)</option>
+            <option value="splunk-inc-share-price/">Splunk Inc (SPLK)</option>
+            <option value="spotify-share-price/">Spotify Technology S.A. (SPOT)</option>
+            <option value="square-inc-share-price/">Square Inc - A (SQ)</option>
+            <option value="standard-chartered-share-price/">Standard Chartered PLC (STAN)</option>
+            <option value="standard-chartered-share-price-2/">Standard Chartered PLC (STAN)</option>
+            <option value="stanley-black-share-price/">Stanley Black & Decker Inc (SWK)</option>
+            <option value="star-ent-share-price/">Star Entertainment Grp Ltd/T (SGR)</option>
+            <option value="starbucks-share-price/">Starbucks Corporation (SBUX)</option>
+            <option value="statestreet-share-price/">State Street Corp (STT)</option>
+            <option value="stellantis-share-price/">Stellantis N.V. (STLA)</option>
+            <option value="stockland-share-price/">Stockland Corporation Ltd (SGP.xasx)</option>
+            <option value="sydney-airport-share-price/">Sydney Airport Holdings Pty Ltd (SYD)</option>
+            <option value="synchrony-financial-share-price/">Synchrony Financial (SYF)</option>
+            <option value="synopsys-share-price/">Synopsys (SNPS)</option>
+            <option value="sysco-share-price/">Sysco Corporation (SYY)</option>
+            <option value="twse-share-price/">Taiwan Semiconductor Mfg. Co. Ltd. (TWSE)</option>
+            <option value="ttwo-share-price/">Take-Two Interactive Software, (TTWO)</option>
+            <option value="tal-educ-share-price/">TAL Education Group (TAL)</option>
+            <option value="target-corporation-share-price/">Target Corporation (TGT)</option>
+            <option value="tattoed-chef-share-price/">Tattooed Chef, Inc. (TTCF)</option>
+            <option value="technipfmc-share-price/">TechnipFMC PLC (FTI)</option>
+            <option value="telefonica-share-price/">Telefonica SA (TEF)</option>
+            <option value="telstra-share-price/">Telstra Corp Ltd (TLS.xasx)</option>
+            <option value="tencent-share-price/">Tencent Holdings Ltd (TCEHY)</option>
+            <option value="tencent-music-share-price/">Tencent Music Entertainment Group (TME)</option>
+            <option value="tesco-share-price/">Tesco plc (TSCO)</option>
+            <option value="tesla-share-price/">Tesla Inc (TSLA)</option>
+            <option value="test-share/">test-share</option>
+            <option value="tevapharma-share-price/">Teva Pharmaceutical Industries Ltd. (TEVA)</option>
+            <option value="texas-instruments-share-price/">Texas Instruments Incorporated (TXN)</option>
+            <option value="blackstone-share-price/">The Blackstone Group Inc. (BX)</option>
+            <option value="the-trade-desk-share-price/">The Trade Desk, Inc. (TTD)</option>
+            <option value="trv-share-price/">The Travelers Companies, Inc. (TRV)</option>
+            <option value="williamscos-share-price/">The Williams Companies, Inc. (WMB)</option>
+            <option value="thermo-fisher-share-price/">Thermo Fisher Scientific (TMO)</option>
+            <option value="tjx-share-price/">TJX Companies, Inc. (TJX)</option>
+            <option value="totalenergies-share-price/">TotalEnergies SE (TTE)</option>
+            <option value="transocean-share-price/">Transocean Ltd (RIG)</option>
+            <option value="tripadvisor-share-price/">TripAdvisor, Inc. (TRIP)</option>
+            <option value="truist-financial-share-price/">Truist Financial Corporation (TFC)</option>
+            <option value="trustpilot-share-price/">Trustpilot Group PLC (TRST)</option>
+            <option value="tupperware-share-price/">Tupperware Brands Corporation (TUP)</option>
+            <option value="twilio-share-price/">Twilio (TWLO)</option>
+            <option value="twitter-share-price/">Twitter, Inc. (TWTR)</option>
+            <option value="tyson-foods-share-price/">Tyson Foods, Inc (TSN)</option>
+            <option value="usbancorp-share-price/">U.S. Bancorp (USB)</option>
+            <option value="uber-share-price/">Uber Technologies, Inc. (UBER)</option>
+            <option value="ultabeauty-share-price/">Ulta Beauty, Inc (ULTA)</option>
+            <option value="underarmour-share-price/">Under Armour, Inc. (UA)</option>
+            <option value="unp-share-price/">Union Pacific Corporation (UNP)</option>
+            <option value="ual-share-price/">United Airlines, Inc. (UAL)</option>
+            <option value="umc-share-price/">United Microelectronics Corporation (UMC)</option>
+            <option value="ups-share-price/">United Parcel Service (UPS)</option>
+            <option value="unh-share-price/">UnitedHealth Group (UNH)</option>
+            <option value="valesa-share-price/">Vale SA (VALE)</option>
+            <option value="valero-share-price/">Valero Energy Corporation (VLO)</option>
+            <option value="verizon-share-price/">Verizon Communications Inc (VZ)</option>
+            <option value="vertex-share-price/">Vertex Pharmaceuticals, Inc. (VRTX)</option>
+            <option value="vfcorporation-share-price/">VF Corporation (VFC)</option>
+            <option value="viatris-share-price/">Viatris, Inc (VTRS)</option>
+            <option value="vipshop-share-price/">Vipshop (VIPS)</option>
+            <option value="virgin-galactic-share-price/">Virgin Galactic Holdings, Inc (SPCE)</option>
+            <option value="virtu-financial-share-price/">Virtu Financial (VIRT)</option>
+            <option value="visa-share-price/">Visa Inc. (V)</option>
+            <option value="vmware-share-price/">VMWare, Inc (VMW)</option>
+            <option value="vodafone-share-price/">Vodafone Group plc (VOD)</option>
+            <option value="volkswagen-ag-pfd-share-price/">Volkswagen AG</option>
+            <option value="volkswagen-share-price/">Volkswagen AG (VOW)</option>
+            <option value="vonovia-share-price/">Vonovia SE (VNA.xetr)</option>
+            <option value="vulcan-materials-share-price/">Vulcan Materials Company (VMC)</option>
+            <option value="wwgrainger-share-price/">W. W. Grainger, Inc (GWW)</option>
+            <option value="walgreens-share-price/">Walgreens Boots Alliance, Inc.(WBA)</option>
+            <option value="walmart-share-price/">Walmart Inc (WMT)</option>
+            <option value="disney-share-price/">Walt Disney Company (DIS)</option>
+            <option value="want-want-china-share-price/">Want Want China Holdings Ltd (151)</option>
+            <option value="whsp-share-price/">Washington H. Soul Pattinson / WHSP (SOL)</option>
+            <option value="wastemngt-share-price/">Waste Management, Inc. (WM)</option>
+            <option value="weibo-share-price/">Weibo Corporation (WB)</option>
+            <option value="wells-fargo-share-price/">Wells Fargo & Company (WFC)</option>
+            <option value="westerndigital-share-price/">Western Digital Corporation (WDC)</option>
+            <option value="westpak-share-price/">Westpac Banking Corp (WBC.xasx)</option>
+            <option value="wolterskluwer-share-price/">Wolters Kluwer NV (WKL.xams)</option>
+            <option value="woolworths-share-price/">Woolworths Group Ltd (WOW.xasx)</option>
+            <option value="workday-share-price/">Workday, Inc (WDAY)</option>
+            <option value="workhorse-grp-share-price/">Workhorse Group, Incorporated (WKHS)</option>
+            <option value="wynn-macau-share-price/">Wynn Macau Ltd (1128)</option>
+            <option value="xcelenergy-share-price/">Xcel Energy Inc (XEL)</option>
+            <option value="xero-share-price/">Xero Ltd (XRO.AX)</option>
+            <option value="xiaomi-share-price/">Xiaomi Corporation (1810.HK)</option>
+            <option value="xilinx-share-price/">Xilinx Inv (XLNX)</option>
+            <option value="xpenginc-share-price/">XPeng Inc ADR (XPEV)</option>
+            <option value="yamanagold-share-price/">Yamana Gold Inc. (AUY)</option>
+            <option value="yumchinahldg-share-price/">Yum China Holdings Inc. (YUMC)</option>
+            <option value="yumbrands-share-price/">Yum! Brands Inc. (YUM)</option>
+            <option value="zalando-share-price/">Zalando SE (ZAL.DE)</option>
+            <option value="zebratechnologiescorp-share-price/">Zebra Technologies Corporation (ZBRA)</option>
+            <option value="zoetis-share-price/">Zoetis Inc. (ZTS)</option>
+            <option value="zomedia-share-price/">Zomedica Inc. (ZOM)</option>
+            <option value="zoomvideocommunications-share-price/">Zoom Video Communications Inc (ZM)</option>
+            <option value="ztoexpresscayman-share-price/">ZTO Express Cayman Inc (ZTO)</option>
+        </select>
+    </form>
+    <p class="text__align__left tv-logo-section">
+        <a style="color:#131722;"
+            href="https://www.tradingview.com/?utm_campaign=technical-analysis&utm_medium=widget_new&utm_source=www.fpmarkets.com"
+            target="_blank">
+            <img class="tv-logo-copy-img lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="/assets/components/phpthumbof/cache/tv-logo-copy.b6954294307f37d9860f365127250158.jpg"
+                alt="traders view logo">
+            <u class="tv-logo-text">
+                Charts by TradingView
+            </u>
+        </a>
+    </p>
+    <style>
+        .searchInput input[type=text] {
+            margin-top: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url(/wp-content/themes/fptheme/images/global_search2.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .searchInput input[type=text]:focus {}
+
+        .tradingview-widget-copyright {
+            display: none !important;
+        }
+
+        input::-webkit-calendar-picker-indicator {
+            display: none !important;
+        }
+
+        [list]::-webkit-calendar-picker-indicator {
+            display: none !important;
+        }
+
+        #traders-view-buy-sell-div .btn.btn-transparent-green {
+            border: none;
+            border-radius: 0 10px 10px 10px !important;
+            font-size: 21px !important;
+            font-weight: 500 !important;
+            font-stretch: normal !important;
+            font-style: normal !important;
+            letter-spacing: 0.98px !important;
+            text-align: center !important;
+            padding: 6px 30px;
+            color: #ffffff !important;
+            background: #26cc68;
+            left: -5px;
+            position: relative;
+        }
+
+        #traders-view-buy-sell-div .btn.btn-transparent-red-new {
+            border: none;
+            border-radius: 0 10px 10px 10px !important;
+            font-size: 21px !important;
+            font-weight: 500 !important;
+            font-stretch: normal !important;
+            font-style: normal !important;
+            letter-spacing: 0.98px !important;
+            text-align: center !important;
+            padding: 6px 30px;
+            color: #ffffff !important;
+            background: #f82f4a;
+            left: 5px;
+            position: relative;
+        }
+    </style>
+
+
+    <div id="traders-view-buy-sell-div" class="buy-sell-btn-mobile-align"
+        style="text-align:center;margin-bottom:25px; margin-top:25px;">
+        <a href="[[!portalUrl]]register/" target="_blank" class="btn btn-lg btn-transparent-green">
+            BUY </a>
+        <a href="[[!portalUrl]]register/" target="_blank" class="btn btn-lg btn-transparent-red-new">
+            SELL</a>
+    </div>
+
+    <p class="norml-par-font" style="font-weight: 700;">Pricing is indicative. Past performance is not a reliable
+        indicator of future results. <a target="_blank" href="webtrader-login/"
+            style="color: #2e3642!important;text-decoration: underline!important;">Log in</a> to see latest markets
+        data.</p>
+
+
+
+</div>
+
+<script>
+    $(function () {
+        // bind change event to select
+        $('#dynamic_select').on('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+    });
+</script>

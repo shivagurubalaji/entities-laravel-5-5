@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="zHNZjhX50Nv0xbSyMyrudLWBVg_8vd7yX9M2FOaqUxQ" />
 
-    <base href="{{env('APP_URL', 'https://uat.fpmarkets.com/sc/ae-en/')}}/sc/ae-en/" />
+    <base href="{{env('APP_URL', 'https://www.fpmarkets.com/ss/')}}/sc/ae-en/" />
     
     <title>{{ $get_index_data->page_title ?? 'N/A' }} | FP Markets English</title>
 
@@ -27,8 +27,8 @@
     <!-- Meta desc - title - images -->
 
     <!-- Favicon -->
-	<link rel="icon" type="image/png" href="{{ asset('assets/images/favicon-32x32.png') }}" sizes="32x32" />
-	<link rel="icon" type="image/png" href="{{ asset('assets/images/favicon-16x16.png') }}" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16" />
 
 
 <!-- Google Tag Manager -->

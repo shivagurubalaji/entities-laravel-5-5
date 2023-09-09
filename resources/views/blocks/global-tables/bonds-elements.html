@@ -1,0 +1,99 @@
+<div class="container-fluid c12 table-2">
+    <div id="dma-table-section" class="container default-wd">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-9 no-padding-mobile">
+            <div class="title mobile-title-1">
+              <h2>
+                <p class="pad-for-table"
+                  style="padding-bottom: 2px;font-size:32px!important;padding-left: 224px;">Bonds <span
+                  class="helvetica-th-font" style="font-weight: 100;">Spreads</span></p>
+              </h2>
+            </div>
+          </div>
+          <div class="col-sm-3 mobile-search">
+            <div class="wposition text__align__center">
+              <img class="searchbar-image-align"
+                src="/wp-content/themes/fptheme/image-2020/metals/desktop/search-min.png" alt="" title=""
+                style="float: right; position: absolute; z-index: 1;">
+              <input class="searchby__symbol__control bg-style-for-box cus-input-desktop cs213frsearchw" style="width: 75%;"
+                id="cus-input-desktop" type="text" placeholder="Search by Symbol" onkeyup="tableFunction()">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function tableFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("cus-input-desktop");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableFunction");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+      </script>
+      <div class="col-md-12 padding-30 mobile-padding-none table-2">
+        <div class="pad-for-table-align table-2">
+          <div class="nctable scroll-bar-for-table table-2" style="overflow: auto !important;">
+            <table class="table table-2" id="tableFunction">
+              <tbody>
+                <tr class="active0 first-row-linear-grd">
+                  <th class="tbe-hd first-row-column-linear-grd r1"
+                    style="padding: 15px;padding-left: 20px;background-image: linear-gradient(to right,rgb(9, 30, 86) 18%,#0086A9)!important; text-align: center;"
+                    rowspan="2">Symbol</th>
+                  <th class="tbe-hd r2" style="padding-left: 19px; text-align:center;" rowspan="2">Product
+                  </th>
+                  <th class="tbe-hd r3"
+                    style="padding-left: 42px;padding-top: 14px;text-align: center!important;"
+                    colspan="2">&nbsp;
+                  </th>
+                  <th class="tbe-hd r4" style="padding-top: 14px;text-align: center;" colspan="2">Standard A/c
+                  </th>
+                </tr>
+                <tr style="background-image: linear-gradient(to right,rgb(-140, 134, 171) 55%,#26cc68);">
+                  <th class="tbe-hd" style="padding: 15px;">&nbsp;</th>
+                  <th class="tbe-hd" style="padding: 15px;">&nbsp;</th>
+                  <th class="tbe-hd" style="padding: 15px;text-align: center;">Min</th>
+                  <th class="tbe-hd" style="padding: 15px;text-align: center;">Avg</th>
+                </tr>
+                <tr class="active0">
+                  <td class="tbe-para"
+                    style="padding: 15px;font-size:18.5px;font-weight:300;text-align:center;"> GILT
+                  </td>
+                  <td class="tbe-para font300" style="padding: 15px; text-align:center;"> UK Long Gilt </td>
+                  <td class="tbe-red" style="padding: 5px;"></td>
+                  <td class="tbe-red" style="padding: 5px;"> </td>
+                  <td class="tbe-blue" style="padding: 5px; text-align:center;"> 0 </td>
+                  <td class="tbe-liteblue" style="padding: 5px; text-align:center;"> 0.43
+                  </td>
+                </tr>
+                <tr class="active0">
+                  <td class="tbe-para"
+                    style="padding: 15px;font-size:18.5px;font-weight:300;text-align:center;"> US10YR
+                  </td>
+                  <td class="tbe-para font300" style="padding: 15px; text-align:center;"> US 10yr T-Note
+                  </td>
+                  <td class="tbe-red" style="padding: 5px;"></td>
+                  <td class="tbe-red" style="padding: 5px;"> </td>
+                  <td class="tbe-blue" style="padding: 5px; text-align:center;"> 0
+                  </td>
+                  <td class="tbe-liteblue" style="padding: 5px; text-align:center;"> 0.44
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
