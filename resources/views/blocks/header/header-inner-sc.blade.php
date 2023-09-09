@@ -365,7 +365,7 @@
 <header class="header">
     <div class="container d-flex align-items-center justify-content-between">
         <div class="header__logo">
-            <a href="."><img src="/assets/sc/images/logo-main.png" alt="header logo"></a>
+            <a href="."><img src="/assets/components/phpthumbof/cache/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="header logo"></a>
         </div>
         <div class="header__right d-flex align-items-center justify-content-between">
             <nav class="header__nav">
