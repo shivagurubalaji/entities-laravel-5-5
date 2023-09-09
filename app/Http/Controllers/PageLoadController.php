@@ -129,7 +129,7 @@ class PageLoadController extends Controller
 
     }
 
-    public function home(Request $request, $entity, $lang){
+    public function home(Request $request, $lang){
 
         $countryCode = @$_SERVER['HTTP_CF_IPCOUNTRY'];
 
