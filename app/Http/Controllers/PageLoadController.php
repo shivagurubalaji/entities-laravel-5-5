@@ -141,6 +141,8 @@ class PageLoadController extends Controller
         //    echo "Value is not present";
         //}
 
+        $entity = "sc";
+
         $get_portalurl = $this->portalUrl();
 
         $get_nationality = $this->getNationality();
