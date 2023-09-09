@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body>
-
+    @include('blocks.header.header-inner-sc')
 
 
     <div class="hidden-xs">
@@ -1388,7 +1388,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         });
     </script>
 
- 
+    @include('blocks.footer.footer-entity-culture')
 
 
     <script src="{{ asset('assets/sc/js/jquery.min.js') }}"></script>
@@ -1406,7 +1406,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End TrustBox script -->
         
     
-
+    @include('blocks.footer.footer')
 
 <style>
 .header {
