@@ -1391,15 +1391,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @include('blocks.footer.footer-entity-culture')
 
 
-    <script src="{{ asset('assets/sc/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/popper.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/bootstrap.min.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/jquery.min.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/popper.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/bootstrap.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script> 
-    <script src="{{ asset('assets/sc/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/simplyScroll.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/main.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/simplyScroll.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/main.js') }}"></script>
     
     <!-- TrustBox script -->
     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
