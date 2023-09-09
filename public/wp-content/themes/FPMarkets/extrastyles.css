@@ -1,0 +1,354 @@
+.quotes-wrap {
+    padding: 2px;
+    width: 100%;
+	margin-top:15px;
+	background: url(images/prices-bg.png);
+    background-repeat: repeat-x;
+    border-radius: 0px 10px 10px 10px;	
+}
+
+.pricetotalnum {
+	padding:0px;
+}
+
+
+.quote-widget__content .quote-widget__content-bid {
+    width: 49%;
+    /*border-right: 1px solid rgba(255, 255, 255, 0.14);*/
+}
+
+.quote-widget__content .quote-widget__content-ask {
+    width: 49%;
+
+}
+
+.quote-widget__footer {
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.quote-widget {
+    font-size: 12px;
+	width:19.9%;
+    background: url('images/sep-bg.png') bottom center;
+	background-position: center right;
+	margin:0px;
+	background-repeat: no-repeat;
+	float: left;
+    padding: 6px;
+}
+.quote-widget__content-title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #ffffff !important;
+}
+
+.quote-widget__content {
+    height: 48px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote-widget__footer-buttons .f-btn.buy {
+    color: #26cc68;
+    margin-right: 4px;
+    border: 1px solid #2e3642;
+    border-radius: 0px 5px 5px 5px;
+    background: #2e3642;
+}
+
+.quote-widget__footer-buttons .f-btn.sell {
+    color: #f6344e;
+    margin-right: 4px;
+    border: 1px solid #2e3642;
+    border-radius: 0px 5px 5px 5px;
+    background: #2e3642;
+}
+
+
+.large-text {
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif !important;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #ffffff;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height:80px;
+}
+
+.colorup {
+	color:#26cc68!important;
+    font-weight: bold;
+}
+
+
+.quote-widget__content-price {
+    height: 25px;
+    margin-top: -5px;
+    position: relative;
+    text-shadow: 0 0 12px;
+    font-weight: 300;
+}
+
+
+.quote-widget__content-price .price-1 {
+    position: unset;
+    bottom: 0;
+    font-size: 14px;
+}
+.quote-widget__content-price .price-2 {
+    top: -3px;
+    font-size: 22px;
+    margin-left: 3px;
+	    position: unset;
+}
+.quote-widget__content-price .price-3 {
+    margin-top: 4px;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 2px;
+	right: auto;
+    top: auto;
+}
+.bgXAUUSD { background:none; }
+
+.quote-widget__content {
+    height: 48px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+	margin-bottom:0px;
+}
+
+
+.quote-widget__footer-buttons .f-btn.buy {
+    color: #26cc68;
+    margin-right: 4px;
+    border: 1px solid #2e3642;
+    border-radius: 0px 10px 10px 10px;
+    background: #2e3642;
+}
+
+.quote-widget__footer-buttons .f-btn.sell {
+    color: #f6344e;
+    margin-right: 4px;
+    border: 1px solid #2e3642;
+    border-radius: 0px 10px 10px 10px;
+    background: #2e3642;
+}
+
+
+
+/* 3 step */
+.cstm-3-step-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto; }
+
+.cstm-3-step-inner {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 1px;
+  font-weight: 300;
+  width: 33.33333%;
+  line-height: normal; }
+
+.cstm3-stp-cntnt {
+  color: #fff; }
+
+.cstm3-stp-ttle {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal; 
+    margin-top: 10px;
+}
+
+.cstm3-stp-numbr {
+  color: #ffffff;
+    background: #26cc68;
+    font-size: 40px;
+    line-height: 72px;
+    max-width: 80px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    border: 2px solid #26cc68;
+    border-radius: 50%;
+    font-weight: 600;
+}
+  .cstm3-stp-numbr:after {
+        content: '';
+    position: absolute;
+    width: 200px;
+    height: 19px;
+    background-color: rgb(0,189,254);
+    background: url(images/steps-arrow-200.png);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+      margin-left: 20px;
+}
+  .cstm3-stp-numbr:after {
+    left: 100%; }
+  .cstm3-stp-numbr:before {
+    right: 100%; }
+
+.cstm-3-step-sec .cstm-3-step-inner:first-child .cstm3-stp-numbr:before, .cstm-3-step-sec .cstm-3-step-inner:last-child .cstm3-stp-numbr:after {
+  display: none; }
+/* end 3 steps */ 
+
+.timeline-Tweet-media {
+    display: none;
+}
+
+.feedsDiv {
+    min-height: 80px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.feedsDiv:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.feedtitle {
+    color: #3e495c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.feedtitle a {
+    color: #00bdff;
+}
+
+.title-date {
+    color: #2e3642;
+}
+
+.stepsBg {
+     background:#152a4a;background-size: cover;background-repeat: no-repeat;background-image: url('/wp-content/themes/FPMarkets/images/steps-bg.jpg');
+}
+.fundsBg { 
+        background-size: cover;background-repeat: no-repeat;background-image: url('/wp-content/themes/FPMarkets/images/payments-bg.jpg');background-position:center bottom;
+    }
+
+.feedsBg {
+    background-repeat: no-repeat;background-image: url('/wp-content/themes/FPMarkets/images/payments-bg.jpg');background-position:center bottom;
+}
+
+.borderBg {
+     padding-top: 10px;margin-top:30px;height:600px;background: url('/wp-content/themes/FPMarkets/images/twitter-feeds-bg.png');background-repeat:no-repeat;
+}
+
+.twitterInner {
+    padding-top: 24px;max-width:505px;padding-left: 10px;padding-bottom:20px;height:85%;overflow:auto;
+}
+
+.tradersInner {
+    max-width:513px;padding-left: 1px;padding-bottom:0px;height:85%;overflow:auto;
+}
+
+@media (max-width: 767px) {
+    .tradersInner {
+        max-width:99%;padding-left: 1px;padding-bottom:0px;height:62%;overflow:auto;
+    }
+    .twitterInner {
+        padding-top: 10px;
+        max-width: 340px;
+        padding-left: 8px;
+        padding-bottom: 20px;
+        height: 60%;
+        overflow: auto;
+    }
+    .feedsBg {
+        background-repeat: no-repeat;background-image: url('/wp-content/themes/FPMarkets/images/mobile-fund-bg.jpg');background-position: bottom;
+        background-size: unset;
+    }
+	.quotes-wrap {
+		margin-top: 35px;
+		width: 100%;
+		margin-bottom: 20px;
+		background: none;
+	}
+    .borderBg {
+         padding-top: 10px;margin-top:30px;height:510px;background: url('/wp-content/themes/FPMarkets/images/twitter-feeds-bg.png');background-repeat:no-repeat;background-size: 100%;
+    }
+    .stepsBg {
+         background:#152a4a;background-size: cover;background-repeat: no-repeat;background-image: url('/wp-content/themes/FPMarkets/images/steps-mobile-bg.jpg');
+    }
+    .fundsBg { 
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/FPMarkets/images/mobile-fund-bg.jpg);
+        background-position: bottom;
+        background-size: unset;
+    }
+	.bgUSDJPY {
+		display:none;
+	}
+	.quote-widget {
+		width: 49%;
+		margin:1px;
+		float: left;
+		background: linear-gradient( to bottom, rgba(33, 44, 62, 0.8) 80%, rgba(33, 44, 62, 0) 100% );
+		border-radius: 0px 10px 10px 10px;
+	}
+    .margin-top-mobile {
+        margin-top: 60px;
+    }
+	
+	.bgXAUUSD { background: linear-gradient( to bottom, rgba(33, 44, 62, 0.8) 80%, rgba(33, 44, 62, 0) 100% ); }
+    
+      .cstm-3-step-sec, .cstm-3-step-sec .cstm3-stp-numbr:after {
+            display: block;
+        }
+    .last-mobile-step .cstm3-stp-numbr:after {
+            display: none;
+        }
+        .stepsBtn {
+          padding:10px;margin-left:0px;margin-top:0px;
+        }
+        .cstm-3-step-inner {
+            text-align: unset;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+    
+    
+        
+        .cstm3-stp-numbr:after {
+        content: '';
+    position: absolute;
+    width: 19px;
+    height: 200px;
+    top: 120%;
+    left: 14%;
+    background-color: rgb(0,189,254);
+    background: linear-gradient(90deg, rgba(0,189,254,1) 1%, rgba(38,204,104,1) 100%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(images/bottom-arrow.png);
+    margin-top: 0px;
+    }
+        .cstm3-stp-cntnt {
+            padding-left: 14px;
+        }
+        .last-mobile-step:before {
+          width: 0px;
+        }
+}
+
+
+

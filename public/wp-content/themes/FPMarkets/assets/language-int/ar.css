@@ -1,0 +1,10 @@
+
+.page-id-2127 html {
+  direction: rtl !important;
+  text-align: right;
+}
+.page-id-2127 .vce-classic-accordion .vce-classic-accordion-panel-title{
+  direction: rtl !important;
+  text-align: right;
+}
+

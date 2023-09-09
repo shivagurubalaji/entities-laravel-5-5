@@ -1,0 +1,16 @@
+.social_menu_icon:after {
+  background: none !important;
+}
+.social_menu_icon2:after {
+  background: none !important;
+}
+.app_menu_icon:after {
+  right: 76px !important;
+}
+li.col-sm-2.margin-top-for-men-itm {
+  margin-left: -9px !important;
+}
+.app_menu_icon2:after {
+  right: 82px !important;
+  margin-top: -23px !important;
+}
