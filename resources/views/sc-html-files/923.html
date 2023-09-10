@@ -1,0 +1,344 @@
+[[$breadcrumb]]
+
+
+
+<style>
+    .input-custom-css {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        margin-bottom: 25px !important;
+        width: 100% !important;
+    }
+
+    .form-group {
+        margin-bottom: 0px;
+    }
+
+    body,
+    html {
+        font-family: 'Helvetica Neue' !important;
+    }
+
+    .fp-demo-signup-global input[type=submit] {
+        background: #00bdff;
+        border: none;
+        padding: 10px 20px;
+        outline: 0;
+        border-radius: 0;
+        color: #fff;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 374px;
+        display: inline;
+        font-family: 'Helvetica Neue' !important;
+        font-size: 18px !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        z-index: 9;
+        position: relative;
+        white-space: pre-wrap;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 600;
+    }
+
+    #iress-account-login-option-section {
+        padding-top: 55px;
+        padding-bottom: 110px;
+    }
+
+    .nrml-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #202835;
+    }
+
+    .col-md-offset-9-custom {
+        margin-left: 75.9%;
+    }
+
+    .form-bg-custom-css {
+        background-color: #fff !important;
+        border-radius: 0px 20px 20px 20px !important;
+        background: linear-gradient(#fff, #fff), linear-gradient(to bottom right, #fff 15%, rgba(0, 189, 255, .48), #26cc68) !important;
+        background-clip: padding-box, border-box !important;
+        background-origin: padding-box, border-box !important;
+        border: 2px solid transparent;
+        padding: 30px 35px 50px 35px;
+    }
+
+    .wid-align-for-form-section {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .savebutton {
+        background-color: #01beff !important;
+        border-radius: 10px !important;
+        opacity: 1;
+        color: #fff !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        height: 50px;
+        width: 177px !important;
+        text-transform: uppercase !important;
+        border: none !important;
+        border-top-left-radius: 0px !important;
+    }
+
+    .headerbg {
+        background-size: 100%;
+        background-position: 55% 100%;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #iress-account-login-option-section {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        .pad-left-right-15-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .col-md-offset-9-custom {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .wid-align-for-form-section {
+            width: auto !important;
+            margin: 0 auto;
+        }
+
+        .form-bg-custom-css {
+            padding: 20px 15px 45px 15px;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/fptheme/image-2020/iress-toplevel/herosection-min.png) !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .page-navi {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+
+    .input-custom-css {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        margin-bottom: 25px !important;
+    }
+
+    .down-arrow-custom {
+        border: solid #01beff;
+        border-width: 0 2px 2px 0;
+        padding: 5px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        cursor: pointer;
+    }
+</style>
+
+
+

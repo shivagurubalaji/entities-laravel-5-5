@@ -1,0 +1,67 @@
+<p class="pad-top-30-mob">
+    <iframe width="100%" height="415" src="https://www.youtube.com/embed/91ubbh2ReIY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</p>
+
+<div class="body-contents" style="padding-bottom: 30px;">
+    <p class="caption-txt">Reading Time: 7 Minutes </p>
+
+    <p class="p-txt">Although most Forex traders operate with a Forex Trading Calculator to compute their Forex
+        position size, understanding the mechanics of position sizing formulas facilitates a deeper awareness of a
+        currency pair’s format. Equally, knowledge of the calculation leaves traders (whether using day trading,
+        swing trading, or position trading strategies) less dependent on position size calculators.</p>
+    <p class="p-txt">Position sizing refers to the size of a trader’s position and determines the number of units or
+        lots (sometimes referred to as ‘lot size’ or ‘trade size’) required to maintain the desired risk profile.
+        This is key within risk-management and money-management systems for professional traders. </p>
+    <p class="p-txt">In part 1, the article explained the procedure behind calculating position size in the Forex
+        market (foreign exchange) with an account currency denominated in the same currency as the currency pair’s
+        term value: the second currency. Part 2, however, describes position sizing dynamics for <b>an account
+            denominated in a currency identical to the base currency of the currency pair of interest:</b> the first
+        currency. </p>
+
+    <p class="h-txt-cus">How to Calculate Position Size?</p>
+
+    <p class="p-txt">Similar to part 1, to trade Forex, the following values are needed to calculate position size:
+        account balance of the trading account (or account size), account risk per trade (trade risk), the currency
+        pair’s exchange rate of interest, and stop-loss distance, measured in pips. </p>
+
+    <p class="p-txt">A noteworthy reminder from part 1 is that 1 pip in FX represents 0.00010 for most currency
+        pairs (priced to the fifth decimal place). For JPY-based currency pairs, 1 pip is priced to the third
+        decimal place (0.300). It should also be clear that currency pairs are valued in terms of the <i>term</i>
+        currency. </p>
+    <p class="p-txt">To calculate the size of a position for an account denominated in an account currency matching
+        the base currency of the targeted currency pair, the following formula can be applied: </p>
+    <p class="p-txt text-center">(Account Equity Risk * Exchange Rate) / Stop Distance</p>
+    <p class="p-txt"><b>Example 1:</b></p>
+    <p class="p-txt">Assume an account of 10,000 USD (often stated as either ‘account equity’, ‘trading capital’, or
+        ‘account equity’). The trader is prepared to risk 1 per cent on each trade (100 USD), and the currency pair
+        of interest is USD/CHF (US dollar against the Swiss franc), trading at 0.97955 CHF. This particular setup
+        also demands a 20-pip protective stop-loss level. Following the formula above, the trader must multiply 100
+        USD by 0.97955 to get 97.955 (the risk in CHF). The next step involves dividing CHF risk by the stop
+        distance: 0.0020 to reach 48,977.5 units (dollar amount): notional position size. On MetaTrader’s order
+        window, this is inputted as 0.49: approximately 5 mini lots (rounded up).</p>
+
+    <p style="    text-align: center;    padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/int/images/usd_chf_trump.png" class="historylayer-img">
+    </p>
+    <span>ID: 321083978</span>
+    <p class="p-txt">Based on the example above, it should be evident that to trade with an account denominated in
+        the same currency as the base currency, ‘term’ currency risk must be understood. The trader is then free to
+        follow the same process as demonstrated in part 1: divide trade risk by the stop distance.</p>
+    <p class="p-txt"><b>Example 2:</b></p>
+    <p class="p-txt">AUD/JPY (Australian dollar against the Japanese yen) trades at ¥92.500 and the account is
+        denominated in Australian dollars (AUD). The trader has an account balance of 5,000 AUD and is prepared to
+        risk 1 per cent on each trade (50 AUD); the setup in this situation requires a protective stop-loss order of
+        25 pips. </p>
+    <p style="    text-align: center;    padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/int/images/aud_yen_a.png" class="historylayer-img">
+    </p>
+    <span>ID: 1316515868</span>
+    <p class="p-txt">Applying the position size formula, multiplying 50 by ¥92.500 equals 4,625 Japanese yen risk.
+        The trader subsequently divides 4,625 by 0.<b>250</b> to produce a notional position size of 18,500 units
+        (AUD). This can be inputted either as 0.18 (rounded down) or 0.19 (rounded up) on MetaTrader’s order
+        windows: approximately 2 mini lots.</p>
+    <p class="p-txt">Instead of dividing by five decimal places as in example 1, example 2 includes the Japanese yen
+        which uses 3 decimal places (0.<b>250</b>). </p>
+</div>

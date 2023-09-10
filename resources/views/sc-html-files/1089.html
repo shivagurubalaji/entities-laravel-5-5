@@ -1,0 +1,197 @@
+<p class="pad-top-30-mob">
+    <iframe width="100%" height="415" src="https://www.youtube.com/embed/X9ju4vOHkW4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</p>
+
+<div class="body-contents" style="padding-bottom: 30px;">
+    <p class="caption-txt">Reading Time: 8 minutes </p>
+
+    <p class="p-txt">Gone are the days of hand gestures and face-to-face contact. Today, the majority of trading
+        operations are facilitated through electronic trading systems. Consequently, understanding how traders and
+        brokerages communicate through trading platforms is imperative. </p>
+    <p class="p-txt">Like a saw is used for cutting solid material to prescribed lengths, order types are the tools
+        used by market participants to express desired trading actions. While a number of types of orders exist,
+        their main function is to enter and exit trades. </p>
+    <p class="h-txt-cus">Market Order</p>
+    <p class="p-txt">One of the simplest order types is a market order, an instruction to enter or exit (buy [long
+        position] or sell [short position]) a security immediately at the next available price. Market orders,
+        therefore, are commonly used by traders who deem current market prices as favourable entry or exit points.
+    </p>
+    <p class="p-txt">It is important to take into account that market conditions can affect the price received. In
+        volatile markets—rapid price fluctuations—or thin liquidity, bid and ask price levels may expand and cause
+        <i>slippage</i> (the price requested is not aligned with the <i>fill price</i>).
+    </p>
+    <p class="p-txt">Using the MetaTrader 4 (MT4) trading platform (figure A), the EUR/USD currency pair displays a
+        bid/ask price of $1.10382/$1.10384. By clicking ‘Sell by Market’ (to sell the bid of $1.10382) or ‘Buy the
+        Market’ (to buy the ask at $1.10384), the trader is entering the market immediately with 1 standard lot
+        (Volume). Though, volatility, as highlighted above, can influence displayed bid/ask prices. </p>
+    <p style="text-align: center; padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/images/eur_usd_order_a.jpg" class="historylayer-img">
+    </p>
+    <span>(Figure A: MetaTrader 4 Order Window)</span>
+    <p class="h-txt-cus">Limit Order</p>
+    <p class="p-txt">A limit order is a command to buy or sell at pre-determined price levels, or better. In other
+        words, it permits market participants to <i>limit</i> their instruction to a specific price received from
+        their broker (a <i>limit price</i>), whether for entry or exit. Note that limit orders are sometimes
+        referred to as <i>pending orders</i> as they’re pending until filled. </p>
+    <p class="p-txt pad-txt-left-20"> &bull; A limit BUY order (buy limit order) is placed BELOW current market
+        prices </p>
+    <p class="p-txt pad-txt-left-20"> &bull; A limit SELL order (sell limit order) is placed ABOVE current market
+        prices </p>
+    <p class="p-txt">As an example, assume a trader employing technical analysis seeks a long position (a buy
+        position) on GBP/USD as the market has been trending over the past month. Instead of entering at current
+        market prices using a market order, the trader believes the currency pair will correct and offer a cheaper
+        entry price. Opting to work with a limit buy order <i>below</i> current price to catch any retracement is an
+        option in this scenario. </p>
+    <p class="p-txt">As presented in figure B, the order window for pending orders shows the option of either a buy
+        or sell limit order, available from the drop-down tab: ‘Type’. At what price the limit order is set is
+        arranged through the ‘at price’ section, with a choice of selecting an expiration date for the chosen limit
+        order parameters. </p>
+    <p style="text-align: center; padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/images/eur_usd_order_b.jpg" class="historylayer-img">
+    </p>
+    <span>(Figure B: MetaTrader 4 Order Window)</span>
+    <p class="h-txt-cus">Stop Orders</p>
+    <p class="p-txt">Another form of <i>pending</i> order is the buy and sell-stop entry orders, frequently used by
+        breakout traders. </p>
+    <p class="p-txt">Traders use a buy-stop order to <i>buy</i> at a level above market price, and is filled when
+        the ask price tests the buy-stop level. Conversely, a sell-stop order is set beneath market price and is
+        triggered when the bid price tests the level. Do note these order types are market orders once filled. </p>
+    <p class="p-txt">An example of the buy-stop entry order window can be seen in figure C. With similar settings to
+        the limit order, the only difference is from ‘Type’: the trader selects either Buy or Sell Stop. </p>
+    <p style="text-align: center; padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/images/eur_usd_order_c.jpg" class="historylayer-img">
+    </p>
+    <span>(Figure C: MetaTrader 4 Order Window)</span>
+    <p class="h-txt-cus">Protective Stop-Loss Order</p>
+    <p class="p-txt">The protective stop-loss order—sometimes referred to as a money-management stop—functions as an
+        instruction to liquidate a position in the event price moves unfavourably. A stop-loss order is a vital
+        risk-management tool that helps prevent financial ruin. However, do keep in mind that a stop-loss order is a
+        market order. Think of it as a pending market order which is activated once prices trigger the level. This
+        is also the same for take-profit levels. </p>
+    <p style="text-align: center; padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/images/eur_usd_order_d.jpg" class="historylayer-img">
+    </p>
+    <span>(Figure D MetaTrader 4 Order Window)</span>
+    <p class="p-txt">A protective stop-loss order allows traders and investors to predetermine risk tolerance,
+        reducing the chance of large unexpected losses.</p>
+    <p class="p-txt">By way of an example, say EUR/USD trades at $1.2050 and a trader enters a long position at
+        current price using a market order. According to the trader’s trading strategy, a 20-pip stop is sufficient
+        and he/she consequently places a protective stop-loss order under current price at $1.2030. If price reaches
+        $1.2030, the position will be automatically closed. As stop-loss orders are essentially market orders once
+        filled, slippage may still occur. </p>
+    <p class="p-txt">A protective stop-loss order also serves as a trailing stop, a method of trailing profitable
+        positions by modifying its location according to price movement. </p>
+</div>
+
+<style>
+    .edu__course__lesson p {
+        font-size: 15px;
+    }
+
+    .h-txt-cus {
+        font-size: 18.5px !important;
+        line-height: 22.5px;
+        padding: 10px 0 0;
+        font-weight: bold !important;
+    }
+
+    img.historylayer-img {
+        margin: auto;
+        display: flex;
+    }
+
+    .padding-42 {
+        padding: 42px 0;
+    }
+
+    .padding-20 {
+        padding: 20px 0;
+    }
+
+    .caption-txt {
+        font-size: 14.5px;
+        line-height: 22.5px;
+        text-transform: uppercase;
+    }
+
+    .h-txt {
+        font-size: 18.5px;
+        line-height: 22.5px;
+        font-family: "Helvetica Neue BD Pro", sans-serif !important;
+        color: #0b121c;
+        padding: 50px 0 0;
+    }
+
+    .h-txt-cus {
+        font-size: 18.5px !important;
+        line-height: 22.5px;
+        font-family: "Helvetica Neue BD Pro", sans-serif !important;
+        color: #0b121c;
+        padding: 10px 0 0;
+
+    }
+
+    .pad-txt-left-20 {
+        padding-left: 20px;
+    }
+
+    .p-txt {
+        font-size: 16px;
+        line-height: 22.5px;
+        text-align: left;
+    }
+
+    .italic-txt {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .sidebar-menu h1 {
+        font-weight: 100;
+    }
+
+    .sidebar-menu {
+        background-color: #f5f7fa;
+        border-radius: 0px 10px 10px 10px;
+        padding: 25px 15px;
+    }
+
+    .sidebar-menu li>a {
+        color: #0b121c;
+    }
+
+    ol.sidebar-ul li {
+        font-size: 18.5px;
+        border-bottom: 1px solid #cdd5e3;
+        padding-bottom: 5px;
+        padding-top: 5px;
+
+    }
+
+    .sidebar-ul li.active a>p {
+        font-weight: 800;
+        color: #0b121c;
+    }
+
+    ol.sidebar-ul li a {
+        display: flex;
+        line-height: 22px;
+    }
+
+    ol.sidebar-ul p {
+        margin-left: 5px;
+        line-height: 22px;
+    }
+
+    .body-section {
+        padding-left: 35px;
+    }
+
+    img.tec-analysis-video-img {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #00bdff;
+    }
+</style>

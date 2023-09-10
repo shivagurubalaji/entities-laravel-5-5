@@ -1,0 +1,528 @@
+[[$breadcrumb]]
+
+
+<style>
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 600;
+    }
+
+    #all-clients-account-section {
+        padding-top: 85px;
+        padding-bottom: 75px;
+    }
+
+    .last-sec-head-font {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .line-bg-for-last {
+        background: url(/wp-content/themes/FPMarkets/image-2020/forex-account-type/vertical-image-1.png) right no-repeat;
+    }
+
+    .list-item-default {
+        list-style: none !important;
+        padding-left: 15px !important;
+        background-image: url(/wp-content/uploads/2018/07/bullet.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 5px !important;
+        background-position: 0 12px !important;
+    }
+
+    #asic-regulated-clients-section {
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+
+    .wid-for-desktop {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .c3 {
+        background: url(/wp-content/themes/fptheme/images/dark-bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .normal-white-font-center {
+        font-size: 18.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .h2-white-font-center {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #leverage-ratio-table-section {
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+
+    .semi-head-font {
+        font-size: 23px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        font-weight: 300;
+        color: #2e3642;
+
+    }
+
+    .pad-left-60 {
+        padding-left: 60px;
+    }
+
+    .nctable table {
+        white-space: normal !important;
+    }
+
+    .table-normal-font-lef {
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.53;
+        letter-spacing: normal;
+        text-align: left;
+        padding-left: 40px;
+        color: #3e495c;
+    }
+
+    .table-normal-font {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.53;
+        letter-spacing: normal;
+        text-align: center !important;
+        color: #3e495c;
+    }
+
+    .nctable table {
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 35%, rgba(0, 189, 255, .48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-radius: 0px 10px 20px 20px;
+        border-collapse: collapse;
+        overflow: hidden;
+        position: inherit;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+        position: inherit;
+        z-index: 9;
+    }
+
+    .table-row-head {
+        background-image: linear-gradient(90deg, #152a4a 0%, #0888be 48%, #24c870 94%, #26cc68 97%);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60px;
+        position: inherit;
+        z-index: 9;
+    }
+
+    table tr {
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+        height: 50px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #eeeeee;
+        position: inherit;
+        z-index: 9;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table tr td,
+    table tr th {
+        border-left: none;
+    }
+
+    table tr th {
+        background: none;
+    }
+
+    .header-font-table {
+        font-size: 18.5px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .h3-font-center {
+        font-size: 23px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+    }
+
+    .h2-font-center {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    #product-intervention-order-section {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    .padding-top-80 {
+        padding-top: 80px;
+    }
+
+    .bottom-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(/wp-content/uploads/2020/04/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .normal-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e3642;
+    }
+
+    .pad-left-40 {
+        padding-left: 40px;
+    }
+
+    .pad-right-40 {
+        padding-right: 40px;
+    }
+
+    .h1-font-sect {
+        font-size: 44px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .table-row-head {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 100%, #26cc68) !important;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/FPMarkets/image-2020/ASIC-Regulatory-Update/hero-mobile.png) !important;
+        }
+
+        #product-intervention-order-section {
+            padding-top: 65px;
+            padding-bottom: 60px;
+        }
+
+        .semi-head-font {
+            margin-top: -30px;
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+
+        #leverage-ratio-table-section {
+            padding-top: 60px;
+            padding-bottom: 65px;
+        }
+
+        .nctable table {
+            border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        #all-clients-account-section {
+            padding-top: 60px;
+            padding-bottom: 55px;
+        }
+
+        .pad-top-15-mob {
+            padding-top: 15px !important;
+        }
+
+        .pad-top-20-mob {
+            padding-top: 20px !important;
+        }
+
+        .pad-top-25-mob {
+            padding-top: 25px !important;
+        }
+
+        .line-bg-for-last {
+            background: url(/wp-content/themes/FPMarkets/image-2020/ASIC-Regulatory-Update/bottom-divi.png) !important;
+            background-repeat: no-repeat !important;
+            background-size: 330px !important;
+            background-position: center bottom !important;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .pad-left-40 {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        .pad-right-40 {
+            padding-right: 30px !important;
+            padding-left: 30px;
+        }
+
+        .wid-for-desktop {
+            width: auto !important;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .c3 {
+            background: url(/wp-content/themes/fptheme/images/dark-bg-mobile.png) !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        #asic-regulated-clients-section {
+            padding-top: 70px;
+            padding-bottom: 60px;
+        }
+
+        .pad-left-60 {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        .scroll-bar-for-table {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .page-navi {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+
+    table tr td,
+    table tr th {
+        padding: 5px 10px;
+        min-width: 50%;
+        max-width: 450px;
+    }
+</style>
+
