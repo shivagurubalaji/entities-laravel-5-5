@@ -1,0 +1,1188 @@
+[[$breadcrumb]]
+
+
+
+<div class="container-fluid cf1">
+    <div id="ib-request-form-section" class="container">
+        <div class="pad-left-right-15-for-mobile padding-top-50">
+            <div class="wid-align-for-form-section form-bg-custom-css">
+                <div role="form">
+                    <input type="hidden" name="nospam:blank" value="[[+fi.nospam]]" />
+                    <form action="[[~[[*id]]]]" method="post" class="ibprogram__form" enctype="multipart/form-data">
+
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="bdeveloper"> Business Developer Name:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.bdeveloper]]</span>
+                                <span>
+                                    <input type="text" id="bdeveloper" value="[[!+fi.bdeveloper]]" name="bdeveloper"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label"> Partner Details: </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="parname">
+                                Partner Name:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.parname]]</span>
+                                <span>
+                                    <input type="text" id="parname" value="[[!+fi.parname]]" name="parname" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="email">
+                                Email
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.email]]</span>
+                                <span>
+                                    <input type="email" id="email" value="[[!+fi.email]]" name="email" size="40"
+                                        class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                        aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="phone">
+                                Phone:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.phone]]</span>
+                                <span>
+                                    <input type="text" id="phone" value="[[!+fi.phone]]" name="phone" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="country">
+                                Country:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.country]]</span>
+                                <span>
+                                    <input type="text" id="country" value="[[!+fi.country]]" name="country" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="sflink">
+                                SF link if applicable:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.sflink]]</span>
+                                <span>
+                                    <input type="text" id="sflink" value="[[!+fi.sflink]]" name="sflink" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="partnertype">
+                                Type of partnership:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.partnertype]]</span>
+
+                                <span>
+                                    <select id="partnertype" name="partnertype" value="[[!+fi.partnertype]]"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                        <option value="IB">IB</option>
+                                        <option value="CPA or Hybrid">CPA or Hybrid</option>
+                                    </select>
+                                </span>
+                                <i class="down-arrow-custom"></i>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label"> Additional information: </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="previousexp">
+                                Previous experience of working as an IB/Affiliate, please
+                                provide full details, number of years and brokers worked with.
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.previousexp]]</span>
+                                <span>
+                                    <input type="text" id="previousexp" value="[[!+fi.previousexp]]" name="previousexp"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="trafficsource">
+                                What is their source of traffic? How do clients find
+                                them?
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.trafficsource]]</span>
+
+                                <span>
+                                    <input type="text" id="trafficsource" value="[[!+fi.trafficsource]]"
+                                        name="trafficsource" size="40" class="form-control" aria-required="true"
+                                        aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="howintroduce">
+                                How will they introduce clients to us? Please provide all
+                                details of websites, any social media pages or groups.
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.howintroduce]]</span>
+
+                                <span>
+                                    <input type="text" id="howintroduce" value="[[!+fi.howintroduce]]"
+                                        name="howintroduce" size="40" class="form-control" aria-required="true"
+                                        aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="monthlyclients">
+                                Monthly expected clients?
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.monthlyclients]]</span>
+
+                                <span>
+                                    <input type="text" id="monthlyclients" value="[[!+fi.monthlyclients]]"
+                                        name="monthlyclients" size="40" class="form-control" aria-required="true"
+                                        aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="avrdeposit">
+                                What will the average deposit and trading volumes be?
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.avrdeposit]]</span>
+
+                                <span>
+                                    <input type="text" id="avrdeposit" value="[[!+fi.avrdeposit]]" name="avrdeposit"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="specservice">
+                                Are they offering any special services to clients? Please
+                                be specific:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.specservice]]</span>
+
+                                <span>
+                                    <input type="text" id="specservice" value="[[!+fi.specservice]]" name="specservice"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="reglicense">
+                                Do they have a regulatory license?
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.reglicense]]</span>
+
+                                <span>
+                                    <input type="text" id="reglicense" value="[[!+fi.reglicense]]" name="reglicense"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="countriesfrom">
+                                Which countries are their clients
+                                from?
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.countriesfrom]]</span>
+
+                                <span>
+                                    <input type="text" id="countriesfrom" value="[[!+fi.countriesfrom]]"
+                                        name="countriesfrom" size="40" class="form-control" aria-required="true"
+                                        aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="uploadfile">
+                                Attach screen shots or files here:
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.uploadfile]]</span>
+
+                                <span>
+                                    <input type="file" name="uploadfile" value="[[!+fi.uploadfile]]"
+                                        accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.ppt,.pptx,.odt" />
+                                </span>
+                            </label>
+                            <br>
+                            <label class="file-uplod-para-font">Allowed File Formats: pdf, doc, txt, docx, jpg,
+                                png
+                            </label>
+                        </div>
+                        <div class="col-md-12 custom-fil-pad">
+                            <label class="custom-input-label" for="markup">
+                                Mark up request if applicable (Please add how
+                                it will be
+                                disclosed to clients and justification):
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.markup]]</span>
+
+                                <span>
+                                    <input type="text" id="markup" value="[[!+fi.markup]]" name="markup" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="specrequest">
+                                Special Request (Budget, marketing material, other):
+                                <br>
+                                <span style="color:red" class="error">[[!+fi.error.specrequest]]</span>
+
+                                <span class="wpcf7-form-control-wrap specialrequesttext">
+                                    <input type="text" id="specrequest" value="[[!+fi.specrequest]]" name="specrequest"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"
+                                        required>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="clear"></div>
+                        <div class="form-item">
+                            [[!recaptchav3_render]]
+                            [[!+fi.error.recaptchav3_error]]
+                        </div>
+                        <div class="text-cent-btn pt__30">
+                            <input type="submit" value="SEND" class="form__sub__btn">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pt__10">
+                                [[!+fi.successMessage]]
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+[[!FormIt?
+&hooks=`recaptchav3,email`
+&emailSubject=`IB Program Request - FPMarkets Website`
+&emailTpl=`ibProgramRequestFormEmail`
+&emailTo=`partners@fpmarkets.com`
+&emailfrom=`website@fpmarkets.com.au`
+&vTextRequired=`required field`
+&successMessage=`<div class="success__msg">Thank you for your message. It has been sent.<br /></div>`
+&validate=`bdeveloper:required,parname:required,email:required,phone:required,country:required,sflink:required,partnertype:required,previousexp:required,trafficsource:required,howintroduce:required,monthlyclients:required,avrdeposit:required,specservice:required,reglicense:required,countriesfrom:required,markup:required`
+]]
+
+
+
+<style>
+    .success__msg {
+        padding: 10px;
+        font-size: 17px;
+        border: 2px solid #46b450;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .ibprogram__form input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="search"],
+    select,
+    textarea {
+        position: relative;
+        height: 47px;
+        line-height: 47px;
+        border: 2px solid #e3e3e3;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 16px;
+        color: #7a7a7a;
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        -ms-transition: border-color 0.3s ease-in-out;
+        -o-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    .custom-input-label {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #7c989f;
+        width: 100%;
+    }
+
+    label {
+        font-weight: normal;
+        color: #111;
+        font-size: 12px;
+        font-family: 'Titillium Web', sans-serif !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        vertical-align: middle;
+    }
+
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    span.wpcf7-list-item.first {
+        margin: 0 0 0 0;
+    }
+
+    input[type=submit] {
+        background-color: #01beff;
+        border-radius: 10px;
+        opacity: 1;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        height: 50px;
+        width: 177px;
+        text-transform: uppercase;
+        border: none;
+        border-top-left-radius: 0px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    select {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        font-family: 'Titillium Web', sans-serif !important;
+        margin-top: 5px;
+    }
+
+    .custom-fil-pad {
+        padding-top: 20px;
+    }
+
+    #wpcf7-f7878-o1>form>div.col-md-12>label>span>input {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        text-transform: lowercase;
+        line-height: 45px;
+    }
+
+    #wpcf7-f7878-o1>form>div.col-md-12>label>span>textarea {
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .file-uplod-para-font {
+        font-size: 15.5px;
+        margin-top: -10px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #202835;
+        text-transform: capitalize;
+    }
+
+    .no-file-selected-font {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5b6472;
+        margin-left: 15px;
+    }
+
+    .file-custom-input-cs {
+        display: flex;
+        width: 100%;
+    }
+
+    .upload-input-field-custom {
+        height: 50px;
+        display: flex;
+        border: solid 1px #d8dbde;
+        background-color: #f9f9f9;
+    }
+
+    .Choosefile {
+        width: 140px;
+        height: 40px;
+        background-color: #01beff;
+        border-radius: 10px;
+        padding: 7px 17px;
+        margin-top: 4px;
+        border-top-left-radius: 0px;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .h2-center-font {
+        font-size: 44px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .check-box-nrml-para-font {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 25PX;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    .bocheckmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #f9f9f9;
+        border: 1px solid #d8dbde;
+        border-radius: 2px;
+    }
+
+    .bocontainer input:checked~.bocheckmark:after {
+        display: block;
+    }
+
+    .bocontainer .bocheckmark:after {
+        left: 7px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid rgb(1, 190, 255);
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .bocheckmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .bocontainer {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        height: auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-left: 15px;
+    }
+
+    .check-box-container {
+        display: flex;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 600;
+    }
+
+    #ib-request-form-section {
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
+
+    .nrml-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #202835;
+    }
+
+    .col-md-offset-9-custom {
+        margin-left: 75.9%;
+    }
+
+    .form-bg-custom-css {
+        background-color: #fff !important;
+        border-radius: 0px 20px 20px 20px !important;
+        background: linear-gradient(#fff, #fff), linear-gradient(to bottom right, #fff 5%, rgba(0, 189, 255, .48), #26cc68) !important;
+        background-clip: padding-box, border-box !important;
+        background-origin: padding-box, border-box !important;
+        border: 2px solid transparent;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .wid-align-for-form-section {
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .savebutton {
+        background-color: #01beff;
+        border-radius: 10px;
+        opacity: 1;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        height: 50px;
+        width: 177px;
+        text-transform: uppercase;
+        border: none;
+        border-top-left-radius: 0px;
+    }
+
+    .custom-input-label {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #7c989f;
+        width: 100%;
+    }
+
+    .headerbg {
+        background-size: 100%;
+        background-position: 55% 100%;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .text-cent-btn {
+            text-align: center !important;
+        }
+
+        input[type=submit] {
+            float: none !important;
+        }
+
+        #wpcf7-f16006-o1>form>div.col-md-12>label>span>input {
+            font-size: 14px !important;
+        }
+
+        .no-file-selected-font {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #5b6472;
+            margin-left: 5px;
+        }
+
+        .bocontainer {
+            padding-left: 30px !important;
+            margin-left: 0px !important;
+        }
+
+        #ib-request-form-section {
+            padding-top: 25px;
+            padding-bottom: 65px;
+        }
+
+        .pad-left-right-15-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .col-md-offset-9-custom {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .wid-align-for-form-section {
+            width: auto !important;
+            margin: 0 auto;
+        }
+
+        .form-bg-custom-css {
+            padding: 45px 0px 55px 0px;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/FPMarkets/image-2020/social-trading-site-new-page/hero-mobile.png) !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .page-navi {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+
+    .input-custom-css {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+    }
+
+    .down-arrow-custom {
+        border: solid #01beff;
+        border-width: 0 2px 2px 0;
+        padding: 5px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) {
+        .Choosefile {
+            width: 100% !important;
+            height: 40px;
+            background-color: #01beff;
+            border-radius: 10px;
+            padding: 7px 17px;
+            margin-top: 4px;
+            border-top-left-radius: 0px;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 411px) {
+        .Choosefile {
+            width: 100% !important;
+            height: 40px;
+            background-color: #01beff;
+            border-radius: 10px;
+            padding: 7px 17px;
+            margin-top: 4px;
+            border-top-left-radius: 0px;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    @media screen and (-webkit-device-pixel-ratio: 3) and (device-height: 640px) and (device-width: 360px) {
+        .Choosefile {
+            width: 105% !important;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    input[type=file]::-webkit-file-upload-button {
+        width: 160px !important;
+        height: 40px !important;
+        background-color: #01beff !important;
+        border-radius: 10px !important;
+        padding: 7px 17px !important;
+        margin-top: 4px !important;
+        border-top-left-radius: 0px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #ffffff !important;
+        margin-right: -5px !important;
+        float: right !important;
+        text-transform: uppercase !important;
+        border: none !important;
+        font-family: 'Titillium Web', sans-serif !important;
+    }
+
+    #wpcf7-f16006-o1>form>div.col-md-12>label>span>input>span {
+        padding-top: 24px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 50px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5b6472;
+        margin-left: 0px;
+        text-transform: uppercase;
+        border: none;
+        font-family: 'Titillium Web', sans-serif !important;
+    }
+</style>
+
+
+<link rel="stylesheet" href="/wp-content/themes/fptheme/extrastyles.css?v=2.2" type="text/css" />
+<script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    $(document).ready(function () {
+        //
+        setTimeout(
+            function () {
+                document.getElementsByName('FirstName')[0].placeholder = 'First Name*';
+                document.getElementsByName('LastName')[0].placeholder = 'Last Name';
+                document.getElementsByName('Email')[0].placeholder = 'Enter Email*';
+            }, 3000);
+
+
+    });
+</script>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0;
+        text-transform: unset;
+    }
+
+    @media only screen and (max-width: 600px) {
+        a.btn-account {
+            margin-left: 50px !important;
+            margin-right: 50px !important;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .navbar-header {
+            padding-right: 20px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .section.nomarginmobile.footer-links div {
+            text-align: center !important;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .registration p {
+            color: white !important;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -8px;
+            margin-right: 1px;
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        div#el-11d961c2 {
+            margin-bottom: 68px !important;
+        }
+
+        #el-4923d651[data-vce-do-apply*=all][data-vce-do-apply*=el-4923d651] {
+            padding-bottom: 104px !important;
+        }
+
+        .only-on-mobile {
+            display: block !important;
+        }
+
+        #el-4ae40169>.vce-col-inner>.vce-col-content {
+            padding-right: 18px !important;
+        }
+
+        .vce-single-image-inner.vce-single-image--absolute {
+            padding-right: 20px !important;
+        }
+
+        #el-0d5c28f5[data-vce-do-apply*=all][data-vce-do-apply*=el-0d5c28f5] {
+            margin-left: -20px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 32px !important;
+        }
+
+        div#el-4c4559f7 {
+            margin-left: -18px !important;
+        }
+
+        div#el-82367445 {
+            margin-top: -97px !important;
+        }
+
+        div#el-c633099b {
+            margin-top: -60px !important;
+        }
+
+        #el-e9436ba9[data-vce-do-apply*=all][data-vce-do-apply*=el-e9436ba9] {
+            padding-top: 0px !important;
+        }
+
+        div#el-7790f85e {
+            margin-top: -19px !important;
+        }
+
+        #el-832c5bbf {
+            margin-top: 24px !important;
+        }
+
+        a.navbar-brand {
+            padding-left: 18px !important;
+        }
+
+        .whitedown {
+            margin-left: 178px !important;
+        }
+    }
+
+    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+        a.navbar-brand img {
+            width: 206px !important;
+        }
+
+        .img-align-nav {
+            height: 40px !important;
+        }
+
+        #el-a4b6ced5 {
+            padding-right: 55px !important;
+            padding-left: 0px !important;
+        }
+
+        #el-0a7659c4>figure>.vce-single-image-inner.vce-single-image--absolute>.vce-single-image {
+            min-width: 130% !important;
+        }
+
+        #el-0e8a640e,
+        #el-a4b6ced5 {
+            padding-right: 50px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 5px !important;
+            margin-right: 44px !important;
+        }
+
+        p.third-sec-text {
+            margin-right: 14px !important;
+        }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+        a.navbar-brand img {
+            width: 164px !important;
+        }
+
+        .img-align-nav {
+            height: 35px !important;
+        }
+
+        .title.mobile-title-3 p {
+            font-size: 30px !important;
+        }
+
+        .colms-title1mt4 {
+            font-size: 15px !important;
+        }
+
+        .blue-button-last-section {
+            font-size: 17px !important;
+        }
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+        a.navbar-brand img {
+            width: 214px !important;
+        }
+    }
+
+    h1.hidden-xs.fp-font.no-uppercase.color-white {
+        padding-top: 65px !important;
+    }
+</style>

@@ -1,0 +1,1286 @@
+
+
+
+[[$breadcrumb]]
+
+
+
+<style>
+    .container-p-100 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .container-p-50 {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .panel-br {
+        border-radius: 0px 20px 20px 20px;
+        border: 1px solid #c1c1c1;
+
+
+    }
+
+    .panel-mob {
+        max-width: 500px;
+    }
+
+    .shadow-all {
+        box-shadow: 0 0 7px #BEBEBE;
+
+    }
+
+    .panel-table {
+        border: none !important;
+        background: none !important;
+    }
+
+    .panel-table .panel-body {
+        border-top: 1px solid #c1c1c1 !important;
+    }
+
+    .panel-table-cards .panel-body {
+        border-top: 1px solid #c1c1c1 !important;
+    }
+
+    .panel-heading-custom {
+        height: 125px !important;
+        padding: 30px;
+        border-radius: 0px 20px 0 0;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .panel-footer {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .account-type {
+        font-size: 26px;
+    }
+
+    .account-type-title {
+        font-size: 25px;
+        display: block;
+    }
+
+    .account-type-content {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-top: 1px solid #c1c1c1;
+
+    }
+
+    .account-table-content {
+        font-size: 20px;
+        color: black;
+        border-top: 1px solid #c1c1c1 !important;
+        font-weight: 600;
+    }
+
+    .panel-footer {
+        background-color: #f8f8f8;
+        border-top: none;
+        padding: 30px;
+    }
+
+    .panel-btn {
+        background-color: white;
+        color: #00bdff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .panel-btn:hover {
+        background-color: #00bdff;
+        color: #fff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .panel-btn:focus {
+        background-color: white;
+        color: #00bdff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .panel-br:hover {
+        border: 1px solid #00bdff !important;
+    }
+
+    .panel:hover .panel-btn {
+        background-color: #00bdff;
+        color: #fff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .account-type-content-mob {
+        font-size: 19px;
+        color: black;
+        text-align: left;
+        background-color: #f8f8f8;
+        border-top: 1px solid #c1c1c1;
+        font-weight: 600;
+
+
+    }
+
+    .account-type-content-title-mob {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+
+
+    }
+
+    .bg-panel-dark {
+        background-color: #001523;
+    }
+
+    .bg-panel-brand {
+        background-color: #00bdff;
+    }
+
+    .panel-comment {
+        font-size: 16px;
+        color: gray;
+    }
+
+    .panel-row-mob {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 40px;
+    }
+
+    .col-pt-40-mob {
+        padding-top: 40px;
+    }
+</style>
+
+
+<style>
+    a.blue-button-card:hover {
+        color: #fff;
+    }
+
+    a.red-button-card:hover {
+        color: #fff;
+    }
+
+    .title p {
+        font-family: 'Helvetica Neue BD Pro';
+        font-size: 40px !important;
+        line-height: 40px !important;
+        color: #0b121c !important;
+        text-align: center;
+        padding-bottom: 24px;
+        font-weight: 800;
+    }
+
+    .width-height-for-desktop {
+        width: 100%;
+        height: 403px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .width-height-for-desktop {
+            width: auto !important;
+            height: auto !important;
+            margin: auto;
+            display: block;
+        }
+    }
+</style>
+
+<style>
+    .mobile-container {
+        display: none;
+    }
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 18px 16px;
+        text-transform: uppercase;
+        font-size: 28px;
+        display: block;
+    }
+
+    .mobile-link-active {
+        height: 54px;
+        margin-right: 0.5px;
+        background-image: url(/wp-content/themes/fptheme/images/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+    }
+
+    .mob-active-link {
+        font-weight: 700;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .end-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(/wp-content/themes/fptheme/images/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .normal-para-font {
+        font-family: 'Helvetica Neue LT Pro';
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    .list-item-default {
+        list-style: none !important;
+        padding-left: 24px !important;
+        background-image: url(/wp-content/themes/fptheme/images/bullet.png);
+        background-repeat: no-repeat !important;
+        background-size: 5px !important;
+        background-position: 0 12px;
+    }
+
+    .third-std-iress-card {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/box1.png);
+        background-size: contain;
+        height: 1000px;
+        background-position: 80%;
+    }
+
+    .col-sm-4 p {
+        line-height: 23px;
+    }
+
+    .drop-menu-h1-font {
+        line-height: 1.15 !important;
+    }
+
+    span.dis-blo.card-left {
+        margin-left: 12px;
+        margin-top: 132px;
+        padding-left: 8px;
+        padding-top: 0px;
+        white-space: nowrap;
+        padding-right: -6px;
+    }
+
+    .stan-box-bg {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/box1.png);
+        background-size: contain;
+        background-position: 95%;
+        height: 870px;
+    }
+
+    .padding-50 {
+        padding-top: 50px;
+    }
+
+    #open-forex-iress-trading-account-section {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    .padding-left-80-for-desktop {
+        padding-left: 80px;
+    }
+
+    .normal-white-para-font {
+        font-family: 'Helvetica Neue LT Pro';
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: 0.19px;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .c3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-image: url(/wp-content/themes/fptheme/image-2020/forex-iress-accounts/Rectangle-10-desktop.png);
+    }
+
+    .header-forex-font-white {
+        font-family: 'Helvetica Neue BD Pro';
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.13;
+        color: #ffffff;
+    }
+
+    #iress-account-types-section {
+        padding-top: 50px;
+
+    }
+
+    .for-plat-iress-card {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types//box%202.png);
+        background-size: contain;
+        height: 1000px;
+        background-position: 80%;
+    }
+
+    .fift-prem-iress-card {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/Desktop-new-prem.jpg);
+        background-size: contain;
+        height: 1000px;
+        background-position: 80%;
+    }
+
+    #forex-account-types-section {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    .end-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(/wp-content/themes/fptheme/images/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .red-button-card {
+        font-family: 'Helvetica Neue BD Pro';
+        border-radius: 0px 10px 10px 10px;
+        background-color: #f82f4a;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        width: 265px;
+        font-weight: 700;
+        padding: 16px 14px 15px 14px;
+    }
+
+    span.dis-blo.card-left.plat-demo-button-align.cs1277vitry.cs-1277-dem-link-acc-std-dem-2 {
+        font-family: 'Helvetica Neue LT Pro';
+    }
+
+    .second-raw-card {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/forex-iress-accounts/popular-desktop.png);
+        background-size: contain;
+        height: 600px;
+        background-position: 15%;
+    }
+
+    .card-sec-bold-font {
+        font-family: 'Helvetica Neue BD Pro';
+        font-size: 17px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: right;
+        color: #0b121c;
+    }
+
+    .card-sec-para-font {
+        font-family: 'Helvetica Neue LT Pro';
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c;
+    }
+
+    .blue-button-card {
+        font-family: 'Helvetica Neue BD Pro';
+        border-radius: 0px 10px 10px 10px;
+        background-color: #00beff;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        width: 265px;
+        font-weight: 700;
+        text-align: center;
+        padding: 17px 14px 15px 14px;
+    }
+
+    span.dis-blo.card-left.std-demo-button-align.cs1277vitry.cs-1277-dem-sem-link {
+        font-family: 'Helvetica Neue LT Pro';
+    }
+
+    .card-left {
+        display: inline-flex;
+        margin-top: 160px;
+        margin-left: 165px;
+    }
+
+    .card-right {
+        font-weight: bold;
+        color: #0b121c !important;
+        margin-left: 100px;
+    }
+
+    .first-std-card {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/forex-iress-accounts/Group-420-desktop.png);
+        background-size: contain;
+        height: 600px;
+        background-position: 80%;
+    }
+
+    .headerbg {
+        background-size: 100% 120%;
+        background-position: 55% 100%;
+    }
+
+    .header-forex-font {
+        font-family: 'Helvetica Neue BD Pro';
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.13;
+        color: #0b121c;
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .cus-nav-inner {
+        height: 54px;
+        background-size: initial;
+        background-image: url(/wp-content/themes/fptheme/images/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.12;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .cus-nav-bar ul,
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li.list-item-menu {
+        width: 16%;
+    }
+
+    .cus-nav-bar li {
+        float: left;
+        text-align: center;
+    }
+
+    .menu-divider {
+        background-size: 1px 35px;
+        background-position: center right !important;
+        background-image: url(/wp-content/themes/fptheme/images/vertical-image-1.png);
+        background-repeat: no-repeat;
+    }
+
+
+    .cus-nav-bar li a.active {
+        background-color: #fff !important;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .cus-nav-bar li a {
+        display: block;
+        color: #3e495c;
+        text-align: center;
+        padding: 1px 16px;
+        text-decoration: none;
+    }
+
+    .cus-nav-bar li a:hover {
+        z-index: 1;
+        background-color: #ffffff;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .container-fluid.nav-bar-section.nav-desktop {
+        display: block;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    .topnav a.icon {
+        font-size: 44px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -13px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #iress-account-types-section {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+
+        .padding-top-30-imp-for-mob {
+            padding-top: 30px !important;
+        }
+
+        .padding-top-0-imp-for-mob {
+            padding-top: 20px !important;
+        }
+
+        .padding-left-right-15-mob {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #open-forex-iress-trading-account-section {
+            padding-top: 65px;
+            padding-bottom: 60px;
+        }
+
+        .c3 {
+            background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/Rectangle-119-mobile.png) !important;
+        }
+
+        .padding-left-right-30-25-mob {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -6px;
+            margin-right: 1px;
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        a.link-end-mobile-divider {
+            background-size: 370px 1px;
+            background-position: top !important;
+            background-image: url(/wp-content/themes/fptheme/image-2020/commodities/vertical_line-1x260-1-1.png);
+            background-repeat: no-repeat;
+        }
+
+        .container-fluid.page-navi {
+            display: none;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .container-fluid.nav-bar-section.nav-desktop {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .btn.btn-transparent-red {
+            display: none;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/herosection-min-mobile.png) !important;
+        }
+
+        .header-forex-font {
+            line-height: 40px;
+        }
+
+        .padding-left-80-for-desktop {
+            padding-left: 30px;
+            padding-right: 25px;
+        }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) {
+        .bg-align-first {
+            background-position: 85px 11px !important;
+        }
+
+        .bg-align-sec {
+            background-position: 25px 11px !important;
+        }
+
+        .bg-align-thd {
+            background-position: 45px 11px !important;
+        }
+
+        .std-1000-dol-align {
+            margin-left: 130px !important;
+        }
+
+        .std-10-min-1-align {
+            margin-left: 65px !important;
+        }
+
+        .std-base-rate-align {
+            margin-left: 125px !important;
+        }
+
+        .std-55-dol-fee-align {
+            margin-left: 50px !important;
+        }
+
+        .std-free-fee-align {
+            margin-left: 135px !important;
+        }
+
+        .std-22-asx-fee-align {
+            margin-left: 45px !important;
+        }
+
+        .std-free-fee2-align {
+            margin-left: 145px !important;
+        }
+
+        .std-no-charge-align {
+            margin-left: 40px !important;
+        }
+
+        .std-pro-acc-align {
+            margin-left: 70px !important;
+        }
+
+        .std-asx-acc-align {
+            margin-top: 10px !important;
+        }
+
+        .plat-25-dol-align {
+            margin-left: 115px !important;
+        }
+
+        .plat-9-min-1-align {
+            margin-left: 60px !important;
+        }
+
+        .plat-base-rate-align {
+            margin-left: 120px !important;
+        }
+
+        .plat-55-gst-fee-align {
+            margin-left: 45px !important;
+        }
+
+        .plat-free-fee-align {
+            margin-left: 130px !important;
+        }
+
+        .plat-22-asx-fee-align {
+            margin-left: 45px !important;
+        }
+
+        .plat-free-fee2-align {
+            margin-left: 145px !important;
+        }
+
+        .plat-no-charge-align {
+            margin-left: 40px !important;
+        }
+
+        .plat-pro-acc-align {
+            margin-left: 65px !important;
+        }
+
+        .plat-asx-acc-align {
+            margin-top: 15px !important;
+        }
+
+        .prem-50-dol-align {
+            margin-left: 115px !important;
+        }
+
+        .prem-no-min-1-align {
+            margin-left: 60px !important;
+        }
+
+        .prem-base-rate-align {
+            margin-left: 120px !important;
+        }
+
+        .prem-plat-fee-align {
+            margin-left: 85px !important;
+        }
+
+        .prem-free-fee-align {
+            margin-left: 130px !important;
+        }
+
+        .prem-asx-live-fee-align {
+            margin-left: 70px !important;
+        }
+
+        .prem-free-fee2-align {
+            margin-left: 145px !important;
+        }
+
+        .prem-no-charge-align {
+            margin-left: 40px !important;
+            margin-top: -5px !important;
+        }
+
+        .prem-pro-trade-align {
+            margin-left: 75px !important;
+        }
+
+        .prem-start-button-align {
+            margin-top: 120px !important;
+        }
+
+        .for-plat-iress-card {
+            background-position: 80% !important;
+        }
+
+        .fift-prem-iress-card {
+            background-position: 80% !important;
+        }
+
+        .third-std-iress-card {
+            background-position: 80% !important;
+        }
+
+        span.dis-blo.card-left {
+            padding-left: 8px !important;
+        }
+
+        .fift-prem-iress-card,
+        .for-plat-iress-card {
+            margin-top: 25px;
+        }
+
+        .margin-align {
+            margin-top: -5px !important;
+        }
+
+        .fift-prem-iress-card {
+            background-position: 68% !important;
+        }
+
+        .fift-prem-iress-card {
+            background-repeat: no-repeat;
+            background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/Mobile-new-prem.jpg);
+            background-size: contain;
+            height: 872px;
+        }
+
+        .prem-start-button-align {
+            margin-top: 15px !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 411px) {
+
+        .fift-prem-iress-card,
+        .for-plat-iress-card {
+            margin-top: 25px;
+        }
+
+        .bg-align-first {
+            background-position: 100px 11px !important;
+        }
+
+        .bg-align-sec {
+            background-position: 45px 11px !important;
+        }
+
+        .bg-align-thd {
+            background-position: 60px 11px !important;
+        }
+
+        .third-std-iress-card {
+            background-position: 45% !important;
+        }
+
+        .for-plat-iress-card {
+            background-position: 45% !important;
+        }
+
+        .fift-prem-iress-card {
+            background-position: 45% !important;
+        }
+
+        span.dis-blo.card-left {
+            padding-left: 20px !important;
+        }
+
+        .fift-prem-iress-card {
+            background-position: 45% !important;
+        }
+
+        .prem-start-button-align {
+            margin-top: 10px !important;
+        }
+
+        .fift-prem-iress-card {
+            background-repeat: no-repeat;
+            background-image: url(/wp-content/themes/fptheme/image-2020/iress_account_types/Mobile-new-prem.jpg);
+            background-size: contain;
+            height: 872px;
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="/wp-content/themes/fptheme/extrastyles.css?v=2.2" type="text/css" />
+
+<script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0;
+        text-transform: unset;
+    }
+
+    @media only screen and (max-width: 600px) {
+        a.btn-account {
+            margin-left: 50px !important;
+            ;
+            margin-right: 50px !important;
+            ;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .navbar-header {
+            padding-right: 20px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .section.nomarginmobile.footer-links div {
+            text-align: center !important;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .registration p {
+            color: white !important;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -8px;
+            margin-right: 1px;
+
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        div#el-11d961c2 {
+            margin-bottom: 68px !important;
+        }
+
+        #el-4923d651[data-vce-do-apply*=all][data-vce-do-apply*=el-4923d651] {
+            padding-bottom: 104px !important;
+        }
+
+        .only-on-mobile {
+            display: block !important;
+        }
+
+        #el-4ae40169>.vce-col-inner>.vce-col-content {
+            padding-right: 18px !important;
+        }
+
+        .vce-single-image-inner.vce-single-image--absolute {
+            padding-right: 20px !important;
+        }
+
+        #el-0d5c28f5[data-vce-do-apply*=all][data-vce-do-apply*=el-0d5c28f5] {
+            margin-left: -20px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 32px !important;
+        }
+
+        div#el-4c4559f7 {
+            margin-left: -18px !important;
+        }
+
+        div#el-82367445 {
+            margin-top: -97px !important;
+        }
+
+        div#el-c633099b {
+            margin-top: -60px !important;
+        }
+
+        #el-e9436ba9[data-vce-do-apply*=all][data-vce-do-apply*=el-e9436ba9] {
+            padding-top: 0px !important;
+        }
+
+        div#el-7790f85e {
+            margin-top: -19px !important;
+        }
+
+        #el-832c5bbf {
+            margin-top: 24px !important;
+        }
+
+        a.navbar-brand {
+            padding-left: 18px !important;
+        }
+
+        .whitedown {
+            margin-left: 178px !important;
+        }
+    }
+
+
+    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+        a.navbar-brand img {
+            width: 206px !important;
+        }
+
+        .img-align-nav {
+            height: 40px !important;
+        }
+
+        #el-a4b6ced5 {
+            padding-right: 55px !important;
+            padding-left: 0px !important;
+        }
+
+        #el-0a7659c4>figure>.vce-single-image-inner.vce-single-image--absolute>.vce-single-image {
+            min-width: 130% !important;
+        }
+
+        #el-0e8a640e,
+        #el-a4b6ced5 {
+            padding-right: 50px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 5px !important;
+            margin-right: 44px !important;
+        }
+
+        p.third-sec-text {
+            margin-right: 14px !important;
+        }
+
+    }
+
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+        a.navbar-brand img {
+            width: 164px !important;
+        }
+
+        .img-align-nav {
+            height: 35px !important;
+        }
+
+        .title.mobile-title-3 p {
+            font-size: 30px !important;
+        }
+
+        .colms-title1mt4 {
+            font-size: 15px !important;
+        }
+
+        .blue-button-last-section {
+            font-size: 17px !important;
+        }
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+        a.navbar-brand img {
+            width: 214px !important;
+        }
+
+    }
+
+    a:hover {
+        color: #4d91ff;
+    }
+
+    p.cus-txt-list.visible-xs {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: 0.19px;
+        text-align: left;
+        padding-left: 22px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+</style>

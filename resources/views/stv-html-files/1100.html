@@ -1,0 +1,179 @@
+<p class="pad-top-30-mob">
+    <iframe width="100%" height="415" src="https://www.youtube.com/embed/91ubbh2ReIY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</p>
+
+<div class="body-contents" style="padding-bottom: 30px;">
+    <p class="caption-txt">Reading Time: 5 Minutes </p>
+
+    <p class="p-txt">Following on from parts 1 and 2—articles dedicated to position size calculation techniques for
+        accounts denominated in the same currency as either the currency pair’s (Forex pair) term currency or base
+        currency—the final part of this position sizing journey centres on position size calculation for account
+        currencies possessing no association with the currency pair of interest.</p>
+    <p class="p-txt">As a reminder, position sizing is a combination of risk management and money management. </p>
+    <p class="h-txt-cus">How to Calculate Position Size?</p>
+    <p class="p-txt"><b>Position size calculation with accounts denominated in the same currency as the currency
+            pair’s conversion base currency.</b> </p>
+    <p class="p-txt">The difference from position size formulas in parts 1 and 2 is a conversion currency pair is
+        necessary to express the size of a trader’s position: </p>
+    <p class="p-txt">Formula:</p>
+    <p class="p-txt text-center">(Trade Risk * Conversion Exchange Rate) / Stop Distance</p>
+    <p class="p-txt">Imagine a 10,000 GBP (British pounds) trading account, with the trader content with risking 3
+        per cent of account equity on this single trade (300 GBP). This can be referred to as either ‘account risk’
+        or ‘trade risk’, which often changes depending on the account size (for example, a 9,000 GBP account balance
+        risking 3 per cent is 270 GBP). The currency pair of interest is EUR/USD (euro against the US dollar) with a
+        protective stop-loss level arranged 30 pips from the entry price. Trading strategies using small stop-loss
+        orders generally fall under the umbrella of either ‘day trading’ (day traders) or ‘scalping’ trading styles.
+    </p>
+    <p style="    text-align: center;    padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/int/images/eur_usd_tump_b.png" class="historylayer-img">
+    </p>
+    <span>ID: 153699737</span>
+    <p class="p-txt">Because currency pairs are priced through their term currencies, the trader is unable to use
+        the EUR/USD as the account currency is not the same as either the base or term currency. It’s important to
+        remember that the trader must calculate the <span style="text-decoration:underline">dollar amount</span> of
+        <span style="text-decoration:underline">300 GBP</span>, not the dollar amount in euro. This can be achieved
+        through the GBP/USD exchange rate: $1.2544, which shows 1 GBP priced at $1.2544.
+    </p>
+    <p class="p-txt">Knowing 1 GBP is priced at $1.2544, and the trader wants to understand how much 300 GBP is
+        valued in US dollar, the trader can multiply 300 GBP by $1.2544 </p>
+    <p class="p-txt text-center">376.32 USD = 300 GBP * $1.2544. </p>
+    <p class="p-txt">Once USD trade risk is found, the formula is the same for an account currency matching the term
+        currency in a currency pair: divide trade risk by stop-loss distance:</p>
+    <p class="p-txt text-center">125,440 units (euro) = (300 * $1.2544) / 0.0030</p>
+    <p class="p-txt">125,440 units limits risk to 300 GBP: a 1.26 lot size can be entered in MetaTrader’s order
+        window for 1 standard lot, 2 mini lots and 6 micro lots (rounded up) or 1.25 (rounded down). </p>
+    <p class="p-txt"><b>When the account currency matches the <i>currency pair’s conversion term</i> currency?</b>
+    </p>
+    <p class="p-txt">Assume the same trader opens a new account and deposits 10,000 USD. Adopting a more risk-averse
+        approach this time, the trader is only willing to risk 1 per cent of their account equity on the trade (100
+        USD). The currency pair of interest is the GBP/AUD and the protective stop-loss order is set 50 pips from
+        the entry point. Trading systems using large stop losses—such as 50 pips—mean the trader generally follows a
+        swing trading style. </p>
+    <p class="p-txt">The first step to calculating position size involves understanding AUD risk; this is the term
+        currency in the selected currency pair (GBP/AUD). For this, the AUD/USD exchange rate ($0.7202) is used. But
+        to discover AUD risk, the next step involves inverting AUD/USD to convert the currency pair to USD/AUD. This
+        is achieved by dividing 1 by the exchange rate (1 / $0.7202) to reach AU$1.3885. </p>
+    <p style="    text-align: center;    padding: 15px 0 15px 0;">
+        <img src="/wp-content/themes/fptheme/int/images/aud_usd_push.png" class="historylayer-img">
+    </p>
+    <span>ID 619015802</span>
+    <p class="p-txt">Following the formula above:</p>
+    <p class="p-txt text-center">27,770 units (GBP) = (100 USD * Inverted Exchange Rate AU$1.3885 / 0.0050</p>
+    <p class="p-txt">In the MetaTrader order window, the trader can use 0.28 (rounded up) or 0.27 (rounded down) to
+        maintain the desired risk limit on the trade: 100 USD. This is essentially 2 mini lots and 8 (7) micro lots.
+    </p>
+
+</div>
+
+<style>
+    .edu__course__lesson p {
+        font-size: 15px;
+    }
+
+    .h-txt-cus {
+        font-size: 18.5px !important;
+        line-height: 22.5px;
+        padding: 10px 0 0;
+        font-weight: bold !important;
+    }
+
+    img.historylayer-img {
+        margin: auto;
+        display: flex;
+    }
+
+    .padding-42 {
+        padding: 42px 0;
+    }
+
+    .padding-20 {
+        padding: 20px 0;
+    }
+
+    .caption-txt {
+        font-size: 14.5px;
+        line-height: 22.5px;
+        text-transform: uppercase;
+    }
+
+    .h-txt {
+        font-size: 18.5px;
+        line-height: 22.5px;
+        font-family: "Helvetica Neue BD Pro", sans-serif !important;
+        color: #0b121c;
+        padding: 50px 0 0;
+    }
+
+    .h-txt-cus {
+        font-size: 18.5px !important;
+        line-height: 22.5px;
+        font-family: "Helvetica Neue BD Pro", sans-serif !important;
+        color: #0b121c;
+        padding: 10px 0 0;
+
+    }
+
+    .pad-txt-left-20 {
+        padding-left: 20px;
+    }
+
+    .p-txt {
+        font-size: 16px;
+        line-height: 22.5px;
+        text-align: left;
+    }
+
+    .italic-txt {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .sidebar-menu h1 {
+        font-weight: 100;
+    }
+
+    .sidebar-menu {
+        background-color: #f5f7fa;
+        border-radius: 0px 10px 10px 10px;
+        padding: 25px 15px;
+    }
+
+    .sidebar-menu li>a {
+        color: #0b121c;
+    }
+
+    ol.sidebar-ul li {
+        font-size: 18.5px;
+        border-bottom: 1px solid #cdd5e3;
+        padding-bottom: 5px;
+        padding-top: 5px;
+
+    }
+
+    .sidebar-ul li.active a>p {
+        font-weight: 800;
+        color: #0b121c;
+    }
+
+    ol.sidebar-ul li a {
+        display: flex;
+        line-height: 22px;
+    }
+
+    ol.sidebar-ul p {
+        margin-left: 5px;
+        line-height: 22px;
+    }
+
+    .body-section {
+        padding-left: 35px;
+    }
+
+    img.tec-analysis-video-img {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #00bdff;
+    }
+</style>

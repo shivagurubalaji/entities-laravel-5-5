@@ -1,0 +1,919 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/api:client.js" async defer></script>
+<!--<script src="https://apis.google.com/js/api.js"></script>-->
+<meta name="google-signin-client_id" content="344520100154-ll4bnih62bi3pq2utptlp4u90ja65q57.apps.googleusercontent.com"
+    defer>
+
+
+<script type="text/javascript"
+    src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" async></script>
+
+<link href="https://fonts.cdnfonts.com/css/euclid-flex" rel="stylesheet" rel="preload">
+
+
+<style>
+    /* Sell Section */
+    .fluid-sell {
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+    .sell-sec {
+        padding-top: 75px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .sell-flex-sec {
+        padding-top: 50px;
+    }
+
+    .one-of-the-content ul {
+        text-align: left;
+    }
+
+    .one-of-the-content ul li {
+        font-size: 20px;
+    }
+
+    .one-of-the-content ul li {
+        position: relative;
+        font-size: 18px;
+        padding-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .dis__block__left ul {
+        list-style-type: none;
+    }
+</style>
+<style>
+    * {
+        font-family: 'Euclid Flex', sans-serif;
+    }
+
+    .hero-container {
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+    .logo-sec {
+        padding-left: 3%;
+        padding-top: 1%;
+    }
+
+    .logo-sec a img {
+        width: 200px;
+    }
+
+    .hero-font {
+        font-size: 25px;
+        font-weight: 800;
+        margin-top: 20%;
+        color: #132a4a;
+    }
+
+    /* Registration Section */
+    div.registration {
+        width: 44%;
+        padding-top: 5%;
+        margin: auto;
+    }
+
+    .form-title {
+        text-align: center;
+        font-size: 33px;
+        margin-top: 30px;
+        color: #132a4a;
+    }
+
+    .form-subtitle {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #132a4a;
+        font-weight: 400;
+    }
+
+    .form-disc {
+        font-size: 13px;
+        color: #000000;
+        line-height: 20px;
+    }
+
+    .form-sm-title {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #132a4a;
+        font-weight: 400;
+    }
+
+    /* Form Input */
+    input[type="text"] {
+        position: relative;
+        line-height: 47px;
+        border: none;
+        padding: 0 16px;
+        color: #7a7a7a;
+        transition: border-color 0.3s ease-in-out;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    input[type="text"]:focus-visible {
+        background-color: #fff;
+        border: 1px solid #e9e9e9;
+        outline: none;
+        transition: 0ms;
+    }
+
+    .fp-demo-signup-global input[type=submit] {
+        background: #00bdff;
+        border: none;
+        padding: 10px 20px;
+        outline: 0;
+        border-radius: 10px !important;
+        color: #fff;
+        margin: 10px auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 25px !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        z-index: 9;
+        position: relative;
+        white-space: pre-wrap;
+    }
+
+    /* SM section */
+    .sm-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm-icon {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sm-icon:hover {
+        cursor: pointer;
+        transform: scale(.95);
+    }
+
+    #fbbtn:hover {
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #customgooglebtn:hover {
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #customapplebtn:hover {
+        background-color: #e9e9e9;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    /* Apple BTN */
+    #appleid-signin div[role=button] {
+        display: none !important;
+    }
+
+    /* Form Error Message */
+    .form_signup_global_msg_ST {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    /* Hide Sections */
+
+    .chat-with-telegram {
+        display: none !important;
+    }
+
+    #lhnHocButton {
+        display: none !important;
+    }
+
+    .footer.hidden-xs .footer__main {
+        display: none;
+    }
+
+    .mob-footer .row.visible-xs p.mob-para {
+        display: none;
+    }
+
+    .mob-footer .footer-menu-sep {
+        display: none;
+    }
+
+    .mob-footer .footer-menu-sep {
+        display: none;
+    }
+
+    .mob-footer .mob-contact,
+    .mob-contact-info {
+        display: none;
+    }
+
+    .mob-footer .fa-facebook-f,
+    .fa-twitter,
+    .fa-instagram,
+    .fa-whatsapp,
+    .fa-linkedin-in,
+    .fa-youtube {
+        display: none;
+    }
+
+    .footer-menu-sep img {
+        display: none;
+    }
+
+    .mob-footer .mobile-socials br {
+        display: none;
+    }
+
+    .footer__bottom .col-md-6 ul li:first-child {
+        display: none;
+    }
+
+    .footer__bottom__top ul {
+        margin-top: 0px !important;
+    }
+
+    .footer__bottom__top ul li {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        border-left: none !important;
+
+    }
+
+    .footer__bottom {
+        padding-top: 0px !important;
+        border-top: none !important;
+    }
+
+    .footer .footer__main__wrap {
+        padding-bottom: 15px !important;
+        flex-direction: row !important;
+    }
+
+    .footer .footer__main__wrap__right {
+        display: none !important;
+    }
+
+    .footer .footer__select {
+        display: none;
+    }
+
+    .footer .footerp .footer__bottom__top {
+        padding-bottom: 10px !important;
+    }
+
+    .footer .footer__bottom__top ul {
+        justify-content: flex-start !important;
+    }
+
+    .footer .foot-sel-sec {
+        display: none;
+    }
+
+    .footer__bottom {
+        padding-bottom: 0px !important;
+    }
+
+    .footer {
+        padding-bottom: 0px !important;
+    }
+
+    .footer .footer__logo img {
+        width: 175px !important;
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 576px) {
+        .logo-sec {
+            padding-left: 5px;
+            padding-top: 1%;
+        }
+
+        .logo-sec a img {
+            width: 175px;
+        }
+
+        .navbar-brand {
+            padding: 15px 0px;
+        }
+
+        .side-img-sec {
+            display: none;
+        }
+
+        div.registration {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .form-title {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        p.form-subtitle {
+            margin-bottom: 0;
+        }
+
+        .form-subtitle {
+            text-align: center;
+        }
+
+        .form-sm-title {
+            margin-top: 15px;
+        }
+
+        /* Selling Section */
+        .sell-sec {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .sell-flex-sec {
+            padding-top: 25px;
+        }
+
+        .dis__block__left ul {
+            padding-left: 0px;
+        }
+
+        .sell-img-sec {
+            display: none;
+        }
+
+        .one-of-the-content {
+            text-align: center;
+        }
+
+        .dis__block__left {
+            display: inline-block;
+        }
+
+        .footer__bottom__top ul {
+            justify-content: center !important;
+        }
+
+        .mobile-socials img.max__width__200 {
+            max-width: 200px !important;
+        }
+    }
+
+    @media only screen and (min-width: 576px) and (max-width: 767.5px) {
+        .logo-sec {
+            padding-left: 2%;
+            padding-top: 1%;
+        }
+
+        .logo-sec a img {
+            width: 200px;
+        }
+
+        div.registration {
+            width: 80%;
+            padding-top: 7%;
+            margin: auto;
+        }
+
+        .side-img-sec {
+            display: none;
+        }
+
+        /* Footer Adjustments */
+
+        /* Selling Section */
+        .sell-sec {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .sell-flex-sec {
+            padding-top: 25px;
+        }
+
+        .dis__block__left ul {
+            padding-left: 0px;
+        }
+
+        .sell-img-sec {
+            display: none;
+        }
+
+        .one-of-the-content {
+            text-align: center;
+        }
+
+        .dis__block__left {
+            display: inline-block;
+        }
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        div.registration {
+            width: 100%;
+            padding-top: 14%;
+            padding-left: 5%;
+            margin: auto;
+            padding-right: 5%;
+        }
+
+        .logo-sec {
+            padding-left: 0;
+            padding-top: 1%;
+        }
+
+        .logo-sec a img {
+            width: 175px;
+        }
+
+        .navbar-brand {
+            padding: 15px 0px;
+        }
+
+        .form-sm-title {
+            margin-top: 10px;
+        }
+
+        .hero-font {
+            font-size: 28px;
+        }
+
+        /* Footer */
+        .mob-footer {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        div.registration {
+            width: 65%;
+            padding-top: 7%;
+            margin: auto;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .logo-sec a img {
+            width: 190px;
+        }
+
+        .hero-font {
+            font-size: 20px;
+        }
+
+        /* Footer */
+        .mob-footer {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        div.registration {
+            width: 55%;
+            padding-top: 5%;
+            margin: auto;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        /* Footer */
+        .mob-footer {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (min-width: 1400px) {
+        div.registration {
+            width: 50%;
+            padding-top: 7%;
+            margin: auto;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .hero-font {
+            font-size: 30px;
+        }
+
+        /* Footer */
+        .mob-footer {
+            display: none !important;
+        }
+    }
+</style>
+
+<div class="container-fluid hero-container">
+    <div class="row">
+        <div class="col-sm-6 col-md-9 left-sec">
+            <div class="logo-sec">
+                <a class="navbar-brand" href="/">
+                    <img src="/wp-content/themes/fptheme/images/fp-logo-blue-hero.webp" alt="fpmarkets logo">
+                </a>
+            </div>
+            <div class="registration">
+                <h2 class="form-title" style="padding-top:35px;">Inizia a fare trading
+                    in pochi minuti</h2>
+                <p class="text-center form-subtitle">
+                    Contro Reale / Demo
+                </p>
+                <br>
+                <div class="fp-demo-signup-global">
+                    <div class="form_signup_global_msg_ST text-center text-danger"></div>
+                    <form id="form_signup_global_ST" method="post" target="_blank">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input id="first_name_ST" name="first_name" value="" type="text" placeholder="Nome"
+                                    class="ncform" required="true" />
+
+                            </div>
+                            <div class="col-md-6">
+                                <input id="last_name_ST" name="last_name" value="" type="text" placeholder="Cognome"
+                                    class="ncform" required />
+                            </div>
+                        </div>
+
+                        <input id="email_ST" name="email" value="" type="text" placeholder="Email" class="ncform"
+                            required />
+                        <input id="phone_ST" name="phone" value="" type="text" placeholder="Phone" class="ncform"
+                            minlength="5" required />
+                        <input id="platform_ST" name="platform" value="mt4" type="hidden" />
+                        <input id="country_ST" name="country" value="[[!getUserNationality]]" type="hidden" />
+                        <input id="track_lang_ST" name="language" value="[[!getCurrentEntity]]" type="hidden" />
+                        <input id="fpm-affiliate-pcode_ST" name="fpm-affiliate-pcode" value="Website/WLK"
+                            type="hidden" />
+                        <input id="fpm-affiliate-utm-source_ST" name="fpm-affiliate-utm-source" value="Website"
+                            type="hidden" />
+                        <input id="currency_ST" name="currency" value="USD" type="hidden" />
+                        <input id="nationality" name="nationality" value="[[!getUserNationality]]" type="hidden" />
+                        <input id="demo_preferred_Language" name="demo_preferred_Language" value="Italian"
+                            type="hidden" />
+                        <input id="honeypot_ST" type="hidden" name="honeypot" value="" />
+                        <input id="_mkto_trk_ST" type="hidden" value="" name="_mkto_trk" />
+                        <input id="track1_1_ST" name="fpm-affiliate-pcode" value="Website/WLK" type="hidden" />
+                        <input id="track2_1_ST" name="fpm-affiliate-utm-source" value="Website" type="hidden" />
+                        <input id="track7_1_ST" name="cxd" value="" type="hidden" />
+                        <input id="track7_2_ST" name="bta" value="" type="hidden" />
+                        <!--<input id="track_lang_ST" name="language" value="[[!formEntity]]" type="hidden" />-->
+                        <input id="track3_1_ST" name="fpm-affiliate-utm-campaign" value="" type="hidden" />
+                        <input id="track4_1_ST" name="fpm-affiliate-utm-content" value="" type="hidden" />
+                        <input id="track5_1_ST" name="fpm-affiliate-agt" value="" type="hidden" />
+                        <input id="track6_1_ST" name="fpm-affiliate-utm-term" value="" type="hidden" />
+                        <input id="landing_page" name="landing_page" value="[[!getCurrentURL]]" type="hidden" />
+                        <input id="btn_name_get_ST" type="hidden" value="GET STARTED NOW" name="btn_name_get" />
+                        <div id="smSec">
+                            <p class="text-center form-sm-title">
+                                Continua con
+                            </p>
+
+                            <div class="sm-section">
+                                <!--
+                                    <div class="text-center sm-icon" id="testbtn">
+                                        <img src="/wp-content/themes/fptheme/images/apple-icon.png" alt="Apple login button"
+                                            width="48">
+                                    </div>
+                                -->
+                                <button style="width: 48px;
+                                
+                                background-position: center;
+                                height: 45px;
+                                background-image: url(/wp-content/themes/fptheme/images/appl-icon.webp);
+                                background-size: contain;
+                                background-repeat: no-repeat;" id="appleid-signin" data-type="sign-in" class="sm-icon">
+
+                                </button>
+                                <div class="text-center sm-icon" onclick="logInWithFacebook()" id="fbbtn">
+                                    <img src="/wp-content/themes/fptheme/images/fbk-icon.webp"
+                                        alt="Facebook login button">
+                                </div>
+                                <div class="text-center sm-icon" id="customgooglebtn">
+                                    <img src="/wp-content/themes/fptheme/images/ggl-icon.webp"
+                                        alt="Google login button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fp-demo-submit-global"><input style="font-size:18px !important;"
+                                class="customBtnRed" type="submit" value="Registrati gratis" /></div>
+                        <p class="form-disc">
+                            Fornendo la tua email, accetti l’informativa
+                            <a href="[[!getCultureUrl]]/privacy-policy" target="_blank">
+                                sulla privacy
+                            </a>
+                            di FP Markets e accetti di
+                            ricevere futuri messaggi di marketing da FP Markets. È possibile disdire in qualsiasi
+                            momento.
+
+                        </p>
+                    </form>
+                </div>
+                <br>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6 col-md-3 side-img-sec"
+            style=" background-position:center; height:100vh; background-size: cover; background-repeat:no-repeat;
+            position: relative;background-image: url(https://www.fpmarkets.com/it/wp-content/themes/fptheme/images/hero-lp-it-new.webp);">
+            <div style="display:flex; justify-content: center;">
+                <div class="hero-font">
+                    Broker Forex globale <br> di valore n. 1 al mondo*
+                    <br>
+                    <span style="font-weight:400; font-size:18px;">Forex, Indices, Commodities & Stocks</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style>
+
+</style>
+<div class="container-fluid fluid-sell">
+    <div class="container">
+        <div class="sell-sec">
+            <div class="section-title">
+                <h2>
+                    <span>Perché FP Markets</span> è uno dei
+                    broker Forex <br> più <span>affidabili al mondo?</span>
+                </h2>
+            </div>
+            <div class="sell-flex-sec">
+                <div class="row">
+                    <div class="col-sm-6 sell-img-sec">
+                        <div class="one-of-the-img">
+                            <img class="sell-img"
+                                src="/it/assets/components/phpthumbof/cache/one-of-the-img.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                data-src="/it/assets/components/phpthumbof/cache/one-of-the-img.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                alt="FP Markets On of the world's trusted brands" width="299" height="288"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="one-of-the-content txt__center__mob pt__50__mob">
+                            <div class="dis__block__left">
+                                <ul>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Trading automatico con BOT algo
+
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Corsi di formazione free
+
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Regolamentato a livello globale
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Fondi dei clienti segregati
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Più di 40 premi internazionali
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Supporto multilingue 24/7^
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Spreads sempre bassi**
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Account manager personali
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        18 anni di esperienza nel trading
+
+                                    </li>
+                                    <li>
+                                        <img class=""
+                                            src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            data-src="/it/assets/components/phpthumbof/cache/star-icon.529eb7bfc3237293fcd592b8905bfbfe.png"
+                                            alt="star icon" width="28" height="26" loading="lazy">
+                                        Autochartist, MetaTrader 4 e 5, Iress Platform
+
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    var googleUser = {};
+    var startApp = function () {
+        gapi.load('auth2', function () {
+            // Retrieve the singleton for the GoogleAuth library and set up the client.
+            auth2 = gapi.auth2.init({
+                client_id: "344520100154-ll4bnih62bi3pq2utptlp4u90ja65q57.apps.googleusercontent.com",
+                cookiepolicy: 'single_host_origin',
+                // plugin_name: 'signup',
+                // Request scopes in addition to 'profile' and 'email'
+                //scope: 'additional_scope'
+            });
+            attachSignin(document.getElementById('customgooglebtn'));
+        });
+    };
+
+    function attachSignin(element) {
+        auth2.attachClickHandler(element, {},
+            function (googleUser) {
+                var profile = googleUser.getBasicProfile();
+                $('#first_name_ST').val(profile.getGivenName());
+                $('#last_name_ST').val(profile.getFamilyName());
+                $('#email_ST').val(profile.getEmail());
+                $("#phone_ST").focus();
+            }, function (error) {
+                //alert(JSON.stringify(error, undefined, 2));
+            });
+    }
+    startApp();
+
+
+    logInWithFacebook = function () {
+        FB.login(function (response) {
+            if (response.authResponse) {
+                var url = '/me?fields=id,first_name,last_name,email,link,gender,locale,picture';
+                FB.api('/me', { locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture' }, function (response) {
+                    $('#first_name_ST').val(response.first_name);
+                    $('#last_name_ST').val(response.last_name);
+                    $('#email_ST').val(response.email);
+                });
+            } else {
+                alert('User cancelled login or did not fully authorize.');
+            }
+        }, { 'scope': 'email' });
+        return false;
+    };
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: 2632562337033744,
+            xfbml: true,
+            version: "v2.8"
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+</script>
+<script>
+    $('#first_name_ST, #last_name_ST, #phone_ST').bind("propertychange change click keyup input paste", function () {
+        $('.form_signup_global_msg_ST ').empty();
+    });
+</script>
+<script type="text/javascript">
+    AppleID.auth.init({
+        clientId: 'com.fpmarkets.signup',
+        scope: 'name email',
+        redirectURI: 'https://www.fpmarkets.com/page-test/newlp-it/',
+        usePopup: true
+    });
+</script>
+<script>
+    // Listen for authorization success.
+    document.addEventListener('AppleIDSignInOnSuccess', (data) => {
+        // Handle successful response.
+        const userObject = data.detail.user;
+        const userAuth = data.detail.authorization.code;
+        const userAuth2 = data.detail.authorization.id_token;
+        console.log("This is code:" + userAuth);
+        console.log("This is id_token:" + userAuth);
+
+        if (userObject) {
+
+            if (userObject.name.firstName) {
+                const firstName = window.btoa(userObject.name.firstName);
+                localStorage.setItem("appl-reg-fn", firstName);
+                $('#first_name_ST').val(atob(firstName));
+            }
+            if (userObject.name.lastName) {
+                const lastName = window.btoa(userObject.name.lastName);
+                localStorage.setItem("appl-reg-ln", lastName);
+                $('#last_name_ST').val(atob(lastName));
+            }
+            if (userObject.email) {
+                const email = window.btoa(userObject.email);
+                localStorage.setItem("appl-reg-em", email);
+                $('#email_ST').val(atob(email));
+                $("#phone_ST").focus();
+            }
+            $('#smSec').hide();
+        }
+        else if (typeof userObject === 'undefined') {
+            const email = localStorage.getItem("appl-reg-em");
+            const firstName = localStorage.getItem("appl-reg-fn");
+            const lastName = localStorage.getItem("appl-reg-ln");
+            if (firstName) {
+                $('#first_name_ST').val(atob(firstName));
+            }
+            if (lastName) {
+                $('#last_name_ST').val(atob(lastName));
+            }
+            if (email) {
+                $('#email_ST').val(atob(email));
+                $("#phone_ST").focus();
+            }
+            if (firstName && lastName && email) {
+                $('#smSec').hide();
+            }
+            else {
+                $('.form_signup_global_msg_ST ').html("Some fields in the form have not been filled. Please fill all form fields before submitting.");
+            }
+        }
+        else {
+            $('.form_signup_global_msg_ST ').html("Something went wrong. Please choose a different method or fill in the form manually.");
+        }
+    });
+    // Listen for authorization failures.
+    document.addEventListener('AppleIDSignInOnFailure', (event) => {
+        // Handle error.
+        $('.form_signup_global_msg_ST ').html("Something went wrong. Please choose a different method or fill in the form manually.");
+        console.log(event.detail.error);
+    });
+</script>

@@ -1,0 +1,2664 @@
+[[$breadcrumb]]
+
+<main>
+    <div class="container-fluid bottom-divid">
+        <div id="looking-to-talk-section" class="container">
+            <div>
+                <iframe class="visible-xs" src="https://www.youtube.com/embed/DyxQu0AbisU?" width="370" height="390"
+                    frameborder="0" allowfullscreen="true"
+                    style="display:table;padding-left: 15px;padding-right: 15px;"></iframe>
+                <iframe class="hidden-xs" src="https://www.youtube.com/embed/DyxQu0AbisU?" width="640" height="390"
+                    frameborder="0" allowfullscreen="true" style="margin:0 auto;display:table;"></iframe>
+            </div>
+            <div class="wid-align-for-secone">
+                <div>
+                    <h2>1. About the Excel RTD app</h2>
+                    <p>The Excel RTD app lets you do two things:</p>
+                    <p><br>• Put real-time data into Excel using only Excel’s RTD() function. No macros;
+                        no<br>programming;
+                        no XLL add-ins<br>• Send simple trading commands from VBA code in Excel</p>
+                    <p><br>You can run multiple copies of the Excel RTD app for different accounts, and then
+                        combine<br>the
+                        data for those accounts in a single spreadsheet.</p>
+                    <p><br>The app is supplied with an example spreadsheet which lets you enter up to 5
+                        account<br>numbers,
+                        and then automatically displays a dashboard of equity and balance etc; symbol<br>prices; and a
+                        consolidated list of open positions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bottom-divid">
+        <div id="looking-to-talk-section" class="container">
+            <div class="wid-align-for-secone">
+                <div>
+                    <h2>2 Displaying real-time data in Excel</h2>
+                    <p><strong>2.1 Running the RTD app</strong></p>
+                    <p>In order to put real-time data into Excel you need to run the RTD app. The Excel
+                        formulas<br>listed
+                        below will give blank values if the app is not running.</p>
+                    <p><strong>2.1.1 Available symbols</strong></p>
+                    <p>Information about the following symbols will be available in the Excel RTD app:</p>
+                    <p>• <strong>MT4/5</strong>: the app will report all the symbols which are included in the MT4/5
+                        market<br>watch<br>• <strong>Tradable</strong>: the app will report all available symbols in the
+                        platform<br>• <strong>All other platforms</strong>: you configure which symbols the app reports
+                        using the app’s<br>Symbols menu.</p>
+                    <p><strong>2.2 Excel formula</strong></p>
+                    <p>Once the RTD app is running, you can use the following formula in Excel to insert a realtime feed
+                        of
+                        account, ticket, or price data. You simply need to fill in the account number, and the
+                        “property”
+                        which you want to display:</p>
+                    <p>=RTD("FXBlueLabs.ExcelRTD", , "<strong>account number</strong>", "<strong>property</strong>")</p>
+                    <p>For example, if your account number is 156734 and you want to display the account’s balance, or
+                        the
+                        bid price of GBPUSD:</p>
+                    <p>=RTD("FXBlueLabs.ExcelRTD", , "156734", "balance")<br>=RTD("FXBlueLabs.ExcelRTD", , "156734",
+                        "bidGBPUSD")</p>
+                    <p><strong>Please note</strong>: with some language settings – for example, Polish – Excel may want
+                        the
+                        sections of the formula to be separate by semi-colons instead of commas. For example:</p>
+                    <p>=RTD("FXBlueLabs.ExcelRTD"; ; "<strong>account</strong> <strong>number</strong>";
+                        "<strong>property</strong>")</p>
+                    <p><strong>2.3 Property names</strong></p>
+                    <p>The RTD app supplies data about the account (e.g. equity and balance), symbol prices, “tickets“,
+                        bar
+                        history, and technical indicator values. The list of tickets includes both open positions and
+                        pending orders.</p>
+                    <p><strong>2.3.1 Account data properties</strong></p>
+                    <table style="height: 358px;" width="927">
+                        <tbody>
+                            <tr>
+                                <td width="312">
+                                    <p><strong>Property</strong></p>
+                                </td>
+                                <td width="312">
+                                    <p><strong>Meaning</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>currency</p>
+                                </td>
+                                <td width="312">
+                                    <p>The deposit currency of the account</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>balance</p>
+                                </td>
+                                <td width="312">
+                                    <p>Account balance</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>Equity</p>
+                                </td>
+                                <td width="312">
+                                    <p>Account equity</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>Pl</p>
+                                </td>
+                                <td width="312">
+                                    <p>Floating profit/loss</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>usedmargin</p>
+                                </td>
+                                <td width="312">
+                                    <p>Margin in use</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>Freemargin</p>
+                                </td>
+                                <td width="312">
+                                    <p>Free margin</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="312">
+                                    <p>tickets</p>
+                                </td>
+                                <td width="312">
+                                    <p>Number of “tickets“: open positions and pending orders</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vce-text-block">
+                    <div class="vce-text-block-wrapper vce" id="el-66922ba6" data-vce-do-apply="all el-66922ba6">
+                        <p><strong>2.3.2 Price and symbol data properties</strong></p>
+                        <p><br>The app supplies the current ask and bid prices for all symbols configured in the app.
+                            For
+                            example, if the symbol name you are interested in is EURUSD, then the property name for its
+                            ask
+                            price is askEURUSD. For example:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "askEURUSD")</p>
+                        <p>&nbsp;</p>
+                        <table style="height: 403px;" width="958">
+                            <tbody>
+                                <tr>
+                                    <td width="159">
+                                        <p><strong>Property</strong></p>
+                                    </td>
+                                    <td width="461">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="159">
+                                        <p>bidSymbol</p>
+                                    </td>
+                                    <td width="461">
+                                        <p>Bid price of symbol</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="159">
+                                        <p>askSymbol</p>
+                                    </td>
+                                    <td width="461">
+                                        <p>Ask price of symbol</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="159">
+                                        <p>highSymbol</p>
+                                    </td>
+                                    <td width="461">
+                                        <p>Daily high of the symbol. Not available on all platforms. The definition of
+                                            the
+                                            day’s start (e.g. GMT, or some other time zone)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="159">
+                                        <p>lowSymbol</p>
+                                    </td>
+                                    <td width="461">
+                                        <p>Daily low of the symbol. Not available on all platforms. The definition of
+                                            the
+                                            day’s start (e.g. GMT, or some other time zone) depends on the
+                                            broker/platform.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p>The app also provides a count and a list of all configured symbols. For example, the
+                            following
+                            formulas return the number of available symbols and the name of the 5th symbol on the list
+                            (which can be in any order):</p>
+                        <p>=RTD("FXBlueLabs.ExcelRTD", , "156734", "symbols")&nbsp;</p>
+                        <p>=RTD("FXBlueLabs.ExcelRTD", , "156734", "s5")</p>
+                        <table style="height: 173px;" width="949">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Property</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbols</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of symbols</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>sN</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Name of the nth symbol, e.g. EURUSD. The N value is an index between 1 and
+                                            the
+                                            total number of symbols</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.3 Ticket data properties</strong></p>
+                        <p><br>The app supplies the following information about each "ticket", i.e. each open position
+                            and
+                            pending order. The N value in each property name is an index between 1 and the total number
+                            of
+                            tickets (reported by the tickets property).</p>
+                        <p><br>For example, you can get the symbol name and net profit of the 2nd ticket (if there is
+                            one)
+                            using the following formulas:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "t2s")<br>=RTD("FXBlueLabs.ExcelRTD", , "156734",
+                            "t2npl")</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Property</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNt</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Ticket number, i.e. the ID of the open position or pending order</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNa</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Action: BUY, SELL, BUYLIMIT, SELLLIMIT, BUYSTOP, SELLSTOP</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNs</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNv</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Volume</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNnpl</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Net profit (gross profit + commission + swap). Not applicable on pending
+                                            orders,
+                                            and reported as zero.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNpl</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Gross profit. Not applicable on pending orders, and reported as zero.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNswap</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Swap. Not applicable on pending orders, and reported as
+                                            zero.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNcomm</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Commission. Not applicable on pending orders, and reported as zero.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNsl</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Stop-loss price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNtp</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Take-profit price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNop</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Open/entry price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNcp</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Current price of symbol</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNcm</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Order comment</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNmg</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Order magic number (MetaTrader 4 only)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>tNot</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Open time (as number of seconds since 1/1/1970)</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>2.3.4 Bar history</strong></p>
+                        <p><br>You can use the Excel RTD app to request recent price history from the platform. All
+                            values
+                            are bid prices. (Please note that this price history is not available on the tradable
+                            platform.)
+                        </p>
+                        <p><br>The property name for bar history is as follows: @bh,symbol,timeframe,data,shift. For
+                            example, the following formula shows the high of the current EUR/USD H1 bar:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", ,"156734", "@bh,EURUSD,H1,high,0")</p>
+                        <p><br><strong>2.3.4.1 Timeframe value</strong></p>
+                        <p><br>The bar timeframe can either be specified as a number of minutes – e.g. 60 for hourly
+                            bars –
+                            or you can use standard notations such as H1 or M3. The available timeframes are as follows:
+                        </p>
+                        <table style="height: 845px;" width="1020">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Period</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Timeframe value</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M1</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>1</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M2</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>2</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M3</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M4</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M5</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>5</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M6</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>6</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M10</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>10</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M12</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>12</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M15</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>15</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>M30</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>30</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H1</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>60</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H2</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>120</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H3</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>180</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H4</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>240</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H6</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>360</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>H8</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>480</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>D1</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>1440</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>D2</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>2880</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>W1</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>7200</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.4.2 Price data</strong></p>
+                        <p><br>You can request the following information about each bar:</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Data</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>time</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Start time of the bar (in the format yyyy/mm/dd hh:mm:ss)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>open</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Open price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>high</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>High price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>low</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Low price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>close</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Close price</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>range</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Range from high to low</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>median</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Average of high and low</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>typical</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>"Typical" price: average of high, low, and close</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>weighted</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>"Weighted" price: average of high, low, close, and close – i.e.
+                                            double-weighting
+                                            on the close value</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>change</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Change in bar: close minus open, therefore negative for down bars and
+                                            positive
+                                            for up bars.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>abschange</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Absolute change value, i.e. change converted to a positive number if
+                                            negative&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.4.3 Bar shift</strong></p>
+                        <p><br>The final part of the price history formula is the bar "shift", i.e. which bar to get
+                            information about. Bars are numbered with the newest at zero, and increasing in order of
+                            age. In
+                            other words, bar 0 is the current in-progress bar; bar 1 is the last complete bar
+                            etc.<br>Therefore, the close price on bar 0 (for any timeframe) is the current bid price. In
+                            effect, the following two formulas are identical:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "bidGBPUSD")<br>=RTD("FXBlueLabs.ExcelRTD", ,
+                            "156734", "@bh,GBPUSD,60,close,0")</p>
+                        <p><br>The amount of data available on each timeframe depends on the underlying platform, but
+                            will
+                            typically be around 250 bars.</p>
+                        <p><br><strong>2.3.5 Technical indicators</strong></p>
+                        <p><br>The Excel RTD app has some built-in indicator calculations which you can request using
+                            formulas. For example, the following formula will show 14-bar Relative Strength Index for
+                            GBP/USD M5:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@rsi,GBPUSD,M5,14,0")</p>
+                        <p>&nbsp;</p>
+                        <p>Please note that the technical indicators are not available on the tradable platform.</p>
+                        <p><br>The property name for a technical indicator starts with an indicator name such as @rsi or
+                            @ema, and is then followed by a list of parameters separated by commas.</p>
+                        <p><br>The first two parameters for an indicator are always the symbol name and the timeframe,
+                            which
+                            can be specified either as H2 or as the equivalent number of minutes such as 120.</p>
+                        <p><br>The last parameter is always the bar "shift". You will normally want to use a value of 0
+                            for
+                            the shift, in order to get the current indicator value, but you can also use a shift of e.g.
+                            1
+                            to get the value of the indicator at the end of the previous bar. (The only exception are
+                            the
+                            swingpoint indicators, which always return the latest swing point and do not use a shift
+                            parameter.)</p>
+                        <p><br>Many indicators can be applied to different data values from each bar, e.g. the high
+                            price or
+                            even the bar range instead of the close price.</p>
+                        <p><br>Please bear in mind that exponential moving averages and similar calculations are
+                            affected by
+                            the amount of available bars. For convenience, everyone always refers to the N value in such
+                            calculations as "N bars" (e.g. "21-bar EMA"), but this is not what it truly means. The N is
+                            a
+                            weighting factor, and a calculation such as an EMA always looks at the entire bar history
+                            which
+                            it has collected, but giving increased weight to the most recent N bars. Two calculations of
+                            an
+                            EMA can be different – though only usually by small amounts – if they are using different
+                            amounts of bar history.</p>
+                        <p><br><strong>2.3.5.1 @sma – Simple Moving Average</strong></p>
+                        <p><br>You can calculate a simple moving average (i.e. arithmetic mean) using the @sma
+                            indicator.<br>For example, the following formula does an average of the median prices for
+                            the
+                            last 10 bars on GBP/USD M5:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@sma,GBPUSD,M5,median,10,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 293px;" width="920">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.2 @ema – Exponential Moving Average</strong></p>
+                        <p><br>You can calculate an exponential moving average using the @ema indicator. For example,
+                            the
+                            following formula does an average of the ranges of the last 21 bars on GBP/USD D1:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@ema,GBPUSD,1440,range,21,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 294px;" width="944">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>&nbsp;2.3.5.4 @lwma – Linear-Weighted Moving Average</strong></p>
+                        <p>You can calculate a linear-weighted moving average using the @lwma indicator. For example,
+                            the
+                            following formula does an average of the ranges of the last 21 bars on GBP/USD D1:</p>
+                        <p>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@lwma,GBPUSD,1440,range,21,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 290px;" width="952">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.5 @macd and @macdsig – MACD</strong></p>
+                        <p><br>You can calculate MACD (the difference between a "fast" EMA and a "slow" EMA) using the
+                            @macd
+                            indicator. You can also use @macdsig to get the smoothed "signal" value of the MACD
+                            indicator.
+                        </p>
+                        <p><br>For example, the following formula calculates MACD for GBP/USD M30, using the standard
+                            12-bar
+                            fast EMA and a 26-bar slow EMA, and applying the calculation to the high price of each bar:
+                        </p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@macd,GBPUSD,30,high,12,26,9,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 389px;" width="955">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>fast</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars for the fast EMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>slow</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars for the slow EMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>slowing</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Smoothing period for the signal value</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.6 @atr – Average True Range</strong></p>
+                        <p><br>You can calculate average true range using the @atr indicator. For example, the following
+                            formula calculates the average true range of the last 21 bars on GBP/USD D1:</p>
+                        <p>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@atr,GBPUSD,D1,21,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 236px;" width="964">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.7 @rsi – Relative Strength Index</strong></p>
+                        <p><br>You can calculate Relative Strength Index using the @rsi indicator. For example, the
+                            following formula calculates 14-bar RSI on USD/JPY M3:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@atr,USDJPY,3,14,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 229px;" width="961">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.8 @stoch and @stochslow – Stochastic Oscillator</strong></p>
+                        <p><br>You can calculate the stochastic oscillator using the @stoch indicator. You can also
+                            calculate the slowed "signal" value for the indicator using @stochslow.</p>
+                        <p><br>For example, the following formula calculates the oscillator on GBP/USD H2 bars, using
+                            standard parameters of (5,3,3) – i.e. K period of 5, D period of 5, slowing value of 3.</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@stoch,GBPUSD,120,5,3,3,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 342px;" width="974">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>k</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>K period for the calculation</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>d</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>D period for the calculation</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>slowing</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Slowing period (moving average of D values)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.9 @bbupper and @bblower – Bollinger bands</strong></p>
+                        <p><br>You can calculate "Bollinger" bands – a simple moving average plus/minus a number of
+                            standard
+                            deviations – using the @bbupper and @bblower indicators.</p>
+                        <p><br>For example, the following formula calculates the upper band on GBP/USD M10, using an
+                            average
+                            of the close prices on the last 30 bars, and 2 standard deviations:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@bbupper,GBPUSD,10,close,30,2,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 344px;" width="994">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>deviations</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of standard deviations to calculate (e.g. 2)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.10 @vol – Volatility (standard deviation)</strong></p>
+                        <p><br>You can calculate volatility – i.e. 1 standard deviation – using the @vol indicator.</p>
+                        <p><br>For example, the following formula calculates the volatility of the last 21 bar-ranges on
+                            GBP/USD M10:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@vol,GBPUSD,10,range,21,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 277px;" width="974">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.11 @cci – Commodity Channel Index</strong></p>
+                        <p><br>You can calculate the Commodity Channel Index using the @cci indicator.</p>
+                        <p><br>For example, the following formula calculates CCI using the typical bar price for the
+                            last 14
+                            bars on EUR/USD H1:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@cci,EURUSD,60,typical,14,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 293px;" width="979">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.12 @high – Highest bar value</strong></p>
+                        <p><br>You can calculate the highest of a series of bar values using the @high indicator. For
+                            example, the following formula calculates the highest high during the last 20 GBP/USD D1
+                            bars:
+                        </p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@high,GBPUSD,D1,high,20,0")</p>
+                        <p><br>The indicator can be applied to any bar data. For example, you can find the highest low
+                            as
+                            well as the highest high. You can also use it to find the bar with the largest range or
+                            change.
+                        </p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 285px;" width="967">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.13 @low – Lowest bar value</strong></p>
+                        <p><br>You can calculate the lowest of a series of bar values using the @low indicator. The
+                            indicator can be applied to any bar data. For example, you can find the lowest high as well
+                            as
+                            the lowest low. You can also use it to find the bar with the smallest range or change.</p>
+                        <p><br>The following formula calculates the smallest D1 bar range during the last 20 GBP/USD D1
+                            bars:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@low,GBPUSD,D1,range,20,0")</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 278px;" width="959">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>period</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to calculate the average over&nbsp;&nbsp;&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.14 @swingh and @swingl – Swing points ("fractals")</strong></p>
+                        <p><br>You can calculate the most recent swing points using the @swingh and @swingl indicators.A
+                            swing point is defined as a bar with lower highs either side of it (or higher lows, for
+                            @swingl). These swing points are similar to the MT4 "Fractals" indicator.</p>
+                        <p><br>For example, the following formulas finds the most recent swing-high and swing-low prices
+                            on
+                            GBP/USD M5, using a 5-bar swing (2 bars either side of swing point) and not allowing an
+                            "unconfirmed" swing involving the current bar:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734",
+                            "@swingh,GBPUSD,M5,high,2,0")<br>=RTD("FXBlueLabs.ExcelRTD", , "156734",
+                            "@swingl,GBPUSD,M5,low,2,0")</p>
+                        <p><br>The indicator’s parameters are as follows. Please note that the @swingh and @swingl do
+                            not
+                            have a bar "shift" parameter; they only return the most recent swing price.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar. You normally use "high" with @swingh, and "low"
+                                            with
+                                            @swingl. However, you can use any value; for example, you can use "high"
+                                            with
+                                            @swingl to find a bar which has a lower high than the bars around it.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>swingbars</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of higher/lower bars required either side of the swing bar. The usual
+                                            value is 2, for a five-bar swing consisting of two lower highs/higher lows
+                                            either side of the swing bar, but you can use any value from 1 (i.e.
+                                            three-bar
+                                            swing) upwards</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>unconfirmed</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Either 0 or 1. Zero ignores the current bar and only allows "confirmed"
+                                            swings. 1
+                                            includes the current bar, and allows "unconfirmed" swings which can change
+                                            depending on price movements during the current bar.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.5.15 @keltupper and @keltlower – Keltner channels</strong></p>
+                        <p><br>You can calculate Keltner channels using the @kelternupper and @keltnerlower indicators.
+                            A
+                            Keltner channel is an exponential moving average plus/minus average true range.</p>
+                        <p><br>For example, the following formula calculates the lower Keltner channel on GBP/USD H1,
+                            using
+                            a 20-bar EMA minus half of 10-bar ATR:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@keltlower,GBPUSD,60,close,20,10,0.5,0")</p>
+                        <p><br>Because Keltner channels are simply a combination of an EMA and ATR, the formula above is
+                            equivalent to the following:</p>
+                        <p><br>=RTD("FXBlueLabs.ExcelRTD", , "156734", "@ema,GBPUSD,60,close,20,0")
+                            –<br>(RTD("FXBlueLabs.ExcelRTD", , "156734", "@atr,GBPUSD,60,10,0") * 0.5)</p>
+                        <p><br>The indicator’s parameters are as follows:</p>
+                        <table style="height: 382px;" width="959">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>symbol</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Symbol name, e.g. GBPUSD</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>timeframe</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar timeframe, as a number of minutes or a notation such as H1 or M3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>data</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Data to use from each bar, e.g. close or high, for calculating the EMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>emaPeriod</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to use for the EMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>atrPeriod</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Number of bars to use for the ATR</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>atrMultiple</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Multiples of ATR to add to/subtract from the EMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>shift</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Bar shift, e.g. zero in order to get the current value of the indicator</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.3.6 Other properties</strong></p>
+                        <p><br>Other miscellaneous data items provided by the Excel RTD app are as follows:</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Property</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>LastUpdateTime</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Time of the last update from the RTD app. Will report 1/1/2000 if the RTD app
+                                            is
+                                            not running for the account.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>2.4 Symbol names and standardisation</strong></p>
+                        <p><br>By default the RTD app uses standardised symbol names. These may be different to the
+                            symbol
+                            names which your broker uses in your trading platform. For example, your broker’s symbol
+                            names
+                            may have a suffix such as cx or mn, e.g. EURUSDcx or EURUSDmn.</p>
+                        <p><br>By default, all forex symbols are converted to the form AAABBB. For example, a name such
+                            as
+                            EURUSDnm or EUR/USD will be converted by default to EURUSD. You can turn off this
+                            standardisation by un-ticking the option "Use standardised symbol names" in the app.&nbsp;
+                        </p>
+                        <p><br>This setting is intended for spreadsheets where you are collecting data from multiple
+                            accounts on different brokers/platforms (by running multiple copies of the RTD app), and the
+                            brokers/platforms use different symbol names.</p>
+                        <p><br>For example, you might have something like the following spreadsheet where there are
+                            account
+                            numbers in columns B onwards, and symbol names in rows 2 onwards. You can then have a
+                            formula
+                            which uses the symbol names in column A without having to adjust for one<br>account using
+                            EUR/USD and the other using EURUSDfx etc.</p>
+                        <table style="height: 76px;" width="957">
+                            <tbody>
+                                <tr>
+                                    <td width="156">
+                                        <p style="text-align: center;"><strong>&nbsp;</strong></p>
+                                    </td>
+                                    <td style="text-align: center;" width="156">
+                                        <p><strong>A</strong></p>
+                                    </td>
+                                    <td style="text-align: center;" width="156">
+                                        <p><strong>B</strong></p>
+                                    </td>
+                                    <td width="156">
+                                        <p style="text-align: center;"><strong>C</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="156">
+                                        <p style="text-align: center;"><strong>1</strong></p>
+                                    </td>
+                                    <td width="156">
+                                        <p>Symbol/Account</p>
+                                    </td>
+                                    <td width="156">
+                                        <p style="text-align: right;">12376522</p>
+                                    </td>
+                                    <td width="156">
+                                        <p>265823654</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="156">
+                                        <p style="text-align: center;"><strong>2</strong></p>
+                                    </td>
+                                    <td width="156">
+                                        <p>EURUSD</p>
+                                    </td>
+                                    <td width="156">
+                                        <p style="text-align: center;"><span
+                                                style="font-weight: 400; font-style: normal; font-size: 10pt;">[see
+                                                below]</span></p>
+                                    </td>
+                                    <td width="156">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="156">
+                                        <p style="text-align: center;"><strong>3</strong></p>
+                                    </td>
+                                    <td width="156">
+                                        <p>GBPUSD</p>
+                                    </td>
+                                    <td width="156">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="156">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="text-align: left;"><span style="font-size: 10pt;">In cell B2:
+                                =RTD("FXBlueLabs.ExcelRTD",
+                                , B$1, CONCATENATE("bid", $A2))</span></p>
+                        <p style="text-align: left;"><br>You could then fill the formula from cell B2 into B3, C2 etc
+                            and
+                            the cell references would automatically adjust.</p>
+                        <p style="text-align: left;"><br>(The CONCATENATE function in Excel simply joins two pieces of
+                            together. In the above example it is joining the text "bid" with the symbol name in column
+                            A, to
+                            produce the property name bidEURUSD or bidGBPUSD.)</p>
+                        <p><strong>2.5 Ticket volumes</strong></p>
+                        <p><br>The RTD app reports the volumes on tickets as the nominal volume, not as a lot size. For
+                            example, a size of 0.20 lots will be reported as a volume of 20000.</p>
+                        <p><br>(Unless you are using something like an MT4 mini account with a lot size of 10K instead
+                            of
+                            100K, in which case 0.20 lots would be 2000 instead of 20000.)</p>
+                    </div>
+                </div>
+
+
+                <div class="vce-text-block">
+                    <div class="vce-text-block-wrapper vce" id="el-b064b29c" data-vce-do-apply="all el-b064b29c">
+                        <h2>3. Sending trading commands from Excel</h2>
+                        <p>The RTD app can also be used to send simple trading commands from VBA code in Excel.<br>You
+                            can
+                            also programmatically read the same data which is available via the RTD function.</p>
+                        <p><br>The following features can in fact be used from any programming language which supports
+                            COM,
+                            not just from VBA in Excel.</p>
+                        <p><br><strong>3.1 Reading data in VBA code</strong></p>
+                        <p><br>You can read data programmatically using the FXBlueLabs.ExcelReader object. For example:
+                        </p>
+                        <p><br>Set reader = CreateObject("FXBlueLabs.ExcelReader")<br>reader.Connect
+                            ("156734")<br>MsgBox
+                            reader.Read("balance")</p>
+                        <p><br>In other words: you create an instance of the&nbsp; XBlueLabs.ExcelReader object; you use
+                            the
+                            Connect() function to link it to a specific account number; and then you can use the Read()
+                            function to get data about the account.</p>
+                        <p><br>The property names for the Read() function are the same as the property names for use
+                            with
+                            Excel’s RTD function.</p>
+                        <p><br><strong>3.1.1 Checking if a reader is successfully connected</strong></p>
+                        <p><br>You can successfully create the ExcelReader object and call the Connect() function even
+                            if no
+                            RTD app is currently running for that account.</p>
+                        <p><br>In order to check whether data is actually available you can use Read() to make sure that
+                            properties such as balance are not blank, or you can read the LastUpdateTime property and
+                            check
+                            that the time is later than 1/1/2000.</p>
+                        <p><br><strong>3.1.2 Data consistency across multiple reads</strong></p>
+                        <p><br>If you are querying multiple pieces of data, particularly multiple pieces of ticket data,
+                            then you need to be careful about updates and data consistency. For example, consider the
+                            following code which loops through the ticket list:</p>
+                        <p><br>For i = 1 To reader.Read("tickets")</p>
+                        <p>strSymbol = reader.Read("t" &amp; i &amp; "s")<br>vVolume = reader.Read("t" &amp; i &amp;
+                            "v")<br>Next</p>
+                        <p><br>It is possible for the following to happen:</p>
+                        <p><br>• At outset there are 2 open tickets<br>• Between the two uses of Read(), i.e. between
+                            the
+                            execution of lines 2 and 3, one of the tickets is closed.<br>• Therefore, what used to be
+                            ticket
+                            2 becomes ticket 1.<br>• As a result, at the end of the first loop, strSymbol will hold the
+                            symbol of the ticket which is now closed, and vVolume will hold the volume of the ticket
+                            which
+                            is still open.</p>
+                        <p><br>To ensure consistency while reading multiple pieces of data, use Reader.ReaderLock().
+                            This
+                            will suspend any changes to the data until you then use Reader.ReaderUnlock(). For
+                            example:&nbsp;</p>
+                        <p><br>Reader.ReaderLock()<br>For i = 1 To reader.Read("tickets")<br>strSymbol = reader.Read("t"
+                            &amp; i &amp; "s")<br>vVolume = reader.Read("t" &amp; i &amp;
+                            "v")<br>Next<br>Reader.ReaderUnlock()</p>
+                        <p><br>Don’t forget to call ReaderUnlock() after using ReaderLock()…</p>
+                        <p><br><strong>3.2 Sending trading commands from Excel</strong></p>
+                        <p><br>As a security measure, commands are turned off by default. You must turn on the "Accept
+                            commands" setting in the RTD app in order to send commands successfully. If this option is
+                            turned off then all commands will return "ERR:Commands not allowed".</p>
+                        <p><br>You can send simple commands from Excel using the FXBlueLabs.ExcelCommand object.<br>For
+                            example:</p>
+                        <p><br>Set cmd = CreateObject("FXBlueLabs.ExcelCommand")<br>strResult =
+                            cmd.SendCommand("156734",
+                            "BUY", "s=EURUSD|v=10000", 5)</p>
+                        <p><br>The SendCommand() function has four parameters:</p>
+                        <p>• The account number (e.g. 156734)<br>• The command, e.g. BUY<br>• Parameters for the
+                            command,
+                            e.g. symbol and volume to buy<br>• The number of seconds to wait for a response</p>
+                        <p><br>SendCommand() is synchronous. It returns either when the RTD app completes the command,
+                            or
+                            when the timeout period expires. (Timeout does not mean that the request such as a market
+                            order
+                            has been withdrawn/cancelled. It only means that the broker/platform has not responded
+                            within
+                            the acceptable time.)</p>
+                        <p>The return value from SendCommand() is a string, beginning either with ERR: to indicate that
+                            an
+                            error occurred, or with OKAY:. The only exception to this is the TEST command, which returns
+                            the
+                            text HELLO.</p>
+                        <p><br><strong>3.2.1 Differences between trading platforms</strong></p>
+                        <p><br>There are some minor differences in the trading features which are currently supported
+                            on<br>different platforms:</p>
+                        <p><br>• "Magic numbers" are only valid for MT4 and MT5, and these parameters will be<br>ignored
+                            on
+                            other platforms.<br>• Order comments are only available on some platforms.<br>• Stop-losses
+                            and
+                            take-profits are not currently supported on tradable</p>
+                        <p><br><strong>3.2.2 Commands and parameters</strong></p>
+                        <p><br>The parameters for a command are sent as a pipe-delimited string, consisting of a number
+                            of
+                            settings in the format name=value. The parameters can be listed in any order, and some
+                            parameters are optional.</p>
+                        <p><br>cmd.SendCommand("156734", "BUY", "s=EURUSD|v=10000", 5)</p>
+                        <p><br>Trading volumes are always specified as cash amounts, not as lot sizes. The format of
+                            symbol
+                            names depends on whether the "Use standardised symbol names" option is turned on in the RTD
+                            app.
+                        </p>
+                        <p><br><strong>3.2.2.1 TEST command</strong></p>
+                        <p><br>Simply returns the text HELLO if successful.</p>
+                        <p><strong>3.2.2.2 BUY and SELL commands</strong></p>
+                        <p><br>Submits buy or sell market orders. If successful, it returns the ID of the new ticket in
+                            the
+                            form OKAY:ticket-number</p>
+                        <table style="height: 325px;" width="967">
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>s</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Symbol name for the buy order</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>v</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Trading volume</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>sl</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Stop-loss price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>tp</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Take-profit price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>comment</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Comment for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>magic</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Magic number for the new position</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.3 BUYLIMIT, SELLLIMIT, BUYSTOP, and SELLSTOP commands</strong></p>
+                        <p><br>Submits a new pending order. If successful, it returns the ID of the new ticket in the
+                            form
+                            OKAY:ticket-number</p>
+                        <table style="height: 378px;" width="940">
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>s</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Symbol name for the buy order</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>v</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Trading volume</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>price</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Entry price for the pending stop/limit order</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>Sl</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Stop-loss price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>tp</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Take-profit price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>comment</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Comment for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>magic</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Magic number for the new position</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.4 CLOSE command</strong></p>
+                        <p><br>Closes an open position or deletes a pending order. Returns OKAY:okay if successful.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>t</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>ID of the position to be closed, or the pending order to be deleted</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.5 PARTIALCLOSE command</strong></p>
+                        <p><br>Does a partial-close of an open position. Returns OKAY:okay if successful. Volumes larger
+                            than the position size are simply treated as a full close (not as a close plus a reverse for
+                            the
+                            remaining amount). Cannot be used on pending orders.</p>
+                        <table style="height: 174px;" width="897">
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>t</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>ID of the position to be partially<br>closed.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>v</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Volume to be closed, e.g. 20000</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.6 REVERSE command</strong></p>
+                        <p><br>Reverses an open position, e.g. closing an open sell and replacing it with a buy. Returns
+                            OKAY:okay if successful.</p>
+                        <table style="height: 348px;" width="918">
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>t</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>ID of the position to be reversed</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>v</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Trading volume</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>sl</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Stop-loss price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>tp</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Take-profit price for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>comment</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Comment for the new position</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>magic</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Optional</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Magic number for the new position</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.7 CLOSESYMBOL command</strong></p>
+                        <p><br>Closes all open positions and pending orders for a specific symbol. Returns OKAY:okay if
+                            successful.</p>
+                        <table style="height: 89px;" width="926">
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>s</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Symbol name for the buy order</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>3.2.2.8 CLOSEALL command</strong></p>
+                        <p><br>Closes all open positions and pending orders for all symbols. Returns OKAY:okay if
+                            successful. Please note that closing everything can require a substantial timeout.</p>
+                        <p>For example:</p>
+                        <p><br>cmd.SendCommand("156734", "CLOSEALL", "", 20) ' 20-second timeout</p>
+                        <p><strong>3.2.2.9 ORDERSL command</strong></p>
+                        <p><br>Changes the stop-loss on an open trade or pending order. Returns OKAY:okay if successful.
+                        </p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>t</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>ID of the trade or pending order to be modified</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>tp</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>New take-profit price, or 0 to remove any existing take-profit</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.2.11 ORDERMODIFY command</strong></p>
+                        <p><br>Changes both the stop-loss and take-profit on an open trade or pending order. For pending
+                            orders, you can also alter the entry price.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="208">
+                                        <p><strong>Parameter</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Optional?</strong></p>
+                                    </td>
+                                    <td width="208">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>t</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>ID of the trade or pending order to be modified</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>p</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory for pending orders</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>For pending orders, the new entry price for the order. Ignored and not
+                                            required
+                                            on open trades.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>sl</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>New stop-loss price, or 0 to remove any existing stop-loss</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="208">
+                                        <p>tp</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>Compulsory</p>
+                                    </td>
+                                    <td width="208">
+                                        <p>New take-profit price, or 0 to remove any existing take-profit</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.2.3 Standard error messages</strong></p>
+                        <table style="height: 389px;" width="1004">
+                            <tbody>
+                                <tr>
+                                    <td width="312">
+                                        <p><strong>Property</strong></p>
+                                    </td>
+                                    <td width="312">
+                                        <p><strong>Meaning</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:Need account</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Account value for SendCommand() is blank</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:Need command</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Command value for SendCommand() is blank</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:No listening app</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>Cannot find an running instance of the RTD app for the specified account</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:No response within timeout</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>No response from the broker/platform within the specified number of seconds
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:Commands not allowed</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>The "Allow commands" option is not turned on in the RTD app</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:Unrecognised command</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>The command value for SendCommand() is not understood by the RTD app</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="312">
+                                        <p>ERR:Missing parameters</p>
+                                    </td>
+                                    <td width="312">
+                                        <p>The command was missing one or more compulsory parameters</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p><strong>3.3 Asynchronous commands</strong></p>
+                        <p><br>It is also possible to send commands asynchronously rather than blocking execution of the
+                            VBA
+                            code until the command completes or times out. This works as follows:</p>
+                        <p><br>• You use SendCommandAsync() instead of SendCommand().<br>• You periodically check the
+                            result
+                            of the asynchronous action using<br>CheckAsyncResult().<br>• When finished (or when you have
+                            decided to give up) you free up the command<br>memory using FreeAsyncCommand()</p>
+                        <p><br>For example:</p>
+                        <p style="padding-left: 40px;"><br>Set cmd =
+                            CreateObject("FXBlueLabs.ExcelCommand")<br>lCommandId =
+                            cmd.SendCommandAsync("10915", "BUY", "s=EURUSD|v=10000",<br>60)<br>strResult = ""<br>While
+                            strResult = ""<br>strResult = cmd.CheckAsyncResult(lCommandId)<br>If strResult = "" Then
+                            MsgBox
+                            "Still waiting..."<br>Wend</p>
+                        <p style="padding-left: 40px;">cmd.FreeAsyncCommand (lCommandId)&nbsp;</p>
+                        <p>SendCommandAsync uses the same four parameters as SendCommand(), but returns a "command ID"
+                            for
+                            subsequent use with CheckAsyncResult() and FreeAsyncCommand(), instead of returning the
+                            command
+                            result. Please note that SendCommandAsync() still has a<br>timeout value.</p>
+                        <p><br>You must eventually call FreeAsyncCommand() after SendCommandAsync(), or else your code
+                            will
+                            leak memory, albeit in small amounts.</p>
+                        <p><br>CheckAsyncResult() either returns a blank string if the command is still executing and
+                            has
+                            not reached its specified timeout or, if complete, it returns the same string response as
+                            SendCommand().</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<style>
+    main table tr td,
+    table tr th {
+        text-align: left;
+        border: 1px solid #313d49;
+        padding: 5px 15px;
+        min-width: 200px;
+    }
+
+    main table tr td,
+    table tr th {
+        width: auto;
+        line-height: 1.5;
+    }
+
+    .wid-align-for-secone {
+        width: 935px;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+
+    .h1-center-font-sec {
+        font-size: 44px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .normal-paragra-font-sec {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e3642;
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .headerbg {
+        background-size: 100%;
+        background-position: 55% 100%;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .page-navi {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="/wp-content/themes/fptheme/int/extrastyles.css?v=2.2" type="text/css" />

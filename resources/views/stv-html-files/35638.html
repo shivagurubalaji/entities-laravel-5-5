@@ -1,0 +1,110 @@
+<style>
+    #form-callback-service-section {
+        max-width: 700px;
+        padding: 60px 30px 40px 30px;
+        background: #f5f7fa;
+        border-radius: 15px;
+    }
+
+    input {
+        height: 48px;
+    }
+
+    .form-control {
+        width: 100% !important;
+        height: 48px !important;
+    }
+</style>
+<div class="container" id="regForm">
+    <div style="padding-top: 40px !important; padding-bottom: 40px;">
+        <div id="form-callback-service-section" class="container">
+            <div class="wid-align-for-form cs-93-ru-regn-al-btn">
+                <div class="form-group p__50">
+
+
+                    <form action="[[~[[*id]]]]" method="post" class="form">
+                        <input type="hidden" name="nospam:blank" value="[[+fi.nospam]]" />
+
+                        <div class="pb__20">
+                            <label for="name"></label><span style="color:red" class="error">[[!+fi.error.name]]</span>
+                            <input type="text" id="name" value="[[!+fi.name]]" name="name" placeholder="Name"
+                                class="w__100 form-control" required>
+                        </div>
+                        <div class="pb__20">
+                            <label for="name"></label><span style="color:red"
+                                class="error">[[!+fi.error.lastname]]</span>
+                            <input type="text" id="name" value="[[!+fi.lastname]]" name="lastname" placeholder="Surname"
+                                class="w__100 form-control" required>
+                        </div>
+                        <div class="pt__20 pb__20">
+                            <label for="email"></label><span style="color:red" class="error">[[!+fi.error.email]]</span>
+                            <input type="text" id="email" name="email" placeholder="Email" class="w__100 form-control"
+                                required>
+                        </div>
+                        <div class="pt__20" style="padding-top:20px !important;">
+                            <label for="phone"></label><span style="color:red" class="error">[[!+fi.error.phone]]</span>
+                            <input type="text" id="phone" name="phone" placeholder="Phone" class="w__100 form-control"
+                                required>
+                        </div>
+                        <div style="clear:both;"></div>
+
+
+                        <div class="form-item">
+                            [[!recaptchav3_render]]
+                            [[!+fi.error.recaptchav3_error]]
+                        </div>
+                        <div class="text__align__center pt__30">
+                            <input type="submit" value="Register" class="form__sub__btn">
+                        </div>
+                        [[!+fi.successMessage]]
+                    </form><!-- /.contact-form -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+[[!FormIt?
+&hooks=`recaptchav3,email,insertZaExpo`
+&emailSubject=`South Africa Traders Fair Expo 2023 - FP Markets Website`
+&emailTpl=`tradersFairExpoZaEmail`
+&emailTo=`g.partassides@fpmarkets.eu,a.phiniefs@fpmarkets.com,n.pillay@fpmarkets.com`
+&vTextRequired=`required field`
+&successMessage=`<div class="pt__30">
+    <div class="success__msg">Thank you for your registration. It has been sent.<br /></div>
+</div>`
+&validate=`name:required,lastname:required,email:required,phone:required`
+]]
+<style>
+    .w__100 {
+        width: 100%;
+    }
+
+    .form__sub__btn {
+        background: #0ab4f0;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px;
+        width: 220px;
+        border-radius: 0 10px 10px 10px;
+        border: none;
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100% !important;
+        padding-bottom: 30px;
+        font-size: 17px;
+    }
+
+    .success__msg {
+        padding: 8px 0;
+        border: 1px solid green;
+        text-align: center;
+    }
+
+    .pt__30 {
+        padding-top: 30px;
+    }
+</style>

@@ -1,0 +1,800 @@
+[[$head]]
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script type="application/javascript">
+    $(document).ready(function () {
+        var url = $(location).attr('href');
+        var segments = url.split('/');
+        var action = segments[3];
+        console.log(action);
+        if (action == 'es') {
+            $('.Fr-lang').css('display', 'none');
+            $('.Es-lang').css('display', 'flex');
+            $('.It-lang').css('display', 'none');
+            $('.Pl-lang').css('display', 'none');
+            $('.En-lang').css('display', 'none');
+            $('.banner-txt-rt p').css('line-height', '0.9');
+            $('.banner-txt-rt p').css('margin-bottom', '0px');
+            $('.frm-btn-txt p a').css('color', '#00aeef');
+            $('.form-outline.mb-4.fp-demo-submit-global input').css('width', '325px!important;');
+        }
+
+        if (action == 'fr') {
+            $('.Fr-lang').css('display', 'flex');
+            $('.Es-lang').css('display', 'none');
+            $('.It-lang').css('display', 'none');
+            $('.Pl-lang').css('display', 'none');
+            $('.En-lang').css('display', 'none');
+            $('.banner-txt-rt p').css('line-height', '0.9');
+            $('.banner-txt-rt p').css('margin-bottom', '15px');
+            $('.frm-btn-txt p a').css('color', '#00aeef');
+        }
+
+        if (action == 'it') {
+            $('.Fr-lang').css('display', 'none');
+            $('.Es-lang').css('display', 'none');
+            $('.It-lang').css('display', 'flex');
+            $('.Pl-lang').css('display', 'none');
+            $('.En-lang').css('display', 'none');
+            $('.banner-txt-rt p').css('line-height', '0.9');
+            $('.banner-txt-rt p').css('margin-bottom', '0px');
+            $('.frm-btn-txt p a').css('color', '#00aeef');
+        }
+
+        if (action == 'pl') {
+            $('.Fr-lang').css('display', 'none');
+            $('.Es-lang').css('display', 'none');
+            $('.It-lang').css('display', 'none');
+            $('.Pl-lang').css('display', 'flex');
+            $('.En-lang').css('display', 'none');
+            $('.banner-txt-rt p').css('line-height', '0.9');
+            $('.banner-txt-rt p').css('margin-bottom', '0px');
+            $('.frm-btn-txt p a').css('color', '#00aeef');
+            $('.mb-4.fp-demo-submit-global .customBtnRed.txt-bold.btn.btn-primary.start-trade').css('width', '325px !important;');
+        }
+    });
+
+</script>
+
+<body>
+    <div class="fullscreen-bg">
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="/wp-content/themes/fptheme/assets/css2/FPM_BG_video.webm" type="video/webm">
+        </video>
+    </div>
+    <!--Header Section-->
+    <section class="bg contentbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 flex-row">
+                    <div class="heading-brand">
+                        <div class="col-md-4 col-12 navLeft">
+                            <a href="https://www.fpmarkets.com/"><img
+                                    src="/wp-content/themes/fptheme/assets/logo-white.png" alt="fp-logo"
+                                    class="logofp entered lazyloaded"
+                                    data-lazy-src="/wp-content/themes/fptheme/assets/logo-white.png"
+                                    data-ll-status="loaded"><noscript><img
+                                        src="/wp-content/themes/fptheme/assets/logo-white.png" alt="fp-logo"
+                                        class="logofp"></noscript></a>
+                        </div>
+                        <div class="col-md-4 col-12 navRight">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.fpmarkets.com/" target="_blank">Visit
+                                        website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row banner-main">
+                <div class="col-md-8 col-sm-12 banner-lt">
+                    <div class="banner-txt" style="padding-top:50px;">
+                        <h1 class="bt-p1">
+                            <span class="white-txt">Performance-driven</span> <br>
+                            <span style="font-weight: 400;">technology and </span>
+                            <span class="white-txt">ultra-low</span>
+                            <span style="font-weight: 400;">spreads</span>
+                        </h1>
+                    </div>
+                    <div class="banner-slider">
+                        <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_kvt8pdnk.json"
+                            background="transparent" speed="1" style="width: 600px;  " class="lottie-player-cls" loop=""
+                            autoplay=""></lottie-player>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" style="padding-top:50px; padding-bottom:100px;">
+                    <div class="banner-txt-rt">
+                        <p style="margin-bottom: -15px"><span class="white-txt">ابدأ التداول في دقائق!</span> </p>
+                        <p> افتح حسابك الآن</p>
+                    </div>
+                    <div class="trading-from-sec">
+
+
+                        <div class="registration">
+                            <div class="fp-demo-signup-global">
+                                <div class="form_signup_global_msg_ST text-center text-danger"></div>
+                                <form id="form_signup_global_ST" method="post" target="_blank">
+                                    <input id="first_name_ST" name="first_name" value="" type="text"
+                                        placeholder="الاسم الأول:" class="ncform" />
+                                    <input id="last_name_ST" name="last_name" value="" type="text"
+                                        placeholder="الاسم الأخير:" class="ncform" />
+                                    <input id="email_ST" name="email" value="" type="text"
+                                        placeholder="البريد الإلكتروني:" class="ncform" />
+                                    <input id="phone_ST" name="phone" value="" type="text" placeholder="Phone"
+                                        class="ncform" />
+                                    <input id="platform_ST" name="platform" value="mt4" type="hidden" />
+                                    <input id="country_ST" name="country" value="[[!getUserNationality]]"
+                                        type="hidden" />
+                                    <input id="track_lang_ST" name="language" value="[[!getCurrentEntity]]"
+                                        type="hidden" />
+                                    <input id="fpm-affiliate-pcode_ST" name="fpm-affiliate-pcode" value="Website/WLK"
+                                        type="hidden" />
+                                    <input id="fpm-affiliate-utm-source_ST" name="fpm-affiliate-utm-source"
+                                        value="Website" type="hidden" />
+                                    <input id="currency_ST" name="currency" value="USD" type="hidden" />
+                                    <input id="honeypot_ST" type="hidden" name="honeypot" value="" />
+                                    <input id="_mkto_trk_ST" type="hidden" value="" name="_mkto_trk" />
+                                    <input id="track1_1_ST" name="fpm-affiliate-pcode" value="Website/WLK"
+                                        type="hidden" />
+                                    <input id="nationality" name="nationality" value="[[!getUserNationality]]"
+                                        type="hidden" />
+                                    <input id="demo_preferred_Language" name="demo_preferred_Language" value="Arabic"
+                                        type="hidden" />
+                                    <input id="track2_1_ST" name="fpm-affiliate-utm-source" value="Website"
+                                        type="hidden" />
+                                    <input id="track7_1_ST" name="cxd" value="" type="hidden" />
+                                    <input id="track7_2_ST" name="bta" value="" type="hidden" />
+                                    <!--<input id="track_lang_ST" name="language" value="[[!formEntity]]" type="hidden" />-->
+                                    <input id="track3_1_ST" name="fpm-affiliate-utm-campaign" value="" type="hidden" />
+                                    <input id="track4_1_ST" name="fpm-affiliate-utm-content" value="" type="hidden" />
+                                    <input id="track5_1_ST" name="fpm-affiliate-agt" value="" type="hidden" />
+                                    <input id="track6_1_ST" name="fpm-affiliate-utm-term" value="" type="hidden" />
+                                    <input id="landing_page" name="landing_page" value="[[!getCurrentURL]]"
+                                        type="hidden" />
+                                    <input id="btn_name_get_ST" type="hidden" value="GET STARTED NOW"
+                                        name="btn_name_get" />
+                                    <div class="fp-demo-submit-global"><input
+                                            style="border-radius: 0 10px 10px 10px!important;" class="customBtnRed"
+                                            type="submit" value="إبدأ التداول" /></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-btn-txt">
+                        <p>
+                            من خلال تقديم بريدك الإلكتروني فإنك توافق على <a href="/privacy-policy" target="_blank"
+                                class="policy-link">سياسة الخصوصية</a> لشركة FP Markets وعلى تلقي مواد تسويقية في
+                            المستقبل من شركة
+                            FP Markets. يمكنك إلغاء الاشتراك في أي وقت.
+                        </p>
+                    </div>
+                    <div class="app-icon" style="text-align: center;">
+                        <a href="https://play.google.com/store/apps/details?id=com.fpmarkets.application&amp;hl=en_IN"
+                            target="_blank" class="play-store play-store-icon">
+                            <img src="/wp-content/themes/fptheme/assets/css2/play-store.png" alt="play-store"
+                                data-lazy-src="/wp-content/themes/fptheme/assets/css2/play-store.png"
+                                data-ll-status="loaded" class="entered lazyloaded"><noscript><img
+                                    src="/wp-content/themes/fptheme/assets/css2/play-store.png"
+                                    alt="play-store"></noscript>
+                        </a>
+                        <a href="https://apps.apple.com/au/app/fp-markets/id1549552932" target="_blank"
+                            class="app-store app-store-icon">
+                            <img src="/wp-content/themes/fptheme/assets/css2/app-store.png" alt="app-store"
+                                data-lazy-src="/wp-content/themes/fptheme/assets/css2/app-store.png"
+                                data-ll-status="loaded" class="entered lazyloaded"><noscript><img
+                                    src="/wp-content/themes/fptheme/assets/css2/app-store.png"
+                                    alt="app-store"></noscript>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Footer start-->
+    <footer class="py-5 bg-light ">
+        <div class="container">
+            <div class="row r-mb">
+                <div class="col-12 footer-txt">
+                    <p>تداول بمسؤولية: المنتجات المشتقة تتمتع برافعة مالية عالية وتحمل درجة عالية من المخاطر وليست
+                        مناسبة لجميع المستثمرين. ميزات منتجاتنا بما في ذلك الرسوم والتكاليف موضحة في الوثائق القانونية
+                        ذات الصلة المتاحة على موقعنا. يجب النظر في المستندات القانونية قبل الدخول في معاملات معنا. FP
+                        Markets هي مجموعة من الشركات التي تشمل First Prudential Markets Pty Ltd ، وهي شركة خاضعة لرقابة
+                        هيئة الأوراق المالية والاستثمارات الأسترالية (ASIC) لخدمات تداول المشتقات والعملات (ABN
+                        161112600281 ، ترخيص AFS رقم 286354) ، وشركة First Prudential Markets Ltd (رقم التسجيل HE
+                        372179)، وهي شركة مرخصة وخاضعة للرقابة من الهيئة القبرصية للأوراق المالية والبورصة (بموجب ترخيص
+                        رقم 371/18،) وشركة FP Markets LLC وهي شركة مسجلة في سانت فنسنت والجرينادين، وهي شركة ذات مسؤولية
+                        محدودة ورقم الشركة هو 126 LLC 2019. لا تقبل FP Markets الطلبات من المقيمين في بلدان أو ولايات
+                        قضائية يكون فيها هذا التوزيع أو الاستخدام مخالف للقوانين أو اللوائح المحلية.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--Footer end-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</body>
+
+</html>
+
+
+<style>
+    input {
+        font-size: 18px;
+    }
+
+    .page__id {
+        display: none;
+    }
+
+    .banner-main {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .contentbg {
+        margin: 0 auto;
+        width: 100%;
+        /* max-width: 960px;
+    padding: 0 15px; */
+    }
+
+    .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+    }
+
+    .fullscreen-bg__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<style>
+    .Czech-trp,
+    .Portuguese-trp,
+    .English-Canada-trp,
+    .Chinese-China-trp,
+    .German-trp,
+    .Greek-trp,
+    .Indonesian-trp,
+    .Ireland-trp,
+    .Kenya-trp,
+    .Korean-trp,
+    .Malay-trp,
+    .Portuguese-Portugal-trp,
+    .Russian-trp,
+    .Thai-trp,
+    .English-UK-trp,
+    .English-South-Africa-trp,
+    .Chinese-HongKong-trp,
+    .Chinese-Taiwan-trp,
+    .Vietnamese-trp,
+    .Arabic-trp {
+        display: none !important;
+    }
+
+    .trp-ls-shortcode-current-language {
+        width: 90px !important;
+    }
+
+    .trp-ls-shortcode-language {
+        width: 90px !important;
+    }
+
+    .trp-language-switcher>div {
+        background-color: transparent;
+        border: none;
+    }
+
+    .trp-language-switcher>div>a:hover {
+        background: #00BDFF;
+    }
+
+    .trp-language-switcher>div>a {
+        color: #fff;
+    }
+
+    div#lottie-controls .toolbar {
+        display: none !important;
+    }
+
+    .main {
+        height: 60% !important;
+    }
+
+
+    .banner-main {
+
+        min-height: 600px;
+        align-content: center;
+    }
+
+    a {
+        color: #0B121C;
+    }
+
+    .logofp {
+        height: 42px;
+    }
+
+    .navLeft {
+        float: left;
+    }
+
+    .navRight {
+        float: right;
+    }
+
+    .heading-brand li.list-inline-item a {
+        color: #00BDFF;
+        font-size: 22px;
+        font-weight: normal;
+        text-decoration: auto;
+    }
+
+    .navRight .list-inline {
+        float: right;
+    }
+
+    .heading-brand {
+        padding: 20px 0;
+    }
+
+    .white-txt {
+        color: #fff;
+    }
+
+    .banner-txt .white-txt {
+        font-weight: bold;
+    }
+
+    .banner-txt p,
+    .banner-txt h1 {
+        color: #00BDFF;
+        font-size: 47px;
+        line-height: 38px;
+
+    }
+
+    .banner-txt-rt p {
+        color: #00BDFF;
+        font-size: 32px;
+
+    }
+
+    .banner-txt-rt .white-txt {
+        font-weight: bold;
+        font-size: 30px;
+
+    }
+
+    .form-control {
+        color: #d2d2d2 !important;
+        background: transparent;
+        border-bottom: 1px solid #212020 !important;
+        width: 100%;
+        display: block;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+    }
+
+    input {
+        border: 0 !important;
+    }
+
+    .form-control:focus {
+        color: #d2d2d2 !important;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .form-control::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 0.7;
+        /* Firefox */
+        font-weight: 100 !important;
+        font-size: 16px;
+    }
+
+    .start-trade {
+        background: #00BDFF !important;
+        border-color: #00BDFF !important;
+    }
+
+    input.btn.btn-primary.start-trade,
+    button.btn.btn-primary.start-trade {
+        height: 62px !important;
+        width: 320px !important;
+        font-size: 28px !important;
+        color: #0B121C;
+        text-transform: none;
+        font-weight: 400 !important;
+    }
+
+    .frm-btn-txt p {
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .app-icon a.play-store-icon img,
+    .app-icon a.app-store-icon img {
+        width: 48%;
+    }
+
+    a.play-store-icon {
+        padding-right: 10px;
+    }
+
+    .footer-txt {
+        font-size: 12px !important;
+        font-weight: normal;
+        color: #000 !important;
+    }
+
+    .bg-light {
+        background-color: #fff !important;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0;
+        /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    .pt-p1 {
+        margin-bottom: -20px !important;
+    }
+
+    @media screen and (min-device-width: 1367px) and (max-device-width: 2800px) {
+        .banner-txt {
+            margin-bottom: 10%;
+        }
+
+        .trading-from-sec {
+            margin-top: 12%;
+        }
+
+        a.play-store-icon {
+            padding-right: initial;
+        }
+
+        .app-icon a.play-store-icon img,
+        .app-icon a.app-store-icon img {
+            width: 48%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        .banner-main,
+        .r-mb {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-0.5 * var(--bs-gutter-x));
+            margin-left: calc(-0.5 * var(--bs-gutter-x));
+        }
+
+        .bg {
+            height: auto;
+            background: #000;
+        }
+
+        .navRight {
+            float: initial;
+        }
+
+        .banner-main {
+            height: auto;
+            align-content: center;
+            display: block;
+            margin-top: 10%;
+        }
+
+        .logofp {
+            margin: 2% 17%;
+        }
+
+        .banner-txt p,
+        .banner-txt h1 {
+            font-size: 30px;
+            padding: 0 15px;
+            line-height: 28px;
+            text-align: left;
+
+        }
+
+        p.bt-p1 {
+            margin-bottom: -10px;
+        }
+
+        .banner-lt {
+            margin-bottom: 15%;
+            text-align: center;
+        }
+
+        .banner-txt {
+            margin-bottom: 10%;
+        }
+
+        .lottie-player-cls {
+            width: 100% !important;
+            margin: auto;
+        }
+
+        .banner-txt-rt {
+            margin: auto;
+            /* width: 90%; */
+            margin-bottom: 7%;
+        }
+
+        .banner-txt-rt .white-txt {
+            font-size: 29px;
+        }
+
+        button.btn.btn-primary.start-trade {
+            margin-left: 7%;
+        }
+
+        .app-icon {
+            margin-bottom: 40px;
+        }
+
+        .app-icon img {
+            /* margin-left: 4%; */
+        }
+
+        .app-icon a.play-store-icon img,
+        .app-icon a.app-store-icon img {
+            width: 47%;
+        }
+
+        .form-outline.mb-4.fp-demo-submit-global {
+            /* margin-left: 16%; */
+            text-align: -webkit-center !important;
+
+        }
+
+        .customBtnRed.txt-bold.btn.btn-primary.start-trade {
+            width: 250px !important;
+            margin-left: 4%;
+            margin-right: 0px !important;
+        }
+
+        .navRight .list-inline {
+            text-align: center;
+            float: initial;
+        }
+
+        .frm-btn-txt p {
+            padding: 0 5%;
+            font-weight: 400 !important;
+        }
+
+        .footer-txt {
+            font-weight: 500;
+        }
+
+
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        .banner-main {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-0.5 * var(--bs-gutter-x));
+            margin-left: calc(-0.5 * var(--bs-gutter-x));
+        }
+
+        .bg {
+            height: auto;
+            background: #000;
+        }
+
+        .banner-main {
+            height: auto;
+            align-content: center;
+            display: block;
+            margin-top: 10%;
+        }
+
+        .banner-txt h1 {
+            font-size: 39px !important;
+            padding: 0 15px;
+            line-height: 38px;
+            text-align: left;
+
+        }
+
+        .banner-txt {
+            margin-bottom: 10% !important;
+        }
+
+        .banner-lt {
+            margin-bottom: 15%;
+            text-align: center;
+        }
+
+        .banner-txt-rt .white-txt {
+            font-size: 25px;
+        }
+
+        .banner-txt-rt p {
+            font-size: 30px;
+        }
+
+        .app-icon a.play-store-icon img,
+        .app-icon a.app-store-icon img {
+            width: 45%;
+        }
+
+        .form-control::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 0.7;
+            /* Firefox */
+            font-weight: 100 !important;
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        .banner-main {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-0.5 * var(--bs-gutter-x));
+            margin-left: calc(-0.5 * var(--bs-gutter-x));
+        }
+
+        .bg {
+            height: auto;
+            background: #000;
+        }
+
+        .banner-main {
+            height: auto;
+            align-content: center;
+            display: block;
+            margin-top: 10%;
+        }
+
+        .banner-lt {
+            margin-bottom: 15%;
+            text-align: center;
+        }
+
+        .banner-txt {
+            margin-bottom: 10%;
+        }
+
+        .banner-txt h1 {
+            text-align: left;
+            line-height: 44px;
+
+        }
+
+        .lottie-player-cls {
+            width: 100% !important;
+            margin: auto;
+        }
+
+        .banner-txt-rt {
+            margin-bottom: 7%;
+        }
+
+        .banner-txt-rt p,
+        .banner-txt-rt .white-txt {
+            font-size: 40px;
+        }
+
+        .frm-btn-txt p {
+            font-size: 14px;
+        }
+
+        .app-icon {
+            margin-bottom: 40px;
+        }
+
+        .app-icon a.play-store-icon img,
+        .app-icon a.app-store-icon img {
+            width: 35%;
+        }
+
+        .form-control::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 0.7;
+            /* Firefox */
+            font-weight: 100 !important;
+            font-size: 18px;
+        }
+
+        .form-outline.mb-41.fp-demo-submit-global {
+            margin-bottom: 1.5rem !important;
+        }
+    }
+
+    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+    /* Portrait and Landscape */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        .bg {
+            background: #000;
+            height: auto;
+        }
+
+        .heading-brand li.list-inline-item a {
+            text-decoration: none !important;
+        }
+    }
+
+
+    form label {
+        display: inline-block;
+        width: 100px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    .error {
+        color: #d9534f;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    label.error {
+        display: inline;
+    }
+
+    .policy-link {
+        color: #00aeef;
+        text-decoration: auto;
+    }
+</style>

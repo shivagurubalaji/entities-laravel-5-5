@@ -1,0 +1,1132 @@
+[[$breadcrumb]]
+
+
+<div class="container-fluid cf1">
+    <div id="career-form-section" class="container">
+        <div>
+            <p class="h2-center-font hidden-xs">Demande pour devenir un fournisseur de signal
+
+            </p>
+            <p class="h2-center-font visible-xs" style="margin-bottom: 10px;">Demande pour devenir <br> un fournisseur
+                de signal
+
+
+            </p>
+            <p class="nrml-para-font hidden-xs" style="text-align:center;font-size: 23px;">
+                Veuillez remplir les détails ci-dessous pour enregistrer votre intérêt <br>
+                pour devenir un fournisseur de signaux de Copy Trading
+            </p>
+            <p class="nrml-para-font visible-xs"
+                style="text-align:center;font-size: 23px;padding-left:15px;padding-right:15px;">
+                Veuillez remplir les détails ci-dessous pour enregistrer votre intérêt <br>
+                pour devenir un fournisseur de signaux de Copy Trading
+            </p>
+        </div>
+        <div class="padding-top-50">
+            <div class="wid-align-for-form-section form-bg-custom-css">
+                <div>
+
+                    <form action="[[~[[*id]]]]" method="post" class="soctrading__form">
+                        <input type="hidden" name="nospam:blank" value="[[+fi.nospam]]" />
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="email"> COURRIEL<br> <span style="color:red"
+                                    class="error">[[!+fi.error.email]]</span>
+                                <span>
+                                    <input type="email" id="email" name="email" value="[[!+fi.email]]" size="40"
+                                        class="form-control" aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="accnumber">NUMÉRO DE COMPTE MT4/5
+
+                                <span style="color:red" class="error">[[!+fi.error.accnumber]]</span>
+                                <br>
+                                <span>
+                                    <input type="text" id="accnumber" name="accnumber" value="[[!+fi.accnumber]]"
+                                        size="40" class="form-control" aria-required="true" aria-invalid="false"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <p><label class="custom-input-label" for="nickname">NOM DE LA STRATÉGIE
+                                    <span style="color:red" class="error">[[!+fi.error.nickname]]</span>
+                                    <span class="tooltip2">
+                                        <i class="fa fa-info-circle" style="color:#3c3c3c;"></i><span
+                                            class="tooltiptext2">Strategy Providers must not:<br><br>• Guarantee
+                                            security;<br>• Guarantee profits;<br>• Disclose personal/corporative
+                                            contacts or names;<br>• Disclose website links - commercial or
+                                            personal;<br>• Advertise any kind of product/service or company.<br><br>FP
+                                            Markets review all the applications and reserve all rights to not publish
+                                            anything that is not compliant with the rules above.</span></span><br>
+                                    <span class="nick-name">
+                                        <input type="text" id="nickname" name="nickname" value="[[!+fi.nickname]]"
+                                            size="40" maxlength="29" minlength="6" class="form-control  form-control"
+                                            aria-required="true" aria-invalid="false" required>
+                                    </span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="perfee"> COMMISSION DE PERFORMANCE : 0 % À 50 %
+                                <span style="color:red" class="error"> [[!+fi.error.perfee]]</span>
+                                <span class="tooltip2">
+                                    <i class="fa fa-info-circle" style="color:#3c3c3c;"></i>
+                                    <span class="tooltiptext2">This is the percentage of your follower profit that you
+                                        want to be paid as your performance fees.</span>
+                                </span>
+                                <br>
+                                <span class=" fee">
+                                    <input type="text" id="perfee" name="perfee" value="" size="40" class="form-control"
+                                        aria-required="true" aria-invalid="false" required>
+                                </span>
+                            </label>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <p><label class="custom-input-label" for="difaccount">
+                                    VOULEZ-VOUS RECEVOIR VOS COMMISSIONS DE PERFORMANCE SUR UN AUTRE COMPTE DE TRADING ?
+
+                                    <span style="color:red" class="error">[[!+fi.error.difaccount]]</span>
+
+                                    <br>
+                                    <span class=" fees-on-different-account">
+                                        <select id="difaccount" name="difaccount" value="[[!+fi.difaccount]]"
+                                            class="form-control" aria-required="true" aria-invalid="false"
+                                            onchange='checkIfYes()' required>
+                                            <option value="" id="optionEmpty" value="">-- Choisir --</option>
+                                            <option value="Yes" id="optionYes">Oui</option>
+                                            <option value="No" id="optionNo">Non</option>
+                                        </select></span> <i class="down-arrow-custom"></i><br>
+                                </label>
+                            </p>
+                            <div style="height: auto; display:none;" id="extraAccount">
+                                <label class="custom-input-label" for="difaccountnum">
+                                    Please type the FP Markets trading account number you
+                                    want to connect.
+                                    <span style="color:red" class="error">[[!+fi.error.difaccountnum]]</span>
+                                    <span class="tooltip3">
+                                        <i class="fa fa-info-circle" style="color:#3c3c3c;"></i>
+                                        <span class="tooltiptext3">Nominated trading
+                                            account must be under the same server as the strategy trading
+                                            account.
+                                        </span>
+                                    </span>
+                                    <br>
+                                    <span class="diff-account-number">
+                                        <input type="text" id="difaccountnum" name="difaccountnum"
+                                            value="[[!+fi.difaccountnum]]" size="40" class="form-control">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="perpayout">
+                                INTERVALLE DE PAIEMENT DES FRAIS DE PERFORMANCE
+                                <span style="color:red" class="error">[[!+fi.error.perpayout]]</span>
+
+                                <br>
+                                <span class="interval-type">
+                                    <select id="perpayout" name="perpayout" class="form-control " aria-required="true"
+                                        aria-invalid="false" value="[[!+fi.perpayout]]">
+                                        <!--<option value="Per Trade">Par transaction</option>-->
+                                        <option value="Daily">Quotidien</option>
+                                        <option value="Weekly">Hebdomadaire</option>
+                                        <option value="Monthly">Mensuel</option>
+                                    </select>
+                                </span><i class="down-arrow-custom"></i>
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label br-al" for="strpublic">
+                                RENDRE LA STRATÉGIE PUBLIQUE (OUI/NON) :
+                                <span style="color:red" class="error"> [[!+fi.error.strpublic]]</span>
+                                <br>
+                                <span class="strategy">
+
+                                    <input type="radio" id="strpublicyes" name="strpublic"
+                                        value="[[!+fi.strpublic=`Yes`]]Yes" checked>
+                                    <span class="wpcf7-list-item-label">OUI</span>
+                                    <input type="radio" id="strpublicno" name="strpublic"
+                                        value="[[!+fi.strpublic=`No`]]No">
+                                    <span class="wpcf7-list-item-label">NON</span>
+
+
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12 custom-fil-pad">
+                            <label class="custom-input-label" for="descstrategy">
+                                DESCRIPTION DE LA STRATÉGIE
+                                <span style="color:red" class="error">[[!+fi.error.descstrategy]]</span>
+                                <span class="tooltip2">
+                                    <i class="fa fa-info-circle" style="color:#3c3c3c;"></i>
+                                    <span class="tooltiptext2">Strategy Providers must
+                                        not:<br><br>• Guarantee
+                                        security;<br>• Guarantee profits;<br>• Disclose personal/corporative contacts or
+                                        names;<br>• Disclose website links - commercial or personal;<br>• Advertise any
+                                        kind of product/service or company.<br><br>FP Markets review all the
+                                        applications and reserve all rights to not publish anything that is not
+                                        compliant with the rules above.
+                                    </span>
+                                </span>
+                                <br>
+                                <span class=" des-message">
+                                    <textarea id="descstrategy" name="descstrategy" value="[[!+fi.descstrategy]]"
+                                        cols="40" rows="10" maxlength="250" class="wpcf7-form-control wpcf7-textarea"
+                                        aria-invalid="false">[[!+fi.descstrategy]]
+                                    </textarea>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>
+                                <label for="soctradingalready" class="custom-input-label">
+                                    AVEZ-VOUS DÉJÀ UNE STRATÉGIE/UN COMPTE ENREGISTRÉ AUPRÈS DE FP MARKETS SOCIAL
+                                    TRADING ?
+
+                                    <span style="color:red" class="error">[[!+fi.error.soctradingalready]]</span>
+                                    <br>
+                                    <span class=" social-trading-already">
+                                        <select id="soctradingalready" name="soctradingalready"
+                                            value="[[!+fi.soctradingalready]]" class="form-control"
+                                            onchange='checkIfYesB()' required>
+                                            <option value="">-- Choisir --</option>
+                                            <option value="Yes">Oui</option>
+                                            <option value="No">Non</option>
+                                        </select>
+                                    </span>
+                                    <i class="down-arrow-custom-1"></i><br>
+                                </label>
+                            </p>
+                            <div id="soctradingsection" style="height: auto; display:none;">
+                                <label class="custom-input-label" for="soctradingaccalready">
+                                    Please type the FP Markets trading account number that
+                                    was already used for social trading.
+
+                                    <span style="color:red" class="error">[[!+fi.error.soctradingaccalready]]</span>
+                                    <br>
+                                    <span class=" social-trading-already-number">
+                                        <input type="text" id="soctradingaccalready" name="soctradingaccalready"
+                                            value="[[!+fi.soctradingaccalready]]" size="40" class="form-control">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="custom-input-label" for="minbalance">
+                                SOLDE D'ADHÉSION MINIMUM POUR LES COPIEURS
+                                <span style="color:red" class="error">[[!+fi.error.minbalance]]</span>
+                                <br>
+                                <span class=" copiers">
+                                    <input type="text" id="minbalance" name="minbalance" value="[[!+fi.minbalance]]"
+                                        size="40" class="form-control  form-control" aria-required="true"
+                                        aria-invalid="false">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-12 nccheck">
+                            <span class=" acceptance-737">
+                                <span class="wpcf7-form-control wpcf7-acceptance">
+                                    <span class="wpcf7-list-item"><label>
+                                            <input type="checkbox" name="acceptance-737" value="1" aria-invalid="false"
+                                                required>
+                                            <span class="wpcf7-list-item-label">
+                                                Before
+                                                registering for the Social Trading
+                                                Services please read and agree the following documents on the
+                                                <a href="https://www.fpmarkets.com/legal-documents" target="_blank">
+                                                    FP
+                                                    Markets LLC website</a> - <a
+                                                    href="https://www.fpmarkets.com/wp-content/uploads/2023/08/20230825-FIRST-PRUDENTIAL-MARKETS-LLC-CLIENT-AGREEMENT.pdf"
+                                                    target="+blank">
+                                                    FP Markets Client Agreement
+                                                </a>
+                                            </span>
+                                        </label>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            [[!recaptchav3_render]]
+                            [[!+fi.error.recaptchav3_error]]
+                        </div>
+                        <div class="text__align__center pt__30">
+                            <input type="submit" value="Envoyer" class="form__sub__btn">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pt__10">
+                                [[!+fi.successMessage]]
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+[[!FormIt?
+&hooks=`recaptchav3,email`
+&emailSubject=`Social Trading- New Signal Provider Request - FPMarkets Website`
+&emailTpl=`socialtradingFormEmail`
+&emailTo=`partners@fpmarkets.com`
+&vTextRequired=`required field`
+&successMessage=`<div class="success__msg">Thank you for your message. It has been sent.<br /></div>`
+&validate=`email:required,accnumber:required,nickname:required,perfee:required,
+difaccount:required,perpayout:required,soctradingalready:required,minbalance:required`
+]]
+
+<style>
+    .success__msg {
+        padding: 10px;
+        font-size: 17px;
+        border: 2px solid #46b450;
+    }
+
+    .soctrading__form input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="search"],
+    select,
+    textarea {
+        position: relative;
+        height: 47px;
+        line-height: 47px;
+        border: 2px solid #e3e3e3;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 16px;
+        color: #7a7a7a;
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        -ms-transition: border-color 0.3s ease-in-out;
+        -o-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    textarea {
+        height: auto !important;
+    }
+
+    .nccheck input[type="checkbox"] {
+        display: block;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .nccheck label {
+        text-transform: none;
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        font-family: 'Titillium Web', sans-serif !important;
+        margin-top: 5px;
+    }
+
+    .wpcf7-list-item {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+
+    .custom-input-label {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #7c989f;
+        width: 100%;
+    }
+
+    label {
+        font-weight: normal;
+        color: #111;
+        font-size: 12px;
+        font-family: 'Titillium Web', sans-serif !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        vertical-align: middle;
+    }
+
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .down-arrow-custom-1 {
+        border: solid #01beff;
+        border-width: 0 2px 2px 0;
+        padding: 5px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 58px;
+        right: 30px;
+        cursor: pointer;
+    }
+</style>
+<style>
+    .tooltip2 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width: 500px;
+        background-color: black;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 10px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        text-transform: none;
+    }
+
+    .tooltip2:hover .tooltiptext2 {
+        visibility: visible;
+    }
+
+
+    .tooltip3 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip3 .tooltiptext3 {
+        visibility: hidden;
+        width: 150px;
+        background-color: black;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 10px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        text-transform: none;
+    }
+
+    div.wpcf7-response-output {
+        border: none !important;
+    }
+
+    .tooltip3:hover .tooltiptext3 {
+        visibility: visible;
+    }
+
+    span.wpcf7-list-item.first {
+        margin: 0 0 0 0;
+    }
+
+    input[type=submit] {
+        background-color: #01beff;
+        border-radius: 10px;
+        opacity: 1;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        height: 50px;
+        width: 177px;
+        text-transform: uppercase;
+        border: none;
+        border-top-left-radius: 0px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    select {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        font-family: 'Titillium Web', sans-serif !important;
+        margin-top: 5px;
+    }
+
+    .custom-fil-pad {
+        padding-top: 20px;
+    }
+
+    #wpcf7-f7527-o1>form>div.col-md-12>label>span>input {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        line-height: 45px;
+    }
+
+    #wpcf7-f7527-o1>form>div.col-md-12>label>span>textarea {
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .file-uplod-para-font {
+        font-size: 15.5px;
+        margin-top: -10px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #202835;
+        text-transform: capitalize;
+    }
+
+    .no-file-selected-font {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5b6472;
+        margin-left: 15px;
+    }
+
+    .file-custom-input-cs {
+        display: flex;
+        width: 100%;
+    }
+
+    .upload-input-field-custom {
+        height: 50px;
+        display: flex;
+        border: solid 1px #d8dbde;
+        background-color: #f9f9f9;
+    }
+
+    .Choosefile {
+        width: 140px;
+        height: 40px;
+        background-color: #01beff;
+        border-radius: 10px;
+        padding: 7px 17px;
+        margin-top: 4px;
+        border-top-left-radius: 0px;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    .h2-center-font {
+        font-size: 44px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .check-box-nrml-para-font {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 25PX;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    .bocheckmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #f9f9f9;
+        border: 1px solid #d8dbde;
+        border-radius: 2px;
+    }
+
+    .bocontainer input:checked~.bocheckmark:after {
+        display: block;
+    }
+
+    .bocontainer .bocheckmark:after {
+        left: 7px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid rgb(1, 190, 255);
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .bocheckmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .bocontainer {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        height: auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-left: 15px;
+    }
+
+    .check-box-container {
+        display: flex;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 600;
+    }
+
+    #career-form-section {
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
+
+    .nrml-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #202835;
+    }
+
+    .col-md-offset-9-custom {
+        margin-left: 75.9%;
+    }
+
+    .form-bg-custom-css {
+        background-color: #fff !important;
+        border-radius: 0px 20px 20px 20px !important;
+        background: linear-gradient(#fff, #fff), linear-gradient(to bottom right, #fff 5%, rgba(0, 189, 255, .48), #26cc68) !important;
+        background-clip: padding-box, border-box !important;
+        background-origin: padding-box, border-box !important;
+        border: 2px solid transparent;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .wid-align-for-form-section {
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .savebutton {
+        background-color: #01beff;
+        border-radius: 10px;
+        opacity: 1;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        height: 50px;
+        width: 177px;
+        text-transform: uppercase;
+        border: none;
+        border-top-left-radius: 0px;
+    }
+
+    .custom-input-label {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #7c989f;
+        width: 100%;
+    }
+
+    .headerbg {
+        background-size: 100%;
+        background-position: 55% 100%;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .text-cent-btn {
+            text-align: center !important;
+        }
+
+        input[type=submit] {
+            float: none !important;
+        }
+
+        #wpcf7-f16006-o1>form>div.col-md-12>label>span>input {
+            font-size: 14px !important;
+        }
+
+        .no-file-selected-font {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #5b6472;
+            margin-left: 5px;
+        }
+
+        .bocontainer {
+            padding-left: 30px !important;
+            margin-left: 0px !important;
+        }
+
+        #career-form-section {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        .pad-left-right-15-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .col-md-offset-9-custom {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .wid-align-for-form-section {
+            width: auto !important;
+            margin: 0 auto;
+        }
+
+        .form-bg-custom-css {
+            padding: 45px 0px 55px 0px;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/fptheme/int/image-2020/social-trading-site-new-page/hero-mobile.png) !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .page-navi {
+            display: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+
+    .input-custom-css {
+        font-size: 18px;
+        padding: 0px 15px !important;
+        font-weight: 300;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        color: #5b6472 !important;
+        height: 50px !important;
+        background-color: #f9f9f9 !important;
+        border: solid 1px #d8dbde !important;
+        box-shadow: none !important;
+    }
+
+    .down-arrow-custom {
+        border: solid #01beff;
+        border-width: 0 2px 2px 0;
+        padding: 5px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 38px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) {
+        .Choosefile {
+            width: 100% !important;
+            height: 40px;
+            background-color: #01beff;
+            border-radius: 10px;
+            padding: 7px 17px;
+            margin-top: 4px;
+            border-top-left-radius: 0px;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 411px) {
+        .Choosefile {
+            width: 100% !important;
+            height: 40px;
+            background-color: #01beff;
+            border-radius: 10px;
+            padding: 7px 17px;
+            margin-top: 4px;
+            border-top-left-radius: 0px;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    @media screen and (-webkit-device-pixel-ratio: 3) and (device-height: 640px) and (device-width: 360px) {
+        .Choosefile {
+            width: 105% !important;
+            margin-left: -25px !important;
+            margin-right: 5px !important;
+        }
+    }
+
+    input[type=file]::-webkit-file-upload-button {
+        width: 140px !important;
+        height: 40px !important;
+        background-color: #01beff !important;
+        border-radius: 10px !important;
+        padding: 7px 17px !important;
+        margin-top: 4px !important;
+        border-top-left-radius: 0px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #ffffff !important;
+        margin-right: -5px !important;
+        float: right !important;
+        text-transform: uppercase !important;
+        border: none !important;
+        font-family: 'Titillium Web', sans-serif !important;
+    }
+
+    #wpcf7-f16006-o1>form>div.col-md-12>label>span>input>span {
+        padding-top: 24px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 50px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5b6472;
+        margin-left: 0px;
+        text-transform: uppercase;
+        border: none;
+        font-family: 'Titillium Web', sans-serif !important;
+    }
+</style>
+
+
+<style>
+    input[type="radio"] {
+        display: inherit !important;
+    }
+
+    input[type=radio] {
+        margin: 10px 0 0;
+        line-height: normal;
+    }
+
+    label.custom-input-label.br-al>br {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .first {
+            background: none !important;
+        }
+    }
+
+    .wpcf7 form.sent .wpcf7-response-output,
+    .wpcf7 form.invalid .wpcf7-response-output,
+    .wpcf7 form.unaccepted .wpcf7-response-output {
+        border-color: #46b450;
+        z-index: 9;
+        position: relative;
+        background: #fff;
+        top: 55px;
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e3642;
+        padding: 20px;
+    }
+
+    .wpcf7-not-valid-tip {
+        text-transform: capitalize !important;
+    }
+</style>
+
+<script>
+    function checkIfYes() {
+        if (document.getElementById('difaccount').value == 'Yes') {
+            document.getElementById('extraAccount').style.display = 'block';
+            document.getElementById('difaccountnum').required = true;
+        } else {
+            document.getElementById('extraAccount').style.display = 'none';
+            document.getElementById('difaccountnum').required = false;
+
+        }
+    }
+</script>
+<script>
+    function checkIfYesB() {
+        if (document.getElementById('soctradingalready').value == 'Yes') {
+            document.getElementById('soctradingsection').style.display = 'block';
+            document.getElementById('soctradingaccalready').required = true;
+        } else {
+            document.getElementById('soctradingsection').style.display = 'none';
+            document.getElementById('soctradingaccalready').required = false;
+
+        }
+    }
+</script>
