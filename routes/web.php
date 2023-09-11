@@ -12,10 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/ae-en');
 });
 
 Route::any('/{lang}', ['uses' => 'PageLoadController@home'])->name('fpmarkets.sc.home');
+Route::any('/{lang}/{page_uri}', 'pageloadcontroller@initiate')->where('page_uri', '(.*)');
+
+Route::get('/{page_uri}', 'pageloadcontroller@decide');
+
+/* Test */
 
 Route::get('/breadcrumb', 'SimpleFunctionsController@create_breadcrumbs');
 
