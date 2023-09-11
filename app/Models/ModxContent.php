@@ -2,13 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class ModxContent extends Model
 {
-    use HasFactory;
-
     protected $table = 'modx_site_content';
 
     protected $fillable = [
