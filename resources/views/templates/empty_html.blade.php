@@ -5,7 +5,7 @@
     
     <title>{{ $get_index_data->page_title ?? 'N/A' }} | FP Markets English</title>
     
-    <base href="{{env('APP_URL', 'https://uat.fpmarkets.com/sc/ae-en/')}}/ae-en/" />
+    <base href="{{env('APP_URL', 'https://www.fpmarkets.com/sc')}}ae-en/" />
     <meta charset="UTF-8"/>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
