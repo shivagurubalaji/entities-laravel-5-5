@@ -10,7 +10,7 @@ use App\Models\ModxContent;
 class PageLoadController extends Controller
 {
     
-    public function initiate(Request $request, $entity, $lang, $page_uri){
+    public function initiate(Request $request, $lang, $page_uri){
 
         try{
 
@@ -30,6 +30,8 @@ class PageLoadController extends Controller
             //    // Value is not present in the array
             //    echo "Value is not present";
             //}
+
+            $entity = "sc";
     
             switch ($entity) {
                 case "int":
