@@ -74,11 +74,7 @@
         crossorigin="anonymous"></script> 
     <script src="/assets/templates/v3/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/templates/v3/assets/js/simplyScroll.js"></script>
-    <script src="/assets/templates/v3/assets/js/main.js"></script>
-
-    <script>
-        $("#scroller").simplyScroll();
-    </script>
+    <script src="/assets/templates/v3/assets/js/main.js?v=2.6"></script>
 
     @include('blocks.footer.footer')
 
