@@ -2,48 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>{{ $get_index_data->page_title ?? 'N/A' }} | FP Markets English</title>
-    <base href="{{env('APP_URL', 'https://uat.fpmarkets.com/sc/ae-en/')}}/sc/ae-en/" />
-    
-    
-    <meta charset="[[++modx_charset]]" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-        <!-- Latest compiled and minified CSS -->
-        <link href="{{ asset('assets/sc/css/bootstrap.min.css') }}" rel="stylesheet">
-   
-        <link href="{{ asset('assets/sc/css/all.min.css') }}" rel="stylesheet">
-        <script src="https://use.fontawesome.com/44325f843e.js"></script>
-        <link href="{{ asset('assets/sc/css/owl.carousel.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/simplyScroll.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/style_v3.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/responsive.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/new.css') }}" rel="stylesheet">
-    
-
-        <!-- Link alternate -->
-
-        <!-- Meta Desc -->
-
-    
-    <!-- Favicon -->
-	<link rel="icon" type="image/png" href="{{ asset('assets/images/favicon-32x32.png') }}" sizes="32x32" />
-	<link rel="icon" type="image/png" href="{{ asset('assets/images/favicon-16x16.png') }}" sizes="16x16" />
-    
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TJQ6RQ');</script>
-<!-- End Google Tag Manager -->
+    @include('blocks.header.global-header')
 
 </head>
 
