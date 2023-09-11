@@ -5,22 +5,23 @@
     
     <title>{{ $get_index_data->page_title ?? 'N/A' }} | FP Markets English</title>
     
-    <base href="{{env('APP_URL', 'https://uat.fpmarkets.com/sc/ae-en/')}}/sc/ae-en/" />
+    <base href="{{env('APP_URL', 'https://uat.fpmarkets.com/sc/ae-en/')}}/ae-en/" />
     <meta charset="UTF-8"/>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Latest compiled and minified CSS -->
-        <link href="{{ asset('assets/sc/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="/assets/templates/bootstrap.min.css" rel="stylesheet">
    
-        <link href="{{ asset('assets/sc/css/all.min.css') }}" rel="stylesheet">
-        <script src="https://use.fontawesome.com/44325f843e.js"></script>
-        <link href="{{ asset('assets/sc/css/owl.carousel.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/simplyScroll.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/style_v3.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/responsive.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/sc/css/new.css') }}" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/all.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/44325f843e.js"></script>
+    <link href="/assets/templates/v3/assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/simplyScroll.css?v=1.4" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/style.css?v=3.1.5" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/style_v3.css?v=2.5" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/responsive.css?v=1.6" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/new.css?v=7" rel="stylesheet">
     
 
         <link rel="alternate" hreflang="en" href="https://www.fpmarkets.com/[[*duplicateUri]]" />
@@ -189,23 +190,19 @@
     @include('blocks.footer.footer-entity-culture')
     <!--------- Footer area end --------->
     
-
-    <script src="{{ asset('assets/sc/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/popper.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/bootstrap.min.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/jquery.min.js"></script>
+    <script src="/assets/templates/v3/assets/js/popper.js"></script>
+    <script src="/assets/templates/v3/assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script> 
-    <script src="{{ asset('assets/sc/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/simplyScroll.js') }}"></script>
-    <script src="{{ asset('assets/sc/js/main.js') }}"></script>
+    <script src="/assets/templates/v3/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/templates/v3/assets/js/simplyScroll.js"></script>
+    <script src="/assets/templates/v3/assets/js/main.js?v=2.6"></script>
 
-    <script>
-        $("#scroller").simplyScroll();
-    </script>
-    <link href="{{ asset('assets/sc/css/footer-css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/sc/css/footer-css/style_v3.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/sc/css/footer-css/responsive.css') }}" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/style.css?v=3.1.4" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/style_v3.css?v=2.4" rel="stylesheet">
+    <link href="/assets/templates/v3/assets/css/responsive.css?v=1.6" rel="stylesheet">
    
     <!-- Footer Chunk Start -->
 
