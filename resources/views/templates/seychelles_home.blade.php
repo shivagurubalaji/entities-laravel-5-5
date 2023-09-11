@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="zHNZjhX50Nv0xbSyMyrudLWBVg_8vd7yX9M2FOaqUxQ" />
 
-    <base href="{{env('APP_URL', 'https://www.fpmarkets.com/ss/')}}/sc/ae-en/" />
+    <base href="{{env('APP_URL', 'https://www.fpmarkets.com/sc/')}}ae-en/" />
     
     <title>{{ $get_index_data->page_title ?? 'N/A' }} | FP Markets English</title>
 
