@@ -16,9 +16,9 @@ Route::get('/', function () {
 });
 
 Route::any('/{lang}', ['uses' => 'PageLoadController@home'])->name('fpmarkets.sc.home');
-Route::any('/{lang}/{page_uri}', 'pageloadcontroller@initiate')->where('page_uri', '(.*)');
+Route::any('/{lang}/{page_uri}', 'PageLoadController@initiate')->where('page_uri', '(.*)');
 
-Route::get('/{page_uri}', 'pageloadcontroller@decide');
+Route::get('/{page_uri}', 'PageLoadController@decide');
 
 /* Test */
 
