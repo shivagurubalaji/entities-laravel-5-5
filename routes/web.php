@@ -15,6 +15,8 @@ Route::get('/', function () {
     return redirect('/ae-en');
 });
 
+Route::post('/github-webhook', 'SimpleFunctionsController@Github_Webhook');
+
 Route::any('/{lang}', ['uses' => 'PageLoadController@home'])->name('fpmarkets.sc.home');
 Route::any('/{lang}/{page_uri}', 'PageLoadController@initiate')->where('page_uri', '(.*)');
 

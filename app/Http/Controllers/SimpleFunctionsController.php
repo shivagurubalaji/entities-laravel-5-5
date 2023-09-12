@@ -31,4 +31,24 @@ class SimpleFunctionsController extends Controller {
   
       }
 
+      public function Github_WebHook(Request $request){
+
+        // Extract the necessary information from the webhook payload
+        $payload = $request->all();
+        //$repository = $payload['repository']['name'];
+        //$branch = $payload['ref'];
+  
+        // Perform any additional validation or filtering if needed
+  
+        // Execute the post-receive hook or trigger the deployment process
+        //if ($branch === 'refs/heads/master') {
+            $output = shell_exec('bash /var/www/eu/deploy_uat.sh');
+            // Optionally, handle the output or perform other actions based on the deployment result
+        //}
+  
+        // Return a response to acknowledge the webhook request
+        return response()->json(['message' => 'Webhook received'], 200);
+  
+      }
+
 }
